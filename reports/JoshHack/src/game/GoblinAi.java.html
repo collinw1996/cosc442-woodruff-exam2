@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../../../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../../../jacoco-resources/report.gif" type="image/gif"/><title>GoblinAi.java</title><link rel="stylesheet" href="../../../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../../../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../../../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../../../index.html" class="el_report">AllUiTests (May 19, 2018 11:46:29 AM)</a> &gt; <a href="../../index.html" class="el_group">JoshHack</a> &gt; <a href="../index.html" class="el_bundle">src</a> &gt; <a href="index.source.html" class="el_package">game</a> &gt; <span class="el_source">GoblinAi.java</span></div><h1>GoblinAi.java</h1><pre class="source lang-java linenums">package game;
+
+
+public class GoblinAi extends CreatureAi {
+	private Creature player;
+	
+	public GoblinAi(Creature creature, Creature player) {
+<span class="fc" id="L8">		super(creature);</span>
+<span class="fc" id="L9">		this.player = player;</span>
+<span class="fc" id="L10">	}</span>
+
+	public void onUpdate(){
+<span class="pc bpc" id="L13" title="1 of 2 branches missed.">		if (canUseBetterEquipment())</span>
+<span class="nc" id="L14">			useBetterEquipment();</span>
+<span class="pc bpc" id="L15" title="1 of 2 branches missed.">		else if (canRangedWeaponAttack(player))</span>
+<span class="nc" id="L16">			creature.rangedWeaponAttack(player);</span>
+<span class="pc bpc" id="L17" title="1 of 2 branches missed.">		else if (canThrowAt(player))</span>
+<span class="nc" id="L18">			creature.throwItem(getWeaponToThrow(), player.x, player.y, player.z);</span>
+<span class="pc bpc" id="L19" title="1 of 2 branches missed.">		else if (creature.canSee(player.x, player.y, player.z))</span>
+<span class="nc" id="L20">			hunt(player);</span>
+<span class="fc bfc" id="L21" title="All 2 branches covered.">		else if (canPickup())</span>
+<span class="fc" id="L22">			creature.pickup();</span>
+		else
+<span class="fc" id="L24">			wander();</span>
+<span class="fc" id="L25">	}</span>
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.7.9.201702052155</span>AllUiTests (May 19, 2018 11:46:29 AM)</div></body></html>

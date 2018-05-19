@@ -1,0 +1,332 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../../../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../../../jacoco-resources/report.gif" type="image/gif"/><title>InventoryTest.java</title><link rel="stylesheet" href="../../../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../../../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../../../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../../../index.html" class="el_report">AllUiTests (May 19, 2018 11:46:29 AM)</a> &gt; <a href="../../index.html" class="el_group">JoshHack</a> &gt; <a href="../index.html" class="el_bundle">src</a> &gt; <a href="index.source.html" class="el_package">game</a> &gt; <span class="el_source">InventoryTest.java</span></div><h1>InventoryTest.java</h1><pre class="source lang-java linenums">package game;
+
+import org.junit.*;
+import static org.junit.Assert.*;
+
+/**
+ * The class &lt;code&gt;InventoryTest&lt;/code&gt; contains tests for the class &lt;code&gt;{@link Inventory}&lt;/code&gt;.
+ *
+ * @generatedBy CodePro at 5/19/18 11:11 AM
+ * @author Collin
+ * @version $Revision: 1.0 $
+ */
+<span class="nc" id="L13">public class InventoryTest {</span>
+	/**
+	 * Run the Inventory(int) constructor test.
+	 *
+	 * @throws Exception
+	 *
+	 * @generatedBy CodePro at 5/19/18 11:11 AM
+	 */
+	@Test
+	public void testInventory_1()
+		throws Exception {
+<span class="nc" id="L24">		int max = 1;</span>
+
+<span class="nc" id="L26">		Inventory result = new Inventory(max);</span>
+
+		// add additional test code here
+<span class="nc" id="L29">		assertNotNull(result);</span>
+<span class="nc" id="L30">		assertEquals(false, result.isFull());</span>
+<span class="nc" id="L31">	}</span>
+
+	/**
+	 * Run the void add(Item) method test.
+	 *
+	 * @throws Exception
+	 *
+	 * @generatedBy CodePro at 5/19/18 11:11 AM
+	 */
+	@Test
+	public void testAdd_1()
+		throws Exception {
+<span class="nc" id="L43">		Inventory fixture = InventoryFactory.createInventory();</span>
+<span class="nc" id="L44">		Item item = ItemFactory.createItem();</span>
+
+<span class="nc" id="L46">		fixture.add(item);</span>
+
+		// add additional test code here
+<span class="nc" id="L49">	}</span>
+
+	/**
+	 * Run the void add(Item) method test.
+	 *
+	 * @throws Exception
+	 *
+	 * @generatedBy CodePro at 5/19/18 11:11 AM
+	 */
+	@Test
+	public void testAdd_2()
+		throws Exception {
+<span class="nc" id="L61">		Inventory fixture = InventoryFactory.createInventory();</span>
+<span class="nc" id="L62">		Item item = ItemFactory.createItem2();</span>
+
+<span class="nc" id="L64">		fixture.add(item);</span>
+
+		// add additional test code here
+<span class="nc" id="L67">	}</span>
+
+	/**
+	 * Run the void add(Item) method test.
+	 *
+	 * @throws Exception
+	 *
+	 * @generatedBy CodePro at 5/19/18 11:11 AM
+	 */
+	@Test
+	public void testAdd_3()
+		throws Exception {
+<span class="nc" id="L79">		Inventory fixture = InventoryFactory.createInventory();</span>
+<span class="nc" id="L80">		Item item = ItemFactory.createItem3();</span>
+
+<span class="nc" id="L82">		fixture.add(item);</span>
+
+		// add additional test code here
+<span class="nc" id="L85">	}</span>
+
+	/**
+	 * Run the boolean contains(Item) method test.
+	 *
+	 * @throws Exception
+	 *
+	 * @generatedBy CodePro at 5/19/18 11:11 AM
+	 */
+	@Test
+	public void testContains_1()
+		throws Exception {
+<span class="nc" id="L97">		Inventory fixture = InventoryFactory.createInventory();</span>
+<span class="nc" id="L98">		Item item = ItemFactory.createItem3();</span>
+
+<span class="nc" id="L100">		boolean result = fixture.contains(item);</span>
+
+		// add additional test code here
+<span class="nc" id="L103">		assertEquals(false, result);</span>
+<span class="nc" id="L104">	}</span>
+
+	/**
+	 * Run the boolean contains(Item) method test.
+	 *
+	 * @throws Exception
+	 *
+	 * @generatedBy CodePro at 5/19/18 11:11 AM
+	 */
+	@Test
+	public void testContains_2()
+		throws Exception {
+<span class="nc" id="L116">		Inventory fixture = InventoryFactory.createInventory();</span>
+<span class="nc" id="L117">		Item item = ItemFactory.createItem4();</span>
+
+<span class="nc" id="L119">		boolean result = fixture.contains(item);</span>
+
+		// add additional test code here
+<span class="nc" id="L122">		assertEquals(false, result);</span>
+<span class="nc" id="L123">	}</span>
+
+	/**
+	 * Run the boolean contains(Item) method test.
+	 *
+	 * @throws Exception
+	 *
+	 * @generatedBy CodePro at 5/19/18 11:11 AM
+	 */
+	@Test
+	public void testContains_3()
+		throws Exception {
+<span class="nc" id="L135">		Inventory fixture = InventoryFactory.createInventory();</span>
+<span class="nc" id="L136">		Item item = ItemFactory.createItem();</span>
+
+<span class="nc" id="L138">		boolean result = fixture.contains(item);</span>
+
+		// add additional test code here
+<span class="nc" id="L141">		assertEquals(false, result);</span>
+<span class="nc" id="L142">	}</span>
+
+	/**
+	 * Run the Item get(int) method test.
+	 *
+	 * @throws Exception
+	 *
+	 * @generatedBy CodePro at 5/19/18 11:11 AM
+	 */
+	@Test
+	public void testGet_1()
+		throws Exception {
+<span class="nc" id="L154">		Inventory fixture = InventoryFactory.createInventory();</span>
+<span class="nc" id="L155">		int i = 1;</span>
+
+<span class="nc" id="L157">		Item result = fixture.get(i);</span>
+
+		// add additional test code here
+		// An unexpected exception was thrown in user code while executing this test:
+		//    java.lang.ArrayIndexOutOfBoundsException: 1
+		//       at game.Inventory.get(Inventory.java:7)
+<span class="nc" id="L163">		assertNotNull(result);</span>
+<span class="nc" id="L164">	}</span>
+
+	/**
+	 * Run the Item[] getItems() method test.
+	 *
+	 * @throws Exception
+	 *
+	 * @generatedBy CodePro at 5/19/18 11:11 AM
+	 */
+	@Test
+	public void testGetItems_1()
+		throws Exception {
+<span class="nc" id="L176">		Inventory fixture = InventoryFactory.createInventory();</span>
+
+<span class="nc" id="L178">		Item[] result = fixture.getItems();</span>
+
+		// add additional test code here
+<span class="nc" id="L181">		assertNotNull(result);</span>
+<span class="nc" id="L182">		assertEquals(0, result.length);</span>
+<span class="nc" id="L183">	}</span>
+
+	/**
+	 * Run the boolean isFull() method test.
+	 *
+	 * @throws Exception
+	 *
+	 * @generatedBy CodePro at 5/19/18 11:11 AM
+	 */
+	@Test
+	public void testIsFull_1()
+		throws Exception {
+<span class="nc" id="L195">		Inventory fixture = InventoryFactory.createInventory();</span>
+
+<span class="nc" id="L197">		boolean result = fixture.isFull();</span>
+
+		// add additional test code here
+<span class="nc" id="L200">		assertEquals(true, result);</span>
+<span class="nc" id="L201">	}</span>
+
+	/**
+	 * Run the boolean isFull() method test.
+	 *
+	 * @throws Exception
+	 *
+	 * @generatedBy CodePro at 5/19/18 11:11 AM
+	 */
+	@Test
+	public void testIsFull_2()
+		throws Exception {
+<span class="nc" id="L213">		Inventory fixture = InventoryFactory.createInventory();</span>
+
+<span class="nc" id="L215">		boolean result = fixture.isFull();</span>
+
+		// add additional test code here
+<span class="nc" id="L218">		assertEquals(true, result);</span>
+<span class="nc" id="L219">	}</span>
+
+	/**
+	 * Run the boolean isFull() method test.
+	 *
+	 * @throws Exception
+	 *
+	 * @generatedBy CodePro at 5/19/18 11:11 AM
+	 */
+	@Test
+	public void testIsFull_3()
+		throws Exception {
+<span class="nc" id="L231">		Inventory fixture = InventoryFactory.createInventory();</span>
+
+<span class="nc" id="L233">		boolean result = fixture.isFull();</span>
+
+		// add additional test code here
+<span class="nc" id="L236">		assertEquals(true, result);</span>
+<span class="nc" id="L237">	}</span>
+
+	/**
+	 * Run the void remove(Item) method test.
+	 *
+	 * @throws Exception
+	 *
+	 * @generatedBy CodePro at 5/19/18 11:11 AM
+	 */
+	@Test
+	public void testRemove_1()
+		throws Exception {
+<span class="nc" id="L249">		Inventory fixture = InventoryFactory.createInventory();</span>
+<span class="nc" id="L250">		Item item = ItemFactory.createItem4();</span>
+
+<span class="nc" id="L252">		fixture.remove(item);</span>
+
+		// add additional test code here
+<span class="nc" id="L255">	}</span>
+
+	/**
+	 * Run the void remove(Item) method test.
+	 *
+	 * @throws Exception
+	 *
+	 * @generatedBy CodePro at 5/19/18 11:11 AM
+	 */
+	@Test
+	public void testRemove_2()
+		throws Exception {
+<span class="nc" id="L267">		Inventory fixture = InventoryFactory.createInventory();</span>
+<span class="nc" id="L268">		Item item = ItemFactory.createItem();</span>
+
+<span class="nc" id="L270">		fixture.remove(item);</span>
+
+		// add additional test code here
+<span class="nc" id="L273">	}</span>
+
+	/**
+	 * Run the void remove(Item) method test.
+	 *
+	 * @throws Exception
+	 *
+	 * @generatedBy CodePro at 5/19/18 11:11 AM
+	 */
+	@Test
+	public void testRemove_3()
+		throws Exception {
+<span class="nc" id="L285">		Inventory fixture = InventoryFactory.createInventory();</span>
+<span class="nc" id="L286">		Item item = ItemFactory.createItem2();</span>
+
+<span class="nc" id="L288">		fixture.remove(item);</span>
+
+		// add additional test code here
+<span class="nc" id="L291">	}</span>
+
+	/**
+	 * Perform pre-test initialization.
+	 *
+	 * @throws Exception
+	 *         if the initialization fails for some reason
+	 *
+	 * @generatedBy CodePro at 5/19/18 11:11 AM
+	 */
+	@Before
+	public void setUp()
+		throws Exception {
+		// add additional set up code here
+<span class="nc" id="L305">	}</span>
+
+	/**
+	 * Perform post-test clean-up.
+	 *
+	 * @throws Exception
+	 *         if the clean-up fails for some reason
+	 *
+	 * @generatedBy CodePro at 5/19/18 11:11 AM
+	 */
+	@After
+	public void tearDown()
+		throws Exception {
+		// Add additional tear down code here
+<span class="nc" id="L319">	}</span>
+
+	/**
+	 * Launch the test.
+	 *
+	 * @param args the command line arguments
+	 *
+	 * @generatedBy CodePro at 5/19/18 11:11 AM
+	 */
+	public static void main(String[] args) {
+<span class="nc" id="L329">		new org.junit.runner.JUnitCore().run(InventoryTest.class);</span>
+<span class="nc" id="L330">	}</span>
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.7.9.201702052155</span>AllUiTests (May 19, 2018 11:46:29 AM)</div></body></html>

@@ -1,0 +1,506 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../../../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../../../jacoco-resources/report.gif" type="image/gif"/><title>FieldOfViewTest.java</title><link rel="stylesheet" href="../../../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../../../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../../../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../../../index.html" class="el_report">AllUiTests (May 19, 2018 11:46:29 AM)</a> &gt; <a href="../../index.html" class="el_group">JoshHack</a> &gt; <a href="../index.html" class="el_bundle">src</a> &gt; <a href="index.source.html" class="el_package">game</a> &gt; <span class="el_source">FieldOfViewTest.java</span></div><h1>FieldOfViewTest.java</h1><pre class="source lang-java linenums">package game;
+
+import org.junit.*;
+import static org.junit.Assert.*;
+
+/**
+ * The class &lt;code&gt;FieldOfViewTest&lt;/code&gt; contains tests for the class &lt;code&gt;{@link FieldOfView}&lt;/code&gt;.
+ *
+ * @generatedBy CodePro at 5/19/18 11:02 AM
+ * @author Collin
+ * @version $Revision: 1.0 $
+ */
+<span class="nc" id="L13">public class FieldOfViewTest {</span>
+	/**
+	 * Run the FieldOfView(World) constructor test.
+	 *
+	 * @throws Exception
+	 *
+	 * @generatedBy CodePro at 5/19/18 11:02 AM
+	 */
+	@Test
+	public void testFieldOfView_1()
+		throws Exception {
+<span class="nc" id="L24">		World world = WorldFactory.createWorld();</span>
+
+<span class="nc" id="L26">		FieldOfView result = new FieldOfView(world);</span>
+
+		// add additional test code here
+<span class="nc" id="L29">		assertNotNull(result);</span>
+<span class="nc" id="L30">	}</span>
+
+	/**
+	 * Run the FieldOfView(World) constructor test.
+	 *
+	 * @throws Exception
+	 *
+	 * @generatedBy CodePro at 5/19/18 11:02 AM
+	 */
+	@Test
+	public void testFieldOfView_2()
+		throws Exception {
+<span class="nc" id="L42">		World world = WorldFactory.createWorld();</span>
+
+<span class="nc" id="L44">		FieldOfView result = new FieldOfView(world);</span>
+
+		// add additional test code here
+<span class="nc" id="L47">		assertNotNull(result);</span>
+<span class="nc" id="L48">	}</span>
+
+	/**
+	 * Run the FieldOfView(World) constructor test.
+	 *
+	 * @throws Exception
+	 *
+	 * @generatedBy CodePro at 5/19/18 11:02 AM
+	 */
+	@Test
+	public void testFieldOfView_3()
+		throws Exception {
+<span class="nc" id="L60">		World world = WorldFactory.createWorld();</span>
+
+<span class="nc" id="L62">		FieldOfView result = new FieldOfView(world);</span>
+
+		// add additional test code here
+<span class="nc" id="L65">		assertNotNull(result);</span>
+<span class="nc" id="L66">	}</span>
+
+	/**
+	 * Run the FieldOfView(World) constructor test.
+	 *
+	 * @throws Exception
+	 *
+	 * @generatedBy CodePro at 5/19/18 11:02 AM
+	 */
+	@Test
+	public void testFieldOfView_4()
+		throws Exception {
+<span class="nc" id="L78">		World world = WorldFactory.createWorld();</span>
+
+<span class="nc" id="L80">		FieldOfView result = new FieldOfView(world);</span>
+
+		// add additional test code here
+<span class="nc" id="L83">		assertNotNull(result);</span>
+<span class="nc" id="L84">	}</span>
+
+	/**
+	 * Run the boolean isVisible(int,int,int) method test.
+	 *
+	 * @throws Exception
+	 *
+	 * @generatedBy CodePro at 5/19/18 11:02 AM
+	 */
+	@Test
+	public void testIsVisible_1()
+		throws Exception {
+<span class="nc" id="L96">		FieldOfView fixture = FieldOfViewFactory.createFieldOfView();</span>
+<span class="nc" id="L97">		int x = 1;</span>
+<span class="nc" id="L98">		int y = 1;</span>
+<span class="nc" id="L99">		int z = 1;</span>
+
+<span class="nc" id="L101">		boolean result = fixture.isVisible(x, y, z);</span>
+
+		// add additional test code here
+<span class="nc" id="L104">		assertEquals(false, result);</span>
+<span class="nc" id="L105">	}</span>
+
+	/**
+	 * Run the boolean isVisible(int,int,int) method test.
+	 *
+	 * @throws Exception
+	 *
+	 * @generatedBy CodePro at 5/19/18 11:02 AM
+	 */
+	@Test
+	public void testIsVisible_2()
+		throws Exception {
+<span class="nc" id="L117">		FieldOfView fixture = FieldOfViewFactory.createFieldOfView();</span>
+<span class="nc" id="L118">		int x = 1;</span>
+<span class="nc" id="L119">		int y = 1;</span>
+<span class="nc" id="L120">		int z = 1;</span>
+
+<span class="nc" id="L122">		boolean result = fixture.isVisible(x, y, z);</span>
+
+		// add additional test code here
+<span class="nc" id="L125">		assertEquals(false, result);</span>
+<span class="nc" id="L126">	}</span>
+
+	/**
+	 * Run the boolean isVisible(int,int,int) method test.
+	 *
+	 * @throws Exception
+	 *
+	 * @generatedBy CodePro at 5/19/18 11:02 AM
+	 */
+	@Test
+	public void testIsVisible_3()
+		throws Exception {
+<span class="nc" id="L138">		FieldOfView fixture = FieldOfViewFactory.createFieldOfView();</span>
+<span class="nc" id="L139">		int x = -1;</span>
+<span class="nc" id="L140">		int y = 1;</span>
+<span class="nc" id="L141">		int z = 1;</span>
+
+<span class="nc" id="L143">		boolean result = fixture.isVisible(x, y, z);</span>
+
+		// add additional test code here
+<span class="nc" id="L146">		assertEquals(false, result);</span>
+<span class="nc" id="L147">	}</span>
+
+	/**
+	 * Run the boolean isVisible(int,int,int) method test.
+	 *
+	 * @throws Exception
+	 *
+	 * @generatedBy CodePro at 5/19/18 11:02 AM
+	 */
+	@Test
+	public void testIsVisible_4()
+		throws Exception {
+<span class="nc" id="L159">		FieldOfView fixture = FieldOfViewFactory.createFieldOfView();</span>
+<span class="nc" id="L160">		int x = 1;</span>
+<span class="nc" id="L161">		int y = -1;</span>
+<span class="nc" id="L162">		int z = 1;</span>
+
+<span class="nc" id="L164">		boolean result = fixture.isVisible(x, y, z);</span>
+
+		// add additional test code here
+<span class="nc" id="L167">		assertEquals(false, result);</span>
+<span class="nc" id="L168">	}</span>
+
+	/**
+	 * Run the boolean isVisible(int,int,int) method test.
+	 *
+	 * @throws Exception
+	 *
+	 * @generatedBy CodePro at 5/19/18 11:02 AM
+	 */
+	@Test
+	public void testIsVisible_5()
+		throws Exception {
+<span class="nc" id="L180">		FieldOfView fixture = FieldOfViewFactory.createFieldOfView();</span>
+<span class="nc" id="L181">		int x = 1;</span>
+<span class="nc" id="L182">		int y = 1;</span>
+<span class="nc" id="L183">		int z = 1;</span>
+
+<span class="nc" id="L185">		boolean result = fixture.isVisible(x, y, z);</span>
+
+		// add additional test code here
+<span class="nc" id="L188">		assertEquals(false, result);</span>
+<span class="nc" id="L189">	}</span>
+
+	/**
+	 * Run the boolean isVisible(int,int,int) method test.
+	 *
+	 * @throws Exception
+	 *
+	 * @generatedBy CodePro at 5/19/18 11:02 AM
+	 */
+	@Test
+	public void testIsVisible_6()
+		throws Exception {
+<span class="nc" id="L201">		FieldOfView fixture = FieldOfViewFactory.createFieldOfView();</span>
+<span class="nc" id="L202">		int x = 1;</span>
+<span class="nc" id="L203">		int y = 1;</span>
+<span class="nc" id="L204">		int z = 1;</span>
+
+<span class="nc" id="L206">		boolean result = fixture.isVisible(x, y, z);</span>
+
+		// add additional test code here
+<span class="nc" id="L209">		assertEquals(false, result);</span>
+<span class="nc" id="L210">	}</span>
+
+	/**
+	 * Run the boolean isVisible(int,int,int) method test.
+	 *
+	 * @throws Exception
+	 *
+	 * @generatedBy CodePro at 5/19/18 11:02 AM
+	 */
+	@Test
+	public void testIsVisible_7()
+		throws Exception {
+<span class="nc" id="L222">		FieldOfView fixture = FieldOfViewFactory.createFieldOfView();</span>
+<span class="nc" id="L223">		int x = 1;</span>
+<span class="nc" id="L224">		int y = 1;</span>
+<span class="nc" id="L225">		int z = 1;</span>
+
+<span class="nc" id="L227">		boolean result = fixture.isVisible(x, y, z);</span>
+
+		// add additional test code here
+<span class="nc" id="L230">		assertEquals(false, result);</span>
+<span class="nc" id="L231">	}</span>
+
+	/**
+	 * Run the Tile tile(int,int,int) method test.
+	 *
+	 * @throws Exception
+	 *
+	 * @generatedBy CodePro at 5/19/18 11:02 AM
+	 */
+	@Test
+	public void testTile_1()
+		throws Exception {
+<span class="nc" id="L243">		FieldOfView fixture = FieldOfViewFactory.createFieldOfView();</span>
+<span class="nc" id="L244">		int x = 1;</span>
+<span class="nc" id="L245">		int y = 1;</span>
+<span class="nc" id="L246">		int z = 1;</span>
+
+<span class="nc" id="L248">		Tile result = fixture.tile(x, y, z);</span>
+
+		// add additional test code here
+		// An unexpected exception was thrown in user code while executing this test:
+		//    java.lang.ArrayIndexOutOfBoundsException: 1
+		//       at game.FieldOfView.tile(FieldOfView.java:14)
+<span class="nc" id="L254">		assertNotNull(result);</span>
+<span class="nc" id="L255">	}</span>
+
+	/**
+	 * Run the void update(int,int,int,int) method test.
+	 *
+	 * @throws Exception
+	 *
+	 * @generatedBy CodePro at 5/19/18 11:02 AM
+	 */
+	@Test
+	public void testUpdate_1()
+		throws Exception {
+<span class="nc" id="L267">		FieldOfView fixture = FieldOfViewFactory.createFieldOfView();</span>
+<span class="nc" id="L268">		int wx = 1;</span>
+<span class="nc" id="L269">		int wy = 1;</span>
+<span class="nc" id="L270">		int wz = 1;</span>
+<span class="nc" id="L271">		int r = 1;</span>
+
+<span class="nc" id="L273">		fixture.update(wx, wy, wz, r);</span>
+
+		// add additional test code here
+<span class="nc" id="L276">	}</span>
+
+	/**
+	 * Run the void update(int,int,int,int) method test.
+	 *
+	 * @throws Exception
+	 *
+	 * @generatedBy CodePro at 5/19/18 11:02 AM
+	 */
+	@Test
+	public void testUpdate_2()
+		throws Exception {
+<span class="nc" id="L288">		FieldOfView fixture = FieldOfViewFactory.createFieldOfView();</span>
+<span class="nc" id="L289">		int wx = 1;</span>
+<span class="nc" id="L290">		int wy = 1;</span>
+<span class="nc" id="L291">		int wz = 1;</span>
+<span class="nc" id="L292">		int r = 1;</span>
+
+<span class="nc" id="L294">		fixture.update(wx, wy, wz, r);</span>
+
+		// add additional test code here
+<span class="nc" id="L297">	}</span>
+
+	/**
+	 * Run the void update(int,int,int,int) method test.
+	 *
+	 * @throws Exception
+	 *
+	 * @generatedBy CodePro at 5/19/18 11:02 AM
+	 */
+	@Test
+	public void testUpdate_3()
+		throws Exception {
+<span class="nc" id="L309">		FieldOfView fixture = FieldOfViewFactory.createFieldOfView();</span>
+<span class="nc" id="L310">		int wx = 1;</span>
+<span class="nc" id="L311">		int wy = 1;</span>
+<span class="nc" id="L312">		int wz = 1;</span>
+<span class="nc" id="L313">		int r = 1;</span>
+
+<span class="nc" id="L315">		fixture.update(wx, wy, wz, r);</span>
+
+		// add additional test code here
+<span class="nc" id="L318">	}</span>
+
+	/**
+	 * Run the void update(int,int,int,int) method test.
+	 *
+	 * @throws Exception
+	 *
+	 * @generatedBy CodePro at 5/19/18 11:02 AM
+	 */
+	@Test
+	public void testUpdate_4()
+		throws Exception {
+<span class="nc" id="L330">		FieldOfView fixture = FieldOfViewFactory.createFieldOfView();</span>
+<span class="nc" id="L331">		int wx = 1;</span>
+<span class="nc" id="L332">		int wy = 1;</span>
+<span class="nc" id="L333">		int wz = 1;</span>
+<span class="nc" id="L334">		int r = 1;</span>
+
+<span class="nc" id="L336">		fixture.update(wx, wy, wz, r);</span>
+
+		// add additional test code here
+<span class="nc" id="L339">	}</span>
+
+	/**
+	 * Run the void update(int,int,int,int) method test.
+	 *
+	 * @throws Exception
+	 *
+	 * @generatedBy CodePro at 5/19/18 11:02 AM
+	 */
+	@Test
+	public void testUpdate_5()
+		throws Exception {
+<span class="nc" id="L351">		FieldOfView fixture = FieldOfViewFactory.createFieldOfView();</span>
+<span class="nc" id="L352">		int wx = 1;</span>
+<span class="nc" id="L353">		int wy = 1;</span>
+<span class="nc" id="L354">		int wz = 1;</span>
+<span class="nc" id="L355">		int r = 1;</span>
+
+<span class="nc" id="L357">		fixture.update(wx, wy, wz, r);</span>
+
+		// add additional test code here
+<span class="nc" id="L360">	}</span>
+
+	/**
+	 * Run the void update(int,int,int,int) method test.
+	 *
+	 * @throws Exception
+	 *
+	 * @generatedBy CodePro at 5/19/18 11:02 AM
+	 */
+	@Test
+	public void testUpdate_6()
+		throws Exception {
+<span class="nc" id="L372">		FieldOfView fixture = FieldOfViewFactory.createFieldOfView();</span>
+<span class="nc" id="L373">		int wx = 1;</span>
+<span class="nc" id="L374">		int wy = 1;</span>
+<span class="nc" id="L375">		int wz = 1;</span>
+<span class="nc" id="L376">		int r = 1;</span>
+
+<span class="nc" id="L378">		fixture.update(wx, wy, wz, r);</span>
+
+		// add additional test code here
+<span class="nc" id="L381">	}</span>
+
+	/**
+	 * Run the void update(int,int,int,int) method test.
+	 *
+	 * @throws Exception
+	 *
+	 * @generatedBy CodePro at 5/19/18 11:02 AM
+	 */
+	@Test
+	public void testUpdate_7()
+		throws Exception {
+<span class="nc" id="L393">		FieldOfView fixture = FieldOfViewFactory.createFieldOfView();</span>
+<span class="nc" id="L394">		int wx = 1;</span>
+<span class="nc" id="L395">		int wy = 1;</span>
+<span class="nc" id="L396">		int wz = 1;</span>
+<span class="nc" id="L397">		int r = 1;</span>
+
+<span class="nc" id="L399">		fixture.update(wx, wy, wz, r);</span>
+
+		// add additional test code here
+<span class="nc" id="L402">	}</span>
+
+	/**
+	 * Run the void update(int,int,int,int) method test.
+	 *
+	 * @throws Exception
+	 *
+	 * @generatedBy CodePro at 5/19/18 11:02 AM
+	 */
+	@Test
+	public void testUpdate_8()
+		throws Exception {
+<span class="nc" id="L414">		FieldOfView fixture = FieldOfViewFactory.createFieldOfView();</span>
+<span class="nc" id="L415">		int wx = 1;</span>
+<span class="nc" id="L416">		int wy = 1;</span>
+<span class="nc" id="L417">		int wz = 1;</span>
+<span class="nc" id="L418">		int r = 1;</span>
+
+<span class="nc" id="L420">		fixture.update(wx, wy, wz, r);</span>
+
+		// add additional test code here
+<span class="nc" id="L423">	}</span>
+
+	/**
+	 * Run the void update(int,int,int,int) method test.
+	 *
+	 * @throws Exception
+	 *
+	 * @generatedBy CodePro at 5/19/18 11:02 AM
+	 */
+	@Test
+	public void testUpdate_9()
+		throws Exception {
+<span class="nc" id="L435">		FieldOfView fixture = FieldOfViewFactory.createFieldOfView();</span>
+<span class="nc" id="L436">		int wx = 1;</span>
+<span class="nc" id="L437">		int wy = 1;</span>
+<span class="nc" id="L438">		int wz = 1;</span>
+<span class="nc" id="L439">		int r = 1;</span>
+
+<span class="nc" id="L441">		fixture.update(wx, wy, wz, r);</span>
+
+		// add additional test code here
+<span class="nc" id="L444">	}</span>
+
+	/**
+	 * Run the void update(int,int,int,int) method test.
+	 *
+	 * @throws Exception
+	 *
+	 * @generatedBy CodePro at 5/19/18 11:02 AM
+	 */
+	@Test
+	public void testUpdate_10()
+		throws Exception {
+<span class="nc" id="L456">		FieldOfView fixture = FieldOfViewFactory.createFieldOfView();</span>
+<span class="nc" id="L457">		int wx = 1;</span>
+<span class="nc" id="L458">		int wy = 1;</span>
+<span class="nc" id="L459">		int wz = 1;</span>
+<span class="nc" id="L460">		int r = 1;</span>
+
+<span class="nc" id="L462">		fixture.update(wx, wy, wz, r);</span>
+
+		// add additional test code here
+<span class="nc" id="L465">	}</span>
+
+	/**
+	 * Perform pre-test initialization.
+	 *
+	 * @throws Exception
+	 *         if the initialization fails for some reason
+	 *
+	 * @generatedBy CodePro at 5/19/18 11:02 AM
+	 */
+	@Before
+	public void setUp()
+		throws Exception {
+		// add additional set up code here
+<span class="nc" id="L479">	}</span>
+
+	/**
+	 * Perform post-test clean-up.
+	 *
+	 * @throws Exception
+	 *         if the clean-up fails for some reason
+	 *
+	 * @generatedBy CodePro at 5/19/18 11:02 AM
+	 */
+	@After
+	public void tearDown()
+		throws Exception {
+		// Add additional tear down code here
+<span class="nc" id="L493">	}</span>
+
+	/**
+	 * Launch the test.
+	 *
+	 * @param args the command line arguments
+	 *
+	 * @generatedBy CodePro at 5/19/18 11:02 AM
+	 */
+	public static void main(String[] args) {
+<span class="nc" id="L503">		new org.junit.runner.JUnitCore().run(FieldOfViewTest.class);</span>
+<span class="nc" id="L504">	}</span>
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.7.9.201702052155</span>AllUiTests (May 19, 2018 11:46:29 AM)</div></body></html>

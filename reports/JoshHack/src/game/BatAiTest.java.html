@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../../../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../../../jacoco-resources/report.gif" type="image/gif"/><title>BatAiTest.java</title><link rel="stylesheet" href="../../../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../../../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../../../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../../../index.html" class="el_report">AllUiTests (May 19, 2018 11:46:29 AM)</a> &gt; <a href="../../index.html" class="el_group">JoshHack</a> &gt; <a href="../index.html" class="el_bundle">src</a> &gt; <a href="index.source.html" class="el_package">game</a> &gt; <span class="el_source">BatAiTest.java</span></div><h1>BatAiTest.java</h1><pre class="source lang-java linenums">package game;
+
+import org.junit.*;
+import static org.junit.Assert.*;
+
+/**
+ * The class &lt;code&gt;BatAiTest&lt;/code&gt; contains tests for the class &lt;code&gt;{@link BatAi}&lt;/code&gt;.
+ *
+ * @generatedBy CodePro at 5/19/18 11:03 AM
+ * @author Collin
+ * @version $Revision: 1.0 $
+ */
+<span class="nc" id="L13">public class BatAiTest {</span>
+	/**
+	 * Run the BatAi(Creature) constructor test.
+	 *
+	 * @throws Exception
+	 *
+	 * @generatedBy CodePro at 5/19/18 11:03 AM
+	 */
+	@Test
+	public void testBatAi_1()
+		throws Exception {
+<span class="nc" id="L24">		Creature creature = CreatureFactory.createCreature();</span>
+
+<span class="nc" id="L26">		BatAi result = new BatAi(creature);</span>
+
+		// add additional test code here
+<span class="nc" id="L29">		assertNotNull(result);</span>
+<span class="nc" id="L30">	}</span>
+
+	/**
+	 * Run the void onUpdate() method test.
+	 *
+	 * @throws Exception
+	 *
+	 * @generatedBy CodePro at 5/19/18 11:03 AM
+	 */
+	@Test
+	public void testOnUpdate_1()
+		throws Exception {
+<span class="nc" id="L42">		BatAi fixture = BatAiFactory.createBatAi();</span>
+
+<span class="nc" id="L44">		fixture.onUpdate();</span>
+
+		// add additional test code here
+<span class="nc" id="L47">	}</span>
+
+	/**
+	 * Perform pre-test initialization.
+	 *
+	 * @throws Exception
+	 *         if the initialization fails for some reason
+	 *
+	 * @generatedBy CodePro at 5/19/18 11:03 AM
+	 */
+	@Before
+	public void setUp()
+		throws Exception {
+		// add additional set up code here
+<span class="nc" id="L61">	}</span>
+
+	/**
+	 * Perform post-test clean-up.
+	 *
+	 * @throws Exception
+	 *         if the clean-up fails for some reason
+	 *
+	 * @generatedBy CodePro at 5/19/18 11:03 AM
+	 */
+	@After
+	public void tearDown()
+		throws Exception {
+		// Add additional tear down code here
+<span class="nc" id="L75">	}</span>
+
+	/**
+	 * Launch the test.
+	 *
+	 * @param args the command line arguments
+	 *
+	 * @generatedBy CodePro at 5/19/18 11:03 AM
+	 */
+	public static void main(String[] args) {
+<span class="nc" id="L85">		new org.junit.runner.JUnitCore().run(BatAiTest.class);</span>
+<span class="nc" id="L86">	}</span>
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.7.9.201702052155</span>AllUiTests (May 19, 2018 11:46:29 AM)</div></body></html>

@@ -1,0 +1,700 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../../../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../../../jacoco-resources/report.gif" type="image/gif"/><title>TargetBasedScreenTest.java</title><link rel="stylesheet" href="../../../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../../../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../../../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../../../index.html" class="el_report">AllUiTests (May 19, 2018 11:46:29 AM)</a> &gt; <a href="../../index.html" class="el_group">JoshHack</a> &gt; <a href="../index.html" class="el_bundle">src</a> &gt; <a href="index.source.html" class="el_package">ui</a> &gt; <span class="el_source">TargetBasedScreenTest.java</span></div><h1>TargetBasedScreenTest.java</h1><pre class="source lang-java linenums">package ui;
+
+import java.awt.Component;
+import java.awt.event.KeyEvent;
+import org.junit.*;
+import asciiPanel.AsciiPanel;
+import game.AppletMain;
+import static org.junit.Assert.*;
+
+/**
+ * The class &lt;code&gt;TargetBasedScreenTest&lt;/code&gt; contains tests for the class &lt;code&gt;{@link TargetBasedScreen}&lt;/code&gt;.
+ *
+ * @generatedBy CodePro at 5/19/18 11:10 AM
+ * @author Collin
+ * @version $Revision: 1.0 $
+ */
+<span class="fc" id="L17">public class TargetBasedScreenTest {</span>
+	/**
+	 * Run the void displayOutput(AsciiPanel) method test.
+	 *
+	 * @throws Exception
+	 *
+	 * @generatedBy CodePro at 5/19/18 11:10 AM
+	 */
+	@Test
+	public void testDisplayOutput_1()
+		throws Exception {
+<span class="fc" id="L28">		TargetBasedScreen fixture = TargetBasedScreenFactory.createcreateCastSpellScreen();</span>
+<span class="fc" id="L29">		AsciiPanel terminal = new AsciiPanel();</span>
+
+<span class="fc" id="L31">		fixture.displayOutput(terminal);</span>
+
+		// add additional test code here
+		// An unexpected exception was thrown in user code while executing this test:
+		//    java.lang.SecurityException: Unable to create temporary file or directory
+		//       at java.nio.file.TempFileHelper.create(Unknown Source)
+		//       at java.nio.file.TempFileHelper.createTempFile(Unknown Source)
+		//       at java.nio.file.Files.createTempFile(Unknown Source)
+		//       at javax.imageio.stream.FileCacheImageInputStream.&lt;init&gt;(Unknown Source)
+		//       at com.sun.imageio.spi.InputStreamImageInputStreamSpi.createInputStreamInstance(Unknown Source)
+		//       at javax.imageio.ImageIO.createImageInputStream(Unknown Source)
+		//       at javax.imageio.ImageIO.read(Unknown Source)
+		//       at asciiPanel.AsciiPanel.loadGlyphs(AsciiPanel.java:301)
+		//       at asciiPanel.AsciiPanel.&lt;init&gt;(AsciiPanel.java:273)
+		//       at asciiPanel.AsciiPanel.&lt;init&gt;(AsciiPanel.java:243)
+<span class="fc" id="L46">	}</span>
+
+	/**
+	 * Run the void displayOutput(AsciiPanel) method test.
+	 *
+	 * @throws Exception
+	 *
+	 * @generatedBy CodePro at 5/19/18 11:10 AM
+	 */
+	@Test
+	public void testDisplayOutput_2()
+		throws Exception {
+<span class="nc" id="L58">		TargetBasedScreen fixture = TargetBasedScreenFactory.createcreateCastSpellScreen2();</span>
+<span class="nc" id="L59">		AsciiPanel terminal = new AsciiPanel();</span>
+
+<span class="nc" id="L61">		fixture.displayOutput(terminal);</span>
+
+		// add additional test code here
+		// An unexpected exception was thrown in user code while executing this test:
+		//    java.lang.NullPointerException
+		//       at game.Effect.&lt;init&gt;(Effect.java:13)
+		//       at game.EffectFactory.createEffect2(EffectFactory.java:39)
+		//       at game.SpellFactory.createSpell2(SpellFactory.java:39)
+		//       at ui.CastSpellScreenFactory.createCastSpellScreen2(CastSpellScreenFactory.java:43)
+		//       at ui.TargetBasedScreenFactory.createcreateCastSpellScreen2(TargetBasedScreenFactory.java:39)
+<span class="nc" id="L71">	}</span>
+
+	/**
+	 * Run the void displayOutput(AsciiPanel) method test.
+	 *
+	 * @throws Exception
+	 *
+	 * @generatedBy CodePro at 5/19/18 11:10 AM
+	 */
+	@Test
+	public void testDisplayOutput_3()
+		throws Exception {
+<span class="fc" id="L83">		TargetBasedScreen fixture = TargetBasedScreenFactory.createcreateCastSpellScreen3();</span>
+<span class="fc" id="L84">		AsciiPanel terminal = new AsciiPanel();</span>
+
+<span class="fc" id="L86">		fixture.displayOutput(terminal);</span>
+
+		// add additional test code here
+		// An unexpected exception was thrown in user code while executing this test:
+		//    java.lang.SecurityException: Unable to create temporary file or directory
+		//       at java.nio.file.TempFileHelper.create(Unknown Source)
+		//       at java.nio.file.TempFileHelper.createTempFile(Unknown Source)
+		//       at java.nio.file.Files.createTempFile(Unknown Source)
+		//       at javax.imageio.stream.FileCacheImageInputStream.&lt;init&gt;(Unknown Source)
+		//       at com.sun.imageio.spi.InputStreamImageInputStreamSpi.createInputStreamInstance(Unknown Source)
+		//       at javax.imageio.ImageIO.createImageInputStream(Unknown Source)
+		//       at javax.imageio.ImageIO.read(Unknown Source)
+		//       at asciiPanel.AsciiPanel.loadGlyphs(AsciiPanel.java:301)
+		//       at asciiPanel.AsciiPanel.&lt;init&gt;(AsciiPanel.java:273)
+		//       at asciiPanel.AsciiPanel.&lt;init&gt;(AsciiPanel.java:243)
+<span class="fc" id="L101">	}</span>
+
+	/**
+	 * Run the void displayOutput(AsciiPanel) method test.
+	 *
+	 * @throws Exception
+	 *
+	 * @generatedBy CodePro at 5/19/18 11:10 AM
+	 */
+	@Test
+	public void testDisplayOutput_4()
+		throws Exception {
+<span class="fc" id="L113">		TargetBasedScreen fixture = TargetBasedScreenFactory.createcreateCastSpellScreen4();</span>
+<span class="fc" id="L114">		AsciiPanel terminal = new AsciiPanel();</span>
+
+<span class="nc" id="L116">		fixture.displayOutput(terminal);</span>
+
+		// add additional test code here
+		// An unexpected exception was thrown in user code while executing this test:
+		//    java.lang.SecurityException: Unable to create temporary file or directory
+		//       at java.nio.file.TempFileHelper.create(Unknown Source)
+		//       at java.nio.file.TempFileHelper.createTempFile(Unknown Source)
+		//       at java.nio.file.Files.createTempFile(Unknown Source)
+		//       at javax.imageio.stream.FileCacheImageInputStream.&lt;init&gt;(Unknown Source)
+		//       at com.sun.imageio.spi.InputStreamImageInputStreamSpi.createInputStreamInstance(Unknown Source)
+		//       at javax.imageio.ImageIO.createImageInputStream(Unknown Source)
+		//       at javax.imageio.ImageIO.read(Unknown Source)
+		//       at asciiPanel.AsciiPanel.loadGlyphs(AsciiPanel.java:301)
+		//       at asciiPanel.AsciiPanel.&lt;init&gt;(AsciiPanel.java:273)
+		//       at asciiPanel.AsciiPanel.&lt;init&gt;(AsciiPanel.java:243)
+<span class="nc" id="L131">	}</span>
+
+	/**
+	 * Run the void displayOutput(AsciiPanel) method test.
+	 *
+	 * @throws Exception
+	 *
+	 * @generatedBy CodePro at 5/19/18 11:10 AM
+	 */
+	@Test
+	public void testDisplayOutput_5()
+		throws Exception {
+<span class="fc" id="L143">		TargetBasedScreen fixture = TargetBasedScreenFactory.createcreateCastSpellScreen5();</span>
+<span class="fc" id="L144">		AsciiPanel terminal = new AsciiPanel();</span>
+
+<span class="fc" id="L146">		fixture.displayOutput(terminal);</span>
+
+		// add additional test code here
+		// An unexpected exception was thrown in user code while executing this test:
+		//    java.lang.SecurityException: Unable to create temporary file or directory
+		//       at java.nio.file.TempFileHelper.create(Unknown Source)
+		//       at java.nio.file.TempFileHelper.createTempFile(Unknown Source)
+		//       at java.nio.file.Files.createTempFile(Unknown Source)
+		//       at javax.imageio.stream.FileCacheImageInputStream.&lt;init&gt;(Unknown Source)
+		//       at com.sun.imageio.spi.InputStreamImageInputStreamSpi.createInputStreamInstance(Unknown Source)
+		//       at javax.imageio.ImageIO.createImageInputStream(Unknown Source)
+		//       at javax.imageio.ImageIO.read(Unknown Source)
+		//       at asciiPanel.AsciiPanel.loadGlyphs(AsciiPanel.java:301)
+		//       at asciiPanel.AsciiPanel.&lt;init&gt;(AsciiPanel.java:273)
+		//       at asciiPanel.AsciiPanel.&lt;init&gt;(AsciiPanel.java:243)
+<span class="fc" id="L161">	}</span>
+
+	/**
+	 * Run the void displayOutput(AsciiPanel) method test.
+	 *
+	 * @throws Exception
+	 *
+	 * @generatedBy CodePro at 5/19/18 11:10 AM
+	 */
+	@Test
+	public void testDisplayOutput_6()
+		throws Exception {
+<span class="nc" id="L173">		TargetBasedScreen fixture = TargetBasedScreenFactory.createcreateFireWeaponScreen();</span>
+<span class="nc" id="L174">		AsciiPanel terminal = new AsciiPanel();</span>
+
+<span class="nc" id="L176">		fixture.displayOutput(terminal);</span>
+
+		// add additional test code here
+		// An unexpected exception was thrown in user code while executing this test:
+		//    java.lang.NullPointerException
+		//       at game.Creature.nameOf(Creature.java:543)
+		//       at ui.FireWeaponScreen.&lt;init&gt;(FireWeaponScreen.java:10)
+		//       at ui.FireWeaponScreenFactory.createFireWeaponScreen(FireWeaponScreenFactory.java:31)
+		//       at ui.TargetBasedScreenFactory.createcreateFireWeaponScreen(TargetBasedScreenFactory.java:79)
+<span class="nc" id="L185">	}</span>
+
+	/**
+	 * Run the void enterWorldCoordinate(int,int,int,int) method test.
+	 *
+	 * @throws Exception
+	 *
+	 * @generatedBy CodePro at 5/19/18 11:10 AM
+	 */
+	@Test
+	public void testEnterWorldCoordinate_1()
+		throws Exception {
+<span class="nc" id="L197">		TargetBasedScreen fixture = TargetBasedScreenFactory.createcreateFireWeaponScreen();</span>
+<span class="nc" id="L198">		int x = 1;</span>
+<span class="nc" id="L199">		int y = 1;</span>
+<span class="nc" id="L200">		int screenX = 1;</span>
+<span class="nc" id="L201">		int screenY = 1;</span>
+
+<span class="nc" id="L203">		fixture.enterWorldCoordinate(x, y, screenX, screenY);</span>
+
+		// add additional test code here
+		// An unexpected exception was thrown in user code while executing this test:
+		//    java.lang.NullPointerException
+		//       at game.Creature.nameOf(Creature.java:543)
+		//       at ui.FireWeaponScreen.&lt;init&gt;(FireWeaponScreen.java:10)
+		//       at ui.FireWeaponScreenFactory.createFireWeaponScreen(FireWeaponScreenFactory.java:31)
+		//       at ui.TargetBasedScreenFactory.createcreateFireWeaponScreen(TargetBasedScreenFactory.java:79)
+<span class="nc" id="L212">	}</span>
+
+	/**
+	 * Run the boolean isAcceptable(int,int) method test.
+	 *
+	 * @throws Exception
+	 *
+	 * @generatedBy CodePro at 5/19/18 11:10 AM
+	 */
+	@Test
+	public void testIsAcceptable_1()
+		throws Exception {
+<span class="fc" id="L224">		TargetBasedScreen fixture = TargetBasedScreenFactory.createcreateCastSpellScreen5();</span>
+<span class="fc" id="L225">		int x = 1;</span>
+<span class="fc" id="L226">		int y = 1;</span>
+
+<span class="fc" id="L228">		boolean result = fixture.isAcceptable(x, y);</span>
+
+		// add additional test code here
+<span class="fc" id="L231">		assertEquals(true, result);</span>
+<span class="fc" id="L232">	}</span>
+
+	/**
+	 * Run the Screen respondToUserInput(KeyEvent) method test.
+	 *
+	 * @throws Exception
+	 *
+	 * @generatedBy CodePro at 5/19/18 11:10 AM
+	 */
+	@Test
+	public void testRespondToUserInput_1()
+		throws Exception {
+<span class="nc" id="L244">		TargetBasedScreen fixture = TargetBasedScreenFactory.createcreateFireWeaponScreen2();</span>
+<span class="nc" id="L245">		KeyEvent key = new KeyEvent(new AppletMain(), 1, 1L, 1, 1);</span>
+
+<span class="nc" id="L247">		Screen result = fixture.respondToUserInput(key);</span>
+
+		// add additional test code here
+		// An unexpected exception was thrown in user code while executing this test:
+		//    java.lang.NullPointerException
+		//       at game.Creature.nameOf(Creature.java:543)
+		//       at ui.FireWeaponScreen.&lt;init&gt;(FireWeaponScreen.java:10)
+		//       at ui.FireWeaponScreenFactory.createFireWeaponScreen2(FireWeaponScreenFactory.java:41)
+		//       at ui.TargetBasedScreenFactory.createcreateFireWeaponScreen2(TargetBasedScreenFactory.java:89)
+<span class="nc" id="L256">		assertNotNull(result);</span>
+<span class="nc" id="L257">	}</span>
+
+	/**
+	 * Run the Screen respondToUserInput(KeyEvent) method test.
+	 *
+	 * @throws Exception
+	 *
+	 * @generatedBy CodePro at 5/19/18 11:10 AM
+	 */
+	@Test
+	public void testRespondToUserInput_2()
+		throws Exception {
+<span class="nc" id="L269">		TargetBasedScreen fixture = TargetBasedScreenFactory.createcreateFireWeaponScreen3();</span>
+<span class="nc" id="L270">		KeyEvent key = new KeyEvent(new AppletMain(), 1, 1L, 1, 1);</span>
+
+<span class="nc" id="L272">		Screen result = fixture.respondToUserInput(key);</span>
+
+		// add additional test code here
+		// An unexpected exception was thrown in user code while executing this test:
+		//    java.lang.NullPointerException
+		//       at game.Creature.nameOf(Creature.java:543)
+		//       at ui.FireWeaponScreen.&lt;init&gt;(FireWeaponScreen.java:10)
+		//       at ui.FireWeaponScreenFactory.createFireWeaponScreen3(FireWeaponScreenFactory.java:51)
+		//       at ui.TargetBasedScreenFactory.createcreateFireWeaponScreen3(TargetBasedScreenFactory.java:99)
+<span class="nc" id="L281">		assertNotNull(result);</span>
+<span class="nc" id="L282">	}</span>
+
+	/**
+	 * Run the Screen respondToUserInput(KeyEvent) method test.
+	 *
+	 * @throws Exception
+	 *
+	 * @generatedBy CodePro at 5/19/18 11:10 AM
+	 */
+	@Test
+	public void testRespondToUserInput_3()
+		throws Exception {
+<span class="fc" id="L294">		TargetBasedScreen fixture = TargetBasedScreenFactory.createcreateLookScreen();</span>
+<span class="fc" id="L295">		KeyEvent key = new KeyEvent(new AppletMain(), 1, 1L, 1, 1);</span>
+
+<span class="nc" id="L297">		Screen result = fixture.respondToUserInput(key);</span>
+
+		// add additional test code here
+		// An unexpected exception was thrown in user code while executing this test:
+		//    java.lang.SecurityException: Unable to create temporary file or directory
+		//       at java.nio.file.TempFileHelper.create(Unknown Source)
+		//       at java.nio.file.TempFileHelper.createTempFile(Unknown Source)
+		//       at java.nio.file.Files.createTempFile(Unknown Source)
+		//       at javax.imageio.stream.FileCacheImageInputStream.&lt;init&gt;(Unknown Source)
+		//       at com.sun.imageio.spi.InputStreamImageInputStreamSpi.createInputStreamInstance(Unknown Source)
+		//       at javax.imageio.ImageIO.createImageInputStream(Unknown Source)
+		//       at javax.imageio.ImageIO.read(Unknown Source)
+		//       at asciiPanel.AsciiPanel.loadGlyphs(AsciiPanel.java:301)
+		//       at asciiPanel.AsciiPanel.&lt;init&gt;(AsciiPanel.java:273)
+		//       at asciiPanel.AsciiPanel.&lt;init&gt;(AsciiPanel.java:243)
+		//       at game.AppletMain.&lt;init&gt;(AppletMain.java:19)
+<span class="nc" id="L313">		assertNotNull(result);</span>
+<span class="nc" id="L314">	}</span>
+
+	/**
+	 * Run the Screen respondToUserInput(KeyEvent) method test.
+	 *
+	 * @throws Exception
+	 *
+	 * @generatedBy CodePro at 5/19/18 11:10 AM
+	 */
+	@Test
+	public void testRespondToUserInput_4()
+		throws Exception {
+<span class="fc" id="L326">		TargetBasedScreen fixture = TargetBasedScreenFactory.createcreateLookScreen2();</span>
+<span class="fc" id="L327">		KeyEvent key = new KeyEvent(new AppletMain(), 1, 1L, 1, 1);</span>
+
+<span class="nc" id="L329">		Screen result = fixture.respondToUserInput(key);</span>
+
+		// add additional test code here
+		// An unexpected exception was thrown in user code while executing this test:
+		//    java.lang.SecurityException: Unable to create temporary file or directory
+		//       at java.nio.file.TempFileHelper.create(Unknown Source)
+		//       at java.nio.file.TempFileHelper.createTempFile(Unknown Source)
+		//       at java.nio.file.Files.createTempFile(Unknown Source)
+		//       at javax.imageio.stream.FileCacheImageInputStream.&lt;init&gt;(Unknown Source)
+		//       at com.sun.imageio.spi.InputStreamImageInputStreamSpi.createInputStreamInstance(Unknown Source)
+		//       at javax.imageio.ImageIO.createImageInputStream(Unknown Source)
+		//       at javax.imageio.ImageIO.read(Unknown Source)
+		//       at asciiPanel.AsciiPanel.loadGlyphs(AsciiPanel.java:301)
+		//       at asciiPanel.AsciiPanel.&lt;init&gt;(AsciiPanel.java:273)
+		//       at asciiPanel.AsciiPanel.&lt;init&gt;(AsciiPanel.java:243)
+		//       at game.AppletMain.&lt;init&gt;(AppletMain.java:19)
+<span class="nc" id="L345">		assertNotNull(result);</span>
+<span class="nc" id="L346">	}</span>
+
+	/**
+	 * Run the Screen respondToUserInput(KeyEvent) method test.
+	 *
+	 * @throws Exception
+	 *
+	 * @generatedBy CodePro at 5/19/18 11:10 AM
+	 */
+	@Test
+	public void testRespondToUserInput_5()
+		throws Exception {
+<span class="fc" id="L358">		TargetBasedScreen fixture = TargetBasedScreenFactory.createcreateLookScreen3();</span>
+<span class="fc" id="L359">		KeyEvent key = new KeyEvent(new AppletMain(), 1, 1L, 1, 1);</span>
+
+<span class="nc" id="L361">		Screen result = fixture.respondToUserInput(key);</span>
+
+		// add additional test code here
+		// An unexpected exception was thrown in user code while executing this test:
+		//    java.lang.SecurityException: Unable to create temporary file or directory
+		//       at java.nio.file.TempFileHelper.create(Unknown Source)
+		//       at java.nio.file.TempFileHelper.createTempFile(Unknown Source)
+		//       at java.nio.file.Files.createTempFile(Unknown Source)
+		//       at javax.imageio.stream.FileCacheImageInputStream.&lt;init&gt;(Unknown Source)
+		//       at com.sun.imageio.spi.InputStreamImageInputStreamSpi.createInputStreamInstance(Unknown Source)
+		//       at javax.imageio.ImageIO.createImageInputStream(Unknown Source)
+		//       at javax.imageio.ImageIO.read(Unknown Source)
+		//       at asciiPanel.AsciiPanel.loadGlyphs(AsciiPanel.java:301)
+		//       at asciiPanel.AsciiPanel.&lt;init&gt;(AsciiPanel.java:273)
+		//       at asciiPanel.AsciiPanel.&lt;init&gt;(AsciiPanel.java:243)
+		//       at game.AppletMain.&lt;init&gt;(AppletMain.java:19)
+<span class="nc" id="L377">		assertNotNull(result);</span>
+<span class="nc" id="L378">	}</span>
+
+	/**
+	 * Run the Screen respondToUserInput(KeyEvent) method test.
+	 *
+	 * @throws Exception
+	 *
+	 * @generatedBy CodePro at 5/19/18 11:10 AM
+	 */
+	@Test
+	public void testRespondToUserInput_6()
+		throws Exception {
+<span class="fc" id="L390">		TargetBasedScreen fixture = TargetBasedScreenFactory.createcreateLookScreen4();</span>
+<span class="fc" id="L391">		KeyEvent key = new KeyEvent(new AppletMain(), 1, 1L, 1, 1);</span>
+
+<span class="nc" id="L393">		Screen result = fixture.respondToUserInput(key);</span>
+
+		// add additional test code here
+		// An unexpected exception was thrown in user code while executing this test:
+		//    java.lang.SecurityException: Unable to create temporary file or directory
+		//       at java.nio.file.TempFileHelper.create(Unknown Source)
+		//       at java.nio.file.TempFileHelper.createTempFile(Unknown Source)
+		//       at java.nio.file.Files.createTempFile(Unknown Source)
+		//       at javax.imageio.stream.FileCacheImageInputStream.&lt;init&gt;(Unknown Source)
+		//       at com.sun.imageio.spi.InputStreamImageInputStreamSpi.createInputStreamInstance(Unknown Source)
+		//       at javax.imageio.ImageIO.createImageInputStream(Unknown Source)
+		//       at javax.imageio.ImageIO.read(Unknown Source)
+		//       at asciiPanel.AsciiPanel.loadGlyphs(AsciiPanel.java:301)
+		//       at asciiPanel.AsciiPanel.&lt;init&gt;(AsciiPanel.java:273)
+		//       at asciiPanel.AsciiPanel.&lt;init&gt;(AsciiPanel.java:243)
+		//       at game.AppletMain.&lt;init&gt;(AppletMain.java:19)
+<span class="nc" id="L409">		assertNotNull(result);</span>
+<span class="nc" id="L410">	}</span>
+
+	/**
+	 * Run the Screen respondToUserInput(KeyEvent) method test.
+	 *
+	 * @throws Exception
+	 *
+	 * @generatedBy CodePro at 5/19/18 11:10 AM
+	 */
+	@Test
+	public void testRespondToUserInput_7()
+		throws Exception {
+<span class="nc" id="L422">		TargetBasedScreen fixture = TargetBasedScreenFactory.createcreateThrowAtScreen();</span>
+<span class="nc" id="L423">		KeyEvent key = new KeyEvent(new AppletMain(), 1, 1L, 1, 1);</span>
+
+<span class="nc" id="L425">		Screen result = fixture.respondToUserInput(key);</span>
+
+		// add additional test code here
+		// An unexpected exception was thrown in user code while executing this test:
+		//    java.lang.NullPointerException
+		//       at game.Creature.nameOf(Creature.java:543)
+		//       at ui.ThrowAtScreen.&lt;init&gt;(ThrowAtScreen.java:12)
+		//       at ui.ThrowAtScreenFactory.createThrowAtScreen(ThrowAtScreenFactory.java:33)
+		//       at ui.TargetBasedScreenFactory.createcreateThrowAtScreen(TargetBasedScreenFactory.java:149)
+<span class="nc" id="L434">		assertNotNull(result);</span>
+<span class="nc" id="L435">	}</span>
+
+	/**
+	 * Run the Screen respondToUserInput(KeyEvent) method test.
+	 *
+	 * @throws Exception
+	 *
+	 * @generatedBy CodePro at 5/19/18 11:10 AM
+	 */
+	@Test
+	public void testRespondToUserInput_8()
+		throws Exception {
+<span class="nc" id="L447">		TargetBasedScreen fixture = TargetBasedScreenFactory.createcreateThrowAtScreen2();</span>
+<span class="nc" id="L448">		KeyEvent key = new KeyEvent(new AppletMain(), 1, 1L, 1, 1);</span>
+
+<span class="nc" id="L450">		Screen result = fixture.respondToUserInput(key);</span>
+
+		// add additional test code here
+		// An unexpected exception was thrown in user code while executing this test:
+		//    java.lang.NullPointerException
+		//       at game.Creature.nameOf(Creature.java:543)
+		//       at ui.ThrowAtScreen.&lt;init&gt;(ThrowAtScreen.java:12)
+		//       at ui.ThrowAtScreenFactory.createThrowAtScreen2(ThrowAtScreenFactory.java:43)
+		//       at ui.TargetBasedScreenFactory.createcreateThrowAtScreen2(TargetBasedScreenFactory.java:159)
+<span class="nc" id="L459">		assertNotNull(result);</span>
+<span class="nc" id="L460">	}</span>
+
+	/**
+	 * Run the Screen respondToUserInput(KeyEvent) method test.
+	 *
+	 * @throws Exception
+	 *
+	 * @generatedBy CodePro at 5/19/18 11:10 AM
+	 */
+	@Test
+	public void testRespondToUserInput_9()
+		throws Exception {
+<span class="nc" id="L472">		TargetBasedScreen fixture = TargetBasedScreenFactory.createcreateThrowAtScreen3();</span>
+<span class="nc" id="L473">		KeyEvent key = new KeyEvent(new AppletMain(), 1, 1L, 1, 1);</span>
+
+<span class="nc" id="L475">		Screen result = fixture.respondToUserInput(key);</span>
+
+		// add additional test code here
+		// An unexpected exception was thrown in user code while executing this test:
+		//    java.lang.NullPointerException
+		//       at game.Creature.nameOf(Creature.java:543)
+		//       at ui.ThrowAtScreen.&lt;init&gt;(ThrowAtScreen.java:12)
+		//       at ui.ThrowAtScreenFactory.createThrowAtScreen3(ThrowAtScreenFactory.java:53)
+		//       at ui.TargetBasedScreenFactory.createcreateThrowAtScreen3(TargetBasedScreenFactory.java:169)
+<span class="nc" id="L484">		assertNotNull(result);</span>
+<span class="nc" id="L485">	}</span>
+
+	/**
+	 * Run the Screen respondToUserInput(KeyEvent) method test.
+	 *
+	 * @throws Exception
+	 *
+	 * @generatedBy CodePro at 5/19/18 11:10 AM
+	 */
+	@Test
+	public void testRespondToUserInput_10()
+		throws Exception {
+<span class="nc" id="L497">		TargetBasedScreen fixture = TargetBasedScreenFactory.createcreateThrowAtScreen4();</span>
+<span class="nc" id="L498">		KeyEvent key = new KeyEvent(new AppletMain(), 1, 1L, 1, 1);</span>
+
+<span class="nc" id="L500">		Screen result = fixture.respondToUserInput(key);</span>
+
+		// add additional test code here
+		// An unexpected exception was thrown in user code while executing this test:
+		//    java.lang.NullPointerException
+		//       at game.Creature.nameOf(Creature.java:543)
+		//       at ui.ThrowAtScreen.&lt;init&gt;(ThrowAtScreen.java:12)
+		//       at ui.ThrowAtScreenFactory.createThrowAtScreen4(ThrowAtScreenFactory.java:63)
+		//       at ui.TargetBasedScreenFactory.createcreateThrowAtScreen4(TargetBasedScreenFactory.java:179)
+<span class="nc" id="L509">		assertNotNull(result);</span>
+<span class="nc" id="L510">	}</span>
+
+	/**
+	 * Run the Screen respondToUserInput(KeyEvent) method test.
+	 *
+	 * @throws Exception
+	 *
+	 * @generatedBy CodePro at 5/19/18 11:10 AM
+	 */
+	@Test
+	public void testRespondToUserInput_11()
+		throws Exception {
+<span class="fc" id="L522">		TargetBasedScreen fixture = TargetBasedScreenFactory.createcreateCastSpellScreen();</span>
+<span class="fc" id="L523">		KeyEvent key = new KeyEvent(new AppletMain(), 1, 1L, 1, 1);</span>
+
+<span class="fc" id="L525">		Screen result = fixture.respondToUserInput(key);</span>
+
+		// add additional test code here
+		// An unexpected exception was thrown in user code while executing this test:
+		//    java.lang.SecurityException: Unable to create temporary file or directory
+		//       at java.nio.file.TempFileHelper.create(Unknown Source)
+		//       at java.nio.file.TempFileHelper.createTempFile(Unknown Source)
+		//       at java.nio.file.Files.createTempFile(Unknown Source)
+		//       at javax.imageio.stream.FileCacheImageInputStream.&lt;init&gt;(Unknown Source)
+		//       at com.sun.imageio.spi.InputStreamImageInputStreamSpi.createInputStreamInstance(Unknown Source)
+		//       at javax.imageio.ImageIO.createImageInputStream(Unknown Source)
+		//       at javax.imageio.ImageIO.read(Unknown Source)
+		//       at asciiPanel.AsciiPanel.loadGlyphs(AsciiPanel.java:301)
+		//       at asciiPanel.AsciiPanel.&lt;init&gt;(AsciiPanel.java:273)
+		//       at asciiPanel.AsciiPanel.&lt;init&gt;(AsciiPanel.java:243)
+		//       at game.AppletMain.&lt;init&gt;(AppletMain.java:19)
+<span class="fc" id="L541">		assertNotNull(result);</span>
+<span class="fc" id="L542">	}</span>
+
+	/**
+	 * Run the Screen respondToUserInput(KeyEvent) method test.
+	 *
+	 * @throws Exception
+	 *
+	 * @generatedBy CodePro at 5/19/18 11:10 AM
+	 */
+	@Test
+	public void testRespondToUserInput_12()
+		throws Exception {
+<span class="nc" id="L554">		TargetBasedScreen fixture = TargetBasedScreenFactory.createcreateCastSpellScreen2();</span>
+<span class="nc" id="L555">		KeyEvent key = new KeyEvent(new AppletMain(), 1, 1L, 1, 1);</span>
+
+<span class="nc" id="L557">		Screen result = fixture.respondToUserInput(key);</span>
+
+		// add additional test code here
+		// An unexpected exception was thrown in user code while executing this test:
+		//    java.lang.NullPointerException
+		//       at game.Effect.&lt;init&gt;(Effect.java:13)
+		//       at game.EffectFactory.createEffect2(EffectFactory.java:39)
+		//       at game.SpellFactory.createSpell2(SpellFactory.java:39)
+		//       at ui.CastSpellScreenFactory.createCastSpellScreen2(CastSpellScreenFactory.java:43)
+		//       at ui.TargetBasedScreenFactory.createcreateCastSpellScreen2(TargetBasedScreenFactory.java:39)
+<span class="nc" id="L567">		assertNotNull(result);</span>
+<span class="nc" id="L568">	}</span>
+
+	/**
+	 * Run the Screen respondToUserInput(KeyEvent) method test.
+	 *
+	 * @throws Exception
+	 *
+	 * @generatedBy CodePro at 5/19/18 11:10 AM
+	 */
+	@Test
+	public void testRespondToUserInput_13()
+		throws Exception {
+<span class="fc" id="L580">		TargetBasedScreen fixture = TargetBasedScreenFactory.createcreateCastSpellScreen3();</span>
+<span class="fc" id="L581">		KeyEvent key = new KeyEvent(new AppletMain(), 1, 1L, 1, 1);</span>
+
+<span class="fc" id="L583">		Screen result = fixture.respondToUserInput(key);</span>
+
+		// add additional test code here
+		// An unexpected exception was thrown in user code while executing this test:
+		//    java.lang.SecurityException: Unable to create temporary file or directory
+		//       at java.nio.file.TempFileHelper.create(Unknown Source)
+		//       at java.nio.file.TempFileHelper.createTempFile(Unknown Source)
+		//       at java.nio.file.Files.createTempFile(Unknown Source)
+		//       at javax.imageio.stream.FileCacheImageInputStream.&lt;init&gt;(Unknown Source)
+		//       at com.sun.imageio.spi.InputStreamImageInputStreamSpi.createInputStreamInstance(Unknown Source)
+		//       at javax.imageio.ImageIO.createImageInputStream(Unknown Source)
+		//       at javax.imageio.ImageIO.read(Unknown Source)
+		//       at asciiPanel.AsciiPanel.loadGlyphs(AsciiPanel.java:301)
+		//       at asciiPanel.AsciiPanel.&lt;init&gt;(AsciiPanel.java:273)
+		//       at asciiPanel.AsciiPanel.&lt;init&gt;(AsciiPanel.java:243)
+		//       at game.AppletMain.&lt;init&gt;(AppletMain.java:19)
+<span class="fc" id="L599">		assertNotNull(result);</span>
+<span class="fc" id="L600">	}</span>
+
+	/**
+	 * Run the Screen respondToUserInput(KeyEvent) method test.
+	 *
+	 * @throws Exception
+	 *
+	 * @generatedBy CodePro at 5/19/18 11:10 AM
+	 */
+	@Test
+	public void testRespondToUserInput_14()
+		throws Exception {
+<span class="fc" id="L612">		TargetBasedScreen fixture = TargetBasedScreenFactory.createcreateCastSpellScreen4();</span>
+<span class="fc" id="L613">		KeyEvent key = new KeyEvent(new AppletMain(), 1, 1L, 1, 1);</span>
+
+<span class="fc" id="L615">		Screen result = fixture.respondToUserInput(key);</span>
+
+		// add additional test code here
+		// An unexpected exception was thrown in user code while executing this test:
+		//    java.lang.SecurityException: Unable to create temporary file or directory
+		//       at java.nio.file.TempFileHelper.create(Unknown Source)
+		//       at java.nio.file.TempFileHelper.createTempFile(Unknown Source)
+		//       at java.nio.file.Files.createTempFile(Unknown Source)
+		//       at javax.imageio.stream.FileCacheImageInputStream.&lt;init&gt;(Unknown Source)
+		//       at com.sun.imageio.spi.InputStreamImageInputStreamSpi.createInputStreamInstance(Unknown Source)
+		//       at javax.imageio.ImageIO.createImageInputStream(Unknown Source)
+		//       at javax.imageio.ImageIO.read(Unknown Source)
+		//       at asciiPanel.AsciiPanel.loadGlyphs(AsciiPanel.java:301)
+		//       at asciiPanel.AsciiPanel.&lt;init&gt;(AsciiPanel.java:273)
+		//       at asciiPanel.AsciiPanel.&lt;init&gt;(AsciiPanel.java:243)
+		//       at game.AppletMain.&lt;init&gt;(AppletMain.java:19)
+<span class="fc" id="L631">		assertNotNull(result);</span>
+<span class="fc" id="L632">	}</span>
+
+	/**
+	 * Run the void selectWorldCoordinate(int,int,int,int) method test.
+	 *
+	 * @throws Exception
+	 *
+	 * @generatedBy CodePro at 5/19/18 11:10 AM
+	 */
+	@Test
+	public void testSelectWorldCoordinate_1()
+		throws Exception {
+<span class="nc" id="L644">		TargetBasedScreen fixture = TargetBasedScreenFactory.createcreateFireWeaponScreen2();</span>
+<span class="nc" id="L645">		int x = 1;</span>
+<span class="nc" id="L646">		int y = 1;</span>
+<span class="nc" id="L647">		int screenX = 1;</span>
+<span class="nc" id="L648">		int screenY = 1;</span>
+
+<span class="nc" id="L650">		fixture.selectWorldCoordinate(x, y, screenX, screenY);</span>
+
+		// add additional test code here
+		// An unexpected exception was thrown in user code while executing this test:
+		//    java.lang.NullPointerException
+		//       at game.Creature.nameOf(Creature.java:543)
+		//       at ui.FireWeaponScreen.&lt;init&gt;(FireWeaponScreen.java:10)
+		//       at ui.FireWeaponScreenFactory.createFireWeaponScreen2(FireWeaponScreenFactory.java:41)
+		//       at ui.TargetBasedScreenFactory.createcreateFireWeaponScreen2(TargetBasedScreenFactory.java:89)
+<span class="nc" id="L659">	}</span>
+
+	/**
+	 * Perform pre-test initialization.
+	 *
+	 * @throws Exception
+	 *         if the initialization fails for some reason
+	 *
+	 * @generatedBy CodePro at 5/19/18 11:10 AM
+	 */
+	@Before
+	public void setUp()
+		throws Exception {
+		// add additional set up code here
+<span class="fc" id="L673">	}</span>
+
+	/**
+	 * Perform post-test clean-up.
+	 *
+	 * @throws Exception
+	 *         if the clean-up fails for some reason
+	 *
+	 * @generatedBy CodePro at 5/19/18 11:10 AM
+	 */
+	@After
+	public void tearDown()
+		throws Exception {
+		// Add additional tear down code here
+<span class="fc" id="L687">	}</span>
+
+	/**
+	 * Launch the test.
+	 *
+	 * @param args the command line arguments
+	 *
+	 * @generatedBy CodePro at 5/19/18 11:10 AM
+	 */
+	public static void main(String[] args) {
+<span class="nc" id="L697">		new org.junit.runner.JUnitCore().run(TargetBasedScreenTest.class);</span>
+<span class="nc" id="L698">	}</span>
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.7.9.201702052155</span>AllUiTests (May 19, 2018 11:46:29 AM)</div></body></html>

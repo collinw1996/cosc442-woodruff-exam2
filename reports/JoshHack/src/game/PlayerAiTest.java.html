@@ -1,0 +1,266 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../../../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../../../jacoco-resources/report.gif" type="image/gif"/><title>PlayerAiTest.java</title><link rel="stylesheet" href="../../../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../../../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../../../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../../../index.html" class="el_report">AllUiTests (May 19, 2018 11:46:29 AM)</a> &gt; <a href="../../index.html" class="el_group">JoshHack</a> &gt; <a href="../index.html" class="el_bundle">src</a> &gt; <a href="index.source.html" class="el_package">game</a> &gt; <span class="el_source">PlayerAiTest.java</span></div><h1>PlayerAiTest.java</h1><pre class="source lang-java linenums">package game;
+
+import java.util.ArrayList;
+import java.util.List;
+import org.junit.*;
+import static org.junit.Assert.*;
+
+/**
+ * The class &lt;code&gt;PlayerAiTest&lt;/code&gt; contains tests for the class &lt;code&gt;{@link PlayerAi}&lt;/code&gt;.
+ *
+ * @generatedBy CodePro at 5/19/18 11:02 AM
+ * @author Collin
+ * @version $Revision: 1.0 $
+ */
+<span class="nc" id="L15">public class PlayerAiTest {</span>
+	/**
+	 * Run the PlayerAi(Creature,List&lt;String&gt;,FieldOfView) constructor test.
+	 *
+	 * @throws Exception
+	 *
+	 * @generatedBy CodePro at 5/19/18 11:02 AM
+	 */
+	@Test
+	public void testPlayerAi_1()
+		throws Exception {
+<span class="nc" id="L26">		Creature creature = CreatureFactory.createCreature();</span>
+<span class="nc" id="L27">		List&lt;String&gt; messages = new ArrayList&lt;String&gt;();</span>
+<span class="nc" id="L28">		FieldOfView fov = FieldOfViewFactory.createFieldOfView();</span>
+
+<span class="nc" id="L30">		PlayerAi result = new PlayerAi(creature, messages, fov);</span>
+
+		// add additional test code here
+<span class="nc" id="L33">		assertNotNull(result);</span>
+<span class="nc" id="L34">	}</span>
+
+	/**
+	 * Run the boolean canSee(int,int,int) method test.
+	 *
+	 * @throws Exception
+	 *
+	 * @generatedBy CodePro at 5/19/18 11:02 AM
+	 */
+	@Test
+	public void testCanSee_1()
+		throws Exception {
+<span class="nc" id="L46">		PlayerAi fixture = PlayerAiFactory.createPlayerAi3();</span>
+<span class="nc" id="L47">		int wx = 1;</span>
+<span class="nc" id="L48">		int wy = 1;</span>
+<span class="nc" id="L49">		int wz = 1;</span>
+
+<span class="nc" id="L51">		boolean result = fixture.canSee(wx, wy, wz);</span>
+
+		// add additional test code here
+		// An unexpected exception was thrown in user code while executing this test:
+		//    java.lang.NullPointerException
+		//       at game.PlayerAi.canSee(PlayerAi.java:36)
+<span class="nc" id="L57">		assertTrue(result);</span>
+<span class="nc" id="L58">	}</span>
+
+	/**
+	 * Run the boolean canSee(int,int,int) method test.
+	 *
+	 * @throws Exception
+	 *
+	 * @generatedBy CodePro at 5/19/18 11:02 AM
+	 */
+	@Test
+	public void testCanSee_2()
+		throws Exception {
+<span class="nc" id="L70">		PlayerAi fixture = PlayerAiFactory.createPlayerAi();</span>
+<span class="nc" id="L71">		int wx = 1;</span>
+<span class="nc" id="L72">		int wy = 1;</span>
+<span class="nc" id="L73">		int wz = 1;</span>
+
+<span class="nc" id="L75">		boolean result = fixture.canSee(wx, wy, wz);</span>
+
+		// add additional test code here
+		// An unexpected exception was thrown in user code while executing this test:
+		//    java.lang.NullPointerException
+		//       at game.PlayerAi.canSee(PlayerAi.java:36)
+<span class="nc" id="L81">		assertTrue(result);</span>
+<span class="nc" id="L82">	}</span>
+
+	/**
+	 * Run the void onEnter(int,int,int,Tile) method test.
+	 *
+	 * @throws Exception
+	 *
+	 * @generatedBy CodePro at 5/19/18 11:02 AM
+	 */
+	@Test
+	public void testOnEnter_1()
+		throws Exception {
+<span class="nc" id="L94">		PlayerAi fixture = PlayerAiFactory.createPlayerAi();</span>
+<span class="nc" id="L95">		int x = 1;</span>
+<span class="nc" id="L96">		int y = 1;</span>
+<span class="nc" id="L97">		int z = 1;</span>
+<span class="nc" id="L98">		Tile tile = Tile.BOUNDS;</span>
+
+<span class="nc" id="L100">		fixture.onEnter(x, y, z, tile);</span>
+
+		// add additional test code here
+<span class="nc" id="L103">	}</span>
+
+	/**
+	 * Run the void onEnter(int,int,int,Tile) method test.
+	 *
+	 * @throws Exception
+	 *
+	 * @generatedBy CodePro at 5/19/18 11:02 AM
+	 */
+	@Test
+	public void testOnEnter_2()
+		throws Exception {
+<span class="nc" id="L115">		PlayerAi fixture = PlayerAiFactory.createPlayerAi2();</span>
+<span class="nc" id="L116">		int x = 1;</span>
+<span class="nc" id="L117">		int y = 1;</span>
+<span class="nc" id="L118">		int z = 1;</span>
+<span class="nc" id="L119">		Tile tile = Tile.BOUNDS;</span>
+
+<span class="nc" id="L121">		fixture.onEnter(x, y, z, tile);</span>
+
+		// add additional test code here
+<span class="nc" id="L124">	}</span>
+
+	/**
+	 * Run the void onEnter(int,int,int,Tile) method test.
+	 *
+	 * @throws Exception
+	 *
+	 * @generatedBy CodePro at 5/19/18 11:02 AM
+	 */
+	@Test
+	public void testOnEnter_3()
+		throws Exception {
+<span class="nc" id="L136">		PlayerAi fixture = PlayerAiFactory.createPlayerAi3();</span>
+<span class="nc" id="L137">		int x = 1;</span>
+<span class="nc" id="L138">		int y = 1;</span>
+<span class="nc" id="L139">		int z = 1;</span>
+<span class="nc" id="L140">		Tile tile = Tile.BOUNDS;</span>
+
+<span class="nc" id="L142">		fixture.onEnter(x, y, z, tile);</span>
+
+		// add additional test code here
+<span class="nc" id="L145">	}</span>
+
+	/**
+	 * Run the void onEnter(int,int,int,Tile) method test.
+	 *
+	 * @throws Exception
+	 *
+	 * @generatedBy CodePro at 5/19/18 11:02 AM
+	 */
+	@Test
+	public void testOnEnter_4()
+		throws Exception {
+<span class="nc" id="L157">		PlayerAi fixture = PlayerAiFactory.createPlayerAi();</span>
+<span class="nc" id="L158">		int x = 1;</span>
+<span class="nc" id="L159">		int y = 1;</span>
+<span class="nc" id="L160">		int z = 1;</span>
+<span class="nc" id="L161">		Tile tile = Tile.BOUNDS;</span>
+
+<span class="nc" id="L163">		fixture.onEnter(x, y, z, tile);</span>
+
+		// add additional test code here
+<span class="nc" id="L166">	}</span>
+
+	/**
+	 * Run the void onGainLevel() method test.
+	 *
+	 * @throws Exception
+	 *
+	 * @generatedBy CodePro at 5/19/18 11:02 AM
+	 */
+	@Test
+	public void testOnGainLevel_1()
+		throws Exception {
+<span class="nc" id="L178">		PlayerAi fixture = PlayerAiFactory.createPlayerAi2();</span>
+
+<span class="nc" id="L180">		fixture.onGainLevel();</span>
+
+		// add additional test code here
+<span class="nc" id="L183">	}</span>
+
+	/**
+	 * Run the void onNotify(String) method test.
+	 *
+	 * @throws Exception
+	 *
+	 * @generatedBy CodePro at 5/19/18 11:02 AM
+	 */
+	@Test
+	public void testOnNotify_1()
+		throws Exception {
+<span class="nc" id="L195">		PlayerAi fixture = PlayerAiFactory.createPlayerAi2();</span>
+<span class="nc" id="L196">		String message = &quot;&quot;;</span>
+
+<span class="nc" id="L198">		fixture.onNotify(message);</span>
+
+		// add additional test code here
+<span class="nc" id="L201">	}</span>
+
+	/**
+	 * Run the Tile rememberedTile(int,int,int) method test.
+	 *
+	 * @throws Exception
+	 *
+	 * @generatedBy CodePro at 5/19/18 11:02 AM
+	 */
+	@Test
+	public void testRememberedTile_1()
+		throws Exception {
+<span class="nc" id="L213">		PlayerAi fixture = PlayerAiFactory.createPlayerAi3();</span>
+<span class="nc" id="L214">		int wx = 1;</span>
+<span class="nc" id="L215">		int wy = 1;</span>
+<span class="nc" id="L216">		int wz = 1;</span>
+
+<span class="nc" id="L218">		Tile result = fixture.rememberedTile(wx, wy, wz);</span>
+
+		// add additional test code here
+		// An unexpected exception was thrown in user code while executing this test:
+		//    java.lang.NullPointerException
+		//       at game.PlayerAi.rememberedTile(PlayerAi.java:43)
+<span class="nc" id="L224">		assertNotNull(result);</span>
+<span class="nc" id="L225">	}</span>
+
+	/**
+	 * Perform pre-test initialization.
+	 *
+	 * @throws Exception
+	 *         if the initialization fails for some reason
+	 *
+	 * @generatedBy CodePro at 5/19/18 11:02 AM
+	 */
+	@Before
+	public void setUp()
+		throws Exception {
+		// add additional set up code here
+<span class="nc" id="L239">	}</span>
+
+	/**
+	 * Perform post-test clean-up.
+	 *
+	 * @throws Exception
+	 *         if the clean-up fails for some reason
+	 *
+	 * @generatedBy CodePro at 5/19/18 11:02 AM
+	 */
+	@After
+	public void tearDown()
+		throws Exception {
+		// Add additional tear down code here
+<span class="nc" id="L253">	}</span>
+
+	/**
+	 * Launch the test.
+	 *
+	 * @param args the command line arguments
+	 *
+	 * @generatedBy CodePro at 5/19/18 11:02 AM
+	 */
+	public static void main(String[] args) {
+<span class="nc" id="L263">		new org.junit.runner.JUnitCore().run(PlayerAiTest.class);</span>
+<span class="nc" id="L264">	}</span>
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.7.9.201702052155</span>AllUiTests (May 19, 2018 11:46:29 AM)</div></body></html>

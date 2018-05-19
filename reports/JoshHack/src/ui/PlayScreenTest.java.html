@@ -1,0 +1,300 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../../../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../../../jacoco-resources/report.gif" type="image/gif"/><title>PlayScreenTest.java</title><link rel="stylesheet" href="../../../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../../../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../../../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../../../index.html" class="el_report">AllUiTests (May 19, 2018 11:46:29 AM)</a> &gt; <a href="../../index.html" class="el_group">JoshHack</a> &gt; <a href="../index.html" class="el_bundle">src</a> &gt; <a href="index.source.html" class="el_package">ui</a> &gt; <span class="el_source">PlayScreenTest.java</span></div><h1>PlayScreenTest.java</h1><pre class="source lang-java linenums">package ui;
+
+import java.awt.Component;
+import java.awt.event.KeyEvent;
+import org.junit.*;
+import asciiPanel.AsciiPanel;
+import game.AppletMain;
+import static org.junit.Assert.*;
+
+/**
+ * The class &lt;code&gt;PlayScreenTest&lt;/code&gt; contains tests for the class &lt;code&gt;{@link PlayScreen}&lt;/code&gt;.
+ *
+ * @generatedBy CodePro at 5/19/18 11:12 AM
+ * @author Collin
+ * @version $Revision: 1.0 $
+ */
+<span class="fc" id="L17">public class PlayScreenTest {</span>
+	/**
+	 * Run the PlayScreen() constructor test.
+	 *
+	 * @throws Exception
+	 *
+	 * @generatedBy CodePro at 5/19/18 11:12 AM
+	 */
+	@Test
+	public void testPlayScreen_1()
+		throws Exception {
+
+<span class="fc" id="L29">		PlayScreen result = new PlayScreen();</span>
+
+		// add additional test code here
+<span class="fc" id="L32">		assertNotNull(result);</span>
+<span class="nc" id="L33">		assertEquals(10, result.getScrollX());</span>
+<span class="nc" id="L34">		assertEquals(4, result.getScrollY());</span>
+<span class="nc" id="L35">	}</span>
+
+	/**
+	 * Run the void displayOutput(AsciiPanel) method test.
+	 *
+	 * @throws Exception
+	 *
+	 * @generatedBy CodePro at 5/19/18 11:12 AM
+	 */
+	@Test
+	public void testDisplayOutput_1()
+		throws Exception {
+<span class="fc" id="L47">		PlayScreen fixture = PlayScreenFactory.createPlayScreen();</span>
+<span class="fc" id="L48">		AsciiPanel terminal = new AsciiPanel();</span>
+
+<span class="fc" id="L50">		fixture.displayOutput(terminal);</span>
+
+		// add additional test code here
+		// An unexpected exception was thrown in user code while executing this test:
+		//    java.lang.SecurityException: Unable to create temporary file or directory
+		//       at java.nio.file.TempFileHelper.create(Unknown Source)
+		//       at java.nio.file.TempFileHelper.createTempFile(Unknown Source)
+		//       at java.nio.file.Files.createTempFile(Unknown Source)
+		//       at javax.imageio.stream.FileCacheImageInputStream.&lt;init&gt;(Unknown Source)
+		//       at com.sun.imageio.spi.InputStreamImageInputStreamSpi.createInputStreamInstance(Unknown Source)
+		//       at javax.imageio.ImageIO.createImageInputStream(Unknown Source)
+		//       at javax.imageio.ImageIO.read(Unknown Source)
+		//       at asciiPanel.AsciiPanel.loadGlyphs(AsciiPanel.java:301)
+		//       at asciiPanel.AsciiPanel.&lt;init&gt;(AsciiPanel.java:273)
+		//       at asciiPanel.AsciiPanel.&lt;init&gt;(AsciiPanel.java:243)
+<span class="fc" id="L65">	}</span>
+
+	/**
+	 * Run the void displayOutput(AsciiPanel) method test.
+	 *
+	 * @throws Exception
+	 *
+	 * @generatedBy CodePro at 5/19/18 11:12 AM
+	 */
+	@Test
+	public void testDisplayOutput_2()
+		throws Exception {
+<span class="fc" id="L77">		PlayScreen fixture = PlayScreenFactory.createPlayScreen();</span>
+<span class="fc" id="L78">		AsciiPanel terminal = new AsciiPanel();</span>
+
+<span class="fc" id="L80">		fixture.displayOutput(terminal);</span>
+
+		// add additional test code here
+		// An unexpected exception was thrown in user code while executing this test:
+		//    java.lang.SecurityException: Unable to create temporary file or directory
+		//       at java.nio.file.TempFileHelper.create(Unknown Source)
+		//       at java.nio.file.TempFileHelper.createTempFile(Unknown Source)
+		//       at java.nio.file.Files.createTempFile(Unknown Source)
+		//       at javax.imageio.stream.FileCacheImageInputStream.&lt;init&gt;(Unknown Source)
+		//       at com.sun.imageio.spi.InputStreamImageInputStreamSpi.createInputStreamInstance(Unknown Source)
+		//       at javax.imageio.ImageIO.createImageInputStream(Unknown Source)
+		//       at javax.imageio.ImageIO.read(Unknown Source)
+		//       at asciiPanel.AsciiPanel.loadGlyphs(AsciiPanel.java:301)
+		//       at asciiPanel.AsciiPanel.&lt;init&gt;(AsciiPanel.java:273)
+		//       at asciiPanel.AsciiPanel.&lt;init&gt;(AsciiPanel.java:243)
+<span class="fc" id="L95">	}</span>
+
+	/**
+	 * Run the int getScrollX() method test.
+	 *
+	 * @throws Exception
+	 *
+	 * @generatedBy CodePro at 5/19/18 11:12 AM
+	 */
+	@Test
+	public void testGetScrollX_1()
+		throws Exception {
+<span class="fc" id="L107">		PlayScreen fixture = PlayScreenFactory.createPlayScreen();</span>
+
+<span class="fc" id="L109">		int result = fixture.getScrollX();</span>
+
+		// add additional test code here
+<span class="fc" id="L112">		assertEquals(10, result);</span>
+<span class="fc" id="L113">	}</span>
+
+	/**
+	 * Run the int getScrollY() method test.
+	 *
+	 * @throws Exception
+	 *
+	 * @generatedBy CodePro at 5/19/18 11:12 AM
+	 */
+	@Test
+	public void testGetScrollY_1()
+		throws Exception {
+<span class="fc" id="L125">		PlayScreen fixture = PlayScreenFactory.createPlayScreen();</span>
+
+<span class="fc" id="L127">		int result = fixture.getScrollY();</span>
+
+		// add additional test code here
+<span class="nc" id="L130">		assertEquals(9, result);</span>
+<span class="nc" id="L131">	}</span>
+
+	/**
+	 * Run the Screen respondToUserInput(KeyEvent) method test.
+	 *
+	 * @throws Exception
+	 *
+	 * @generatedBy CodePro at 5/19/18 11:12 AM
+	 */
+	@Test
+	public void testRespondToUserInput_1()
+		throws Exception {
+<span class="fc" id="L143">		PlayScreen fixture = PlayScreenFactory.createPlayScreen();</span>
+<span class="fc" id="L144">		KeyEvent key = new KeyEvent(new AppletMain(), 1, 1L, 1, 1);</span>
+
+<span class="fc" id="L146">		Screen result = fixture.respondToUserInput(key);</span>
+
+		// add additional test code here
+		// An unexpected exception was thrown in user code while executing this test:
+		//    java.lang.SecurityException: Unable to create temporary file or directory
+		//       at java.nio.file.TempFileHelper.create(Unknown Source)
+		//       at java.nio.file.TempFileHelper.createTempFile(Unknown Source)
+		//       at java.nio.file.Files.createTempFile(Unknown Source)
+		//       at javax.imageio.stream.FileCacheImageInputStream.&lt;init&gt;(Unknown Source)
+		//       at com.sun.imageio.spi.InputStreamImageInputStreamSpi.createInputStreamInstance(Unknown Source)
+		//       at javax.imageio.ImageIO.createImageInputStream(Unknown Source)
+		//       at javax.imageio.ImageIO.read(Unknown Source)
+		//       at asciiPanel.AsciiPanel.loadGlyphs(AsciiPanel.java:301)
+		//       at asciiPanel.AsciiPanel.&lt;init&gt;(AsciiPanel.java:273)
+		//       at asciiPanel.AsciiPanel.&lt;init&gt;(AsciiPanel.java:243)
+		//       at game.AppletMain.&lt;init&gt;(AppletMain.java:19)
+<span class="fc" id="L162">		assertNotNull(result);</span>
+<span class="fc" id="L163">	}</span>
+
+	/**
+	 * Run the Screen respondToUserInput(KeyEvent) method test.
+	 *
+	 * @throws Exception
+	 *
+	 * @generatedBy CodePro at 5/19/18 11:12 AM
+	 */
+	@Test
+	public void testRespondToUserInput_2()
+		throws Exception {
+<span class="fc" id="L175">		PlayScreen fixture = PlayScreenFactory.createPlayScreen();</span>
+<span class="fc" id="L176">		KeyEvent key = new KeyEvent(new AppletMain(), 1, 1L, 1, 1);</span>
+
+<span class="fc" id="L178">		Screen result = fixture.respondToUserInput(key);</span>
+
+		// add additional test code here
+		// An unexpected exception was thrown in user code while executing this test:
+		//    java.lang.SecurityException: Unable to create temporary file or directory
+		//       at java.nio.file.TempFileHelper.create(Unknown Source)
+		//       at java.nio.file.TempFileHelper.createTempFile(Unknown Source)
+		//       at java.nio.file.Files.createTempFile(Unknown Source)
+		//       at javax.imageio.stream.FileCacheImageInputStream.&lt;init&gt;(Unknown Source)
+		//       at com.sun.imageio.spi.InputStreamImageInputStreamSpi.createInputStreamInstance(Unknown Source)
+		//       at javax.imageio.ImageIO.createImageInputStream(Unknown Source)
+		//       at javax.imageio.ImageIO.read(Unknown Source)
+		//       at asciiPanel.AsciiPanel.loadGlyphs(AsciiPanel.java:301)
+		//       at asciiPanel.AsciiPanel.&lt;init&gt;(AsciiPanel.java:273)
+		//       at asciiPanel.AsciiPanel.&lt;init&gt;(AsciiPanel.java:243)
+		//       at game.AppletMain.&lt;init&gt;(AppletMain.java:19)
+<span class="fc" id="L194">		assertNotNull(result);</span>
+<span class="fc" id="L195">	}</span>
+
+	/**
+	 * Run the Screen respondToUserInput(KeyEvent) method test.
+	 *
+	 * @throws Exception
+	 *
+	 * @generatedBy CodePro at 5/19/18 11:12 AM
+	 */
+	@Test
+	public void testRespondToUserInput_3()
+		throws Exception {
+<span class="fc" id="L207">		PlayScreen fixture = PlayScreenFactory.createPlayScreen();</span>
+<span class="fc" id="L208">		KeyEvent key = new KeyEvent(new AppletMain(), 1, 1L, 1, 1);</span>
+
+<span class="fc" id="L210">		Screen result = fixture.respondToUserInput(key);</span>
+
+		// add additional test code here
+		// An unexpected exception was thrown in user code while executing this test:
+		//    java.lang.SecurityException: Unable to create temporary file or directory
+		//       at java.nio.file.TempFileHelper.create(Unknown Source)
+		//       at java.nio.file.TempFileHelper.createTempFile(Unknown Source)
+		//       at java.nio.file.Files.createTempFile(Unknown Source)
+		//       at javax.imageio.stream.FileCacheImageInputStream.&lt;init&gt;(Unknown Source)
+		//       at com.sun.imageio.spi.InputStreamImageInputStreamSpi.createInputStreamInstance(Unknown Source)
+		//       at javax.imageio.ImageIO.createImageInputStream(Unknown Source)
+		//       at javax.imageio.ImageIO.read(Unknown Source)
+		//       at asciiPanel.AsciiPanel.loadGlyphs(AsciiPanel.java:301)
+		//       at asciiPanel.AsciiPanel.&lt;init&gt;(AsciiPanel.java:273)
+		//       at asciiPanel.AsciiPanel.&lt;init&gt;(AsciiPanel.java:243)
+		//       at game.AppletMain.&lt;init&gt;(AppletMain.java:19)
+<span class="fc" id="L226">		assertNotNull(result);</span>
+<span class="fc" id="L227">	}</span>
+
+	/**
+	 * Run the Screen respondToUserInput(KeyEvent) method test.
+	 *
+	 * @throws Exception
+	 *
+	 * @generatedBy CodePro at 5/19/18 11:12 AM
+	 */
+	@Test
+	public void testRespondToUserInput_4()
+		throws Exception {
+<span class="fc" id="L239">		PlayScreen fixture = PlayScreenFactory.createPlayScreen();</span>
+<span class="fc" id="L240">		KeyEvent key = new KeyEvent(new AppletMain(), 1, 1L, 1, 1);</span>
+
+<span class="fc" id="L242">		Screen result = fixture.respondToUserInput(key);</span>
+
+		// add additional test code here
+		// An unexpected exception was thrown in user code while executing this test:
+		//    java.lang.SecurityException: Unable to create temporary file or directory
+		//       at java.nio.file.TempFileHelper.create(Unknown Source)
+		//       at java.nio.file.TempFileHelper.createTempFile(Unknown Source)
+		//       at java.nio.file.Files.createTempFile(Unknown Source)
+		//       at javax.imageio.stream.FileCacheImageInputStream.&lt;init&gt;(Unknown Source)
+		//       at com.sun.imageio.spi.InputStreamImageInputStreamSpi.createInputStreamInstance(Unknown Source)
+		//       at javax.imageio.ImageIO.createImageInputStream(Unknown Source)
+		//       at javax.imageio.ImageIO.read(Unknown Source)
+		//       at asciiPanel.AsciiPanel.loadGlyphs(AsciiPanel.java:301)
+		//       at asciiPanel.AsciiPanel.&lt;init&gt;(AsciiPanel.java:273)
+		//       at asciiPanel.AsciiPanel.&lt;init&gt;(AsciiPanel.java:243)
+		//       at game.AppletMain.&lt;init&gt;(AppletMain.java:19)
+<span class="fc" id="L258">		assertNotNull(result);</span>
+<span class="fc" id="L259">	}</span>
+
+	/**
+	 * Perform pre-test initialization.
+	 *
+	 * @throws Exception
+	 *         if the initialization fails for some reason
+	 *
+	 * @generatedBy CodePro at 5/19/18 11:12 AM
+	 */
+	@Before
+	public void setUp()
+		throws Exception {
+		// add additional set up code here
+<span class="fc" id="L273">	}</span>
+
+	/**
+	 * Perform post-test clean-up.
+	 *
+	 * @throws Exception
+	 *         if the clean-up fails for some reason
+	 *
+	 * @generatedBy CodePro at 5/19/18 11:12 AM
+	 */
+	@After
+	public void tearDown()
+		throws Exception {
+		// Add additional tear down code here
+<span class="fc" id="L287">	}</span>
+
+	/**
+	 * Launch the test.
+	 *
+	 * @param args the command line arguments
+	 *
+	 * @generatedBy CodePro at 5/19/18 11:12 AM
+	 */
+	public static void main(String[] args) {
+<span class="nc" id="L297">		new org.junit.runner.JUnitCore().run(PlayScreenTest.class);</span>
+<span class="nc" id="L298">	}</span>
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.7.9.201702052155</span>AllUiTests (May 19, 2018 11:46:29 AM)</div></body></html>

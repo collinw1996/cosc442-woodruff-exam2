@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../../../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../../../jacoco-resources/report.gif" type="image/gif"/><title>PathFinderTest.java</title><link rel="stylesheet" href="../../../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../../../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../../../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../../../index.html" class="el_report">AllUiTests (May 19, 2018 11:46:29 AM)</a> &gt; <a href="../../index.html" class="el_group">JoshHack</a> &gt; <a href="../index.html" class="el_bundle">src</a> &gt; <a href="index.source.html" class="el_package">game</a> &gt; <span class="el_source">PathFinderTest.java</span></div><h1>PathFinderTest.java</h1><pre class="source lang-java linenums">package game;
+
+import java.util.ArrayList;
+import org.junit.*;
+import static org.junit.Assert.*;
+
+/**
+ * The class &lt;code&gt;PathFinderTest&lt;/code&gt; contains tests for the class &lt;code&gt;{@link PathFinder}&lt;/code&gt;.
+ *
+ * @generatedBy CodePro at 5/19/18 11:10 AM
+ * @author Collin
+ * @version $Revision: 1.0 $
+ */
+<span class="nc" id="L14">public class PathFinderTest {</span>
+	/**
+	 * Run the PathFinder() constructor test.
+	 *
+	 * @throws Exception
+	 *
+	 * @generatedBy CodePro at 5/19/18 11:10 AM
+	 */
+	@Test
+	public void testPathFinder_1()
+		throws Exception {
+
+<span class="nc" id="L26">		PathFinder result = new PathFinder();</span>
+
+		// add additional test code here
+<span class="nc" id="L29">		assertNotNull(result);</span>
+<span class="nc" id="L30">	}</span>
+
+	/**
+	 * Run the ArrayList&lt;Point&gt; findPath(Creature,Point,Point,int) method test.
+	 *
+	 * @throws Exception
+	 *
+	 * @generatedBy CodePro at 5/19/18 11:10 AM
+	 */
+	@Test
+	public void testFindPath_1()
+		throws Exception {
+<span class="nc" id="L42">		PathFinder fixture = PathFinderFactory.createPathFinder();</span>
+<span class="nc" id="L43">		Creature creature = CreatureFactory.createCreature();</span>
+<span class="nc" id="L44">		Point start = PointFactory.createPoint();</span>
+<span class="nc" id="L45">		Point end = PointFactory.createPoint2();</span>
+<span class="nc" id="L46">		int maxTries = 1;</span>
+
+<span class="nc" id="L48">		ArrayList&lt;Point&gt; result = fixture.findPath(creature, start, end, maxTries);</span>
+
+		// add additional test code here
+<span class="nc" id="L51">		assertEquals(null, result);</span>
+<span class="nc" id="L52">	}</span>
+
+	/**
+	 * Run the ArrayList&lt;Point&gt; findPath(Creature,Point,Point,int) method test.
+	 *
+	 * @throws Exception
+	 *
+	 * @generatedBy CodePro at 5/19/18 11:10 AM
+	 */
+	@Test
+	public void testFindPath_2()
+		throws Exception {
+<span class="nc" id="L64">		PathFinder fixture = PathFinderFactory.createPathFinder();</span>
+<span class="nc" id="L65">		Creature creature = CreatureFactory.createCreature2();</span>
+<span class="nc" id="L66">		Point start = PointFactory.createPoint3();</span>
+<span class="nc" id="L67">		Point end = PointFactory.createPoint();</span>
+<span class="nc" id="L68">		int maxTries = 1;</span>
+
+<span class="nc" id="L70">		ArrayList&lt;Point&gt; result = fixture.findPath(creature, start, end, maxTries);</span>
+
+		// add additional test code here
+<span class="nc" id="L73">		assertEquals(null, result);</span>
+<span class="nc" id="L74">	}</span>
+
+	/**
+	 * Run the ArrayList&lt;Point&gt; findPath(Creature,Point,Point,int) method test.
+	 *
+	 * @throws Exception
+	 *
+	 * @generatedBy CodePro at 5/19/18 11:10 AM
+	 */
+	@Test
+	public void testFindPath_3()
+		throws Exception {
+<span class="nc" id="L86">		PathFinder fixture = PathFinderFactory.createPathFinder();</span>
+<span class="nc" id="L87">		Creature creature = CreatureFactory.createCreature3();</span>
+<span class="nc" id="L88">		Point start = PointFactory.createPoint2();</span>
+<span class="nc" id="L89">		Point end = PointFactory.createPoint3();</span>
+<span class="nc" id="L90">		int maxTries = 1;</span>
+
+<span class="nc" id="L92">		ArrayList&lt;Point&gt; result = fixture.findPath(creature, start, end, maxTries);</span>
+
+		// add additional test code here
+<span class="nc" id="L95">		assertEquals(null, result);</span>
+<span class="nc" id="L96">	}</span>
+
+	/**
+	 * Run the ArrayList&lt;Point&gt; findPath(Creature,Point,Point,int) method test.
+	 *
+	 * @throws Exception
+	 *
+	 * @generatedBy CodePro at 5/19/18 11:10 AM
+	 */
+	@Test
+	public void testFindPath_4()
+		throws Exception {
+<span class="nc" id="L108">		PathFinder fixture = PathFinderFactory.createPathFinder();</span>
+<span class="nc" id="L109">		Creature creature = CreatureFactory.createCreature4();</span>
+<span class="nc" id="L110">		Point start = PointFactory.createPoint();</span>
+<span class="nc" id="L111">		Point end = PointFactory.createPoint2();</span>
+<span class="nc" id="L112">		int maxTries = 0;</span>
+
+<span class="nc" id="L114">		ArrayList&lt;Point&gt; result = fixture.findPath(creature, start, end, maxTries);</span>
+
+		// add additional test code here
+<span class="nc" id="L117">		assertEquals(null, result);</span>
+<span class="nc" id="L118">	}</span>
+
+	/**
+	 * Run the ArrayList&lt;Point&gt; findPath(Creature,Point,Point,int) method test.
+	 *
+	 * @throws Exception
+	 *
+	 * @generatedBy CodePro at 5/19/18 11:10 AM
+	 */
+	@Test
+	public void testFindPath_5()
+		throws Exception {
+<span class="nc" id="L130">		PathFinder fixture = PathFinderFactory.createPathFinder();</span>
+<span class="nc" id="L131">		Creature creature = CreatureFactory.createCreature5();</span>
+<span class="nc" id="L132">		Point start = PointFactory.createPoint3();</span>
+<span class="nc" id="L133">		Point end = PointFactory.createPoint();</span>
+<span class="nc" id="L134">		int maxTries = 1;</span>
+
+<span class="nc" id="L136">		ArrayList&lt;Point&gt; result = fixture.findPath(creature, start, end, maxTries);</span>
+
+		// add additional test code here
+		// An unexpected exception was thrown in user code while executing this test:
+		//    java.lang.NullPointerException
+		//       at game.Creature.canEnter(Creature.java:280)
+		//       at game.PathFinder.checkNeighbors(PathFinder.java:76)
+		//       at game.PathFinder.findPath(PathFinder.java:59)
+<span class="nc" id="L144">		assertNotNull(result);</span>
+<span class="nc" id="L145">	}</span>
+
+	/**
+	 * Perform pre-test initialization.
+	 *
+	 * @throws Exception
+	 *         if the initialization fails for some reason
+	 *
+	 * @generatedBy CodePro at 5/19/18 11:10 AM
+	 */
+	@Before
+	public void setUp()
+		throws Exception {
+		// add additional set up code here
+<span class="nc" id="L159">	}</span>
+
+	/**
+	 * Perform post-test clean-up.
+	 *
+	 * @throws Exception
+	 *         if the clean-up fails for some reason
+	 *
+	 * @generatedBy CodePro at 5/19/18 11:10 AM
+	 */
+	@After
+	public void tearDown()
+		throws Exception {
+		// Add additional tear down code here
+<span class="nc" id="L173">	}</span>
+
+	/**
+	 * Launch the test.
+	 *
+	 * @param args the command line arguments
+	 *
+	 * @generatedBy CodePro at 5/19/18 11:10 AM
+	 */
+	public static void main(String[] args) {
+<span class="nc" id="L183">		new org.junit.runner.JUnitCore().run(PathFinderTest.class);</span>
+<span class="nc" id="L184">	}</span>
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.7.9.201702052155</span>AllUiTests (May 19, 2018 11:46:29 AM)</div></body></html>

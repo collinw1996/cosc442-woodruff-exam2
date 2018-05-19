@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../../../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../../../jacoco-resources/report.gif" type="image/gif"/><title>EffectTest.java</title><link rel="stylesheet" href="../../../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../../../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../../../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../../../index.html" class="el_report">AllUiTests (May 19, 2018 11:46:29 AM)</a> &gt; <a href="../../index.html" class="el_group">JoshHack</a> &gt; <a href="../index.html" class="el_bundle">src</a> &gt; <a href="index.source.html" class="el_package">game</a> &gt; <span class="el_source">EffectTest.java</span></div><h1>EffectTest.java</h1><pre class="source lang-java linenums">package game;
+
+import org.junit.*;
+import static org.junit.Assert.*;
+
+/**
+ * The class &lt;code&gt;EffectTest&lt;/code&gt; contains tests for the class &lt;code&gt;{@link Effect}&lt;/code&gt;.
+ *
+ * @generatedBy CodePro at 5/19/18 11:02 AM
+ * @author Collin
+ * @version $Revision: 1.0 $
+ */
+<span class="nc" id="L13">public class EffectTest {</span>
+	/**
+	 * Run the Effect(int) constructor test.
+	 *
+	 * @throws Exception
+	 *
+	 * @generatedBy CodePro at 5/19/18 11:02 AM
+	 */
+	@Test
+	public void testEffect_1()
+		throws Exception {
+<span class="nc" id="L24">		int duration = 1;</span>
+
+<span class="nc" id="L26">		Effect result = new Effect(duration);</span>
+
+		// add additional test code here
+<span class="nc" id="L29">		assertNotNull(result);</span>
+<span class="nc" id="L30">		assertEquals(false, result.isDone());</span>
+<span class="nc" id="L31">	}</span>
+
+	/**
+	 * Run the Effect(Effect) constructor test.
+	 *
+	 * @throws Exception
+	 *
+	 * @generatedBy CodePro at 5/19/18 11:02 AM
+	 */
+	@Test
+	public void testEffect_2()
+		throws Exception {
+<span class="nc" id="L43">		Effect other = EffectFactory.createEffect();</span>
+
+<span class="nc" id="L45">		Effect result = new Effect(other);</span>
+
+		// add additional test code here
+<span class="nc" id="L48">		assertNotNull(result);</span>
+<span class="nc" id="L49">		assertEquals(true, result.isDone());</span>
+<span class="nc" id="L50">	}</span>
+
+	/**
+	 * Run the void end(Creature) method test.
+	 *
+	 * @throws Exception
+	 *
+	 * @generatedBy CodePro at 5/19/18 11:02 AM
+	 */
+	@Test
+	public void testEnd_1()
+		throws Exception {
+<span class="nc" id="L62">		Effect fixture = EffectFactory.createEffect2();</span>
+<span class="nc" id="L63">		Creature creature = CreatureFactory.createCreature3();</span>
+
+<span class="nc" id="L65">		fixture.end(creature);</span>
+
+		// add additional test code here
+		// An unexpected exception was thrown in user code while executing this test:
+		//    java.lang.NullPointerException
+		//       at game.Effect.&lt;init&gt;(Effect.java:13)
+		//       at game.EffectFactory.createEffect2(EffectFactory.java:39)
+<span class="nc" id="L72">	}</span>
+
+	/**
+	 * Run the boolean isDone() method test.
+	 *
+	 * @throws Exception
+	 *
+	 * @generatedBy CodePro at 5/19/18 11:02 AM
+	 */
+	@Test
+	public void testIsDone_1()
+		throws Exception {
+<span class="nc" id="L84">		Effect fixture = EffectFactory.createEffect();</span>
+
+<span class="nc" id="L86">		boolean result = fixture.isDone();</span>
+
+		// add additional test code here
+<span class="nc" id="L89">		assertEquals(true, result);</span>
+<span class="nc" id="L90">	}</span>
+
+	/**
+	 * Run the boolean isDone() method test.
+	 *
+	 * @throws Exception
+	 *
+	 * @generatedBy CodePro at 5/19/18 11:02 AM
+	 */
+	@Test
+	public void testIsDone_2()
+		throws Exception {
+<span class="nc" id="L102">		Effect fixture = EffectFactory.createEffect2();</span>
+
+<span class="nc" id="L104">		boolean result = fixture.isDone();</span>
+
+		// add additional test code here
+		// An unexpected exception was thrown in user code while executing this test:
+		//    java.lang.NullPointerException
+		//       at game.Effect.&lt;init&gt;(Effect.java:13)
+		//       at game.EffectFactory.createEffect2(EffectFactory.java:39)
+<span class="nc" id="L111">		assertTrue(result);</span>
+<span class="nc" id="L112">	}</span>
+
+	/**
+	 * Run the void start(Creature) method test.
+	 *
+	 * @throws Exception
+	 *
+	 * @generatedBy CodePro at 5/19/18 11:02 AM
+	 */
+	@Test
+	public void testStart_1()
+		throws Exception {
+<span class="nc" id="L124">		Effect fixture = EffectFactory.createEffect();</span>
+<span class="nc" id="L125">		Creature creature = CreatureFactory.createCreature2();</span>
+
+<span class="nc" id="L127">		fixture.start(creature);</span>
+
+		// add additional test code here
+<span class="nc" id="L130">	}</span>
+
+	/**
+	 * Run the void update(Creature) method test.
+	 *
+	 * @throws Exception
+	 *
+	 * @generatedBy CodePro at 5/19/18 11:02 AM
+	 */
+	@Test
+	public void testUpdate_1()
+		throws Exception {
+<span class="nc" id="L142">		Effect fixture = EffectFactory.createEffect2();</span>
+<span class="nc" id="L143">		Creature creature = CreatureFactory.createCreature();</span>
+
+<span class="nc" id="L145">		fixture.update(creature);</span>
+
+		// add additional test code here
+		// An unexpected exception was thrown in user code while executing this test:
+		//    java.lang.NullPointerException
+		//       at game.Effect.&lt;init&gt;(Effect.java:13)
+		//       at game.EffectFactory.createEffect2(EffectFactory.java:39)
+<span class="nc" id="L152">	}</span>
+
+	/**
+	 * Perform pre-test initialization.
+	 *
+	 * @throws Exception
+	 *         if the initialization fails for some reason
+	 *
+	 * @generatedBy CodePro at 5/19/18 11:02 AM
+	 */
+	@Before
+	public void setUp()
+		throws Exception {
+		// add additional set up code here
+<span class="nc" id="L166">	}</span>
+
+	/**
+	 * Perform post-test clean-up.
+	 *
+	 * @throws Exception
+	 *         if the clean-up fails for some reason
+	 *
+	 * @generatedBy CodePro at 5/19/18 11:02 AM
+	 */
+	@After
+	public void tearDown()
+		throws Exception {
+		// Add additional tear down code here
+<span class="nc" id="L180">	}</span>
+
+	/**
+	 * Launch the test.
+	 *
+	 * @param args the command line arguments
+	 *
+	 * @generatedBy CodePro at 5/19/18 11:02 AM
+	 */
+	public static void main(String[] args) {
+<span class="nc" id="L190">		new org.junit.runner.JUnitCore().run(EffectTest.class);</span>
+<span class="nc" id="L191">	}</span>
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.7.9.201702052155</span>AllUiTests (May 19, 2018 11:46:29 AM)</div></body></html>

@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../../../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../../../jacoco-resources/report.gif" type="image/gif"/><title>TileTest.java</title><link rel="stylesheet" href="../../../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../../../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../../../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../../../index.html" class="el_report">AllUiTests (May 19, 2018 11:46:29 AM)</a> &gt; <a href="../../index.html" class="el_group">JoshHack</a> &gt; <a href="../index.html" class="el_bundle">src</a> &gt; <a href="index.source.html" class="el_package">game</a> &gt; <span class="el_source">TileTest.java</span></div><h1>TileTest.java</h1><pre class="source lang-java linenums">package game;
+
+import java.awt.Color;
+import org.junit.*;
+import static org.junit.Assert.*;
+
+/**
+ * The class &lt;code&gt;TileTest&lt;/code&gt; contains tests for the class &lt;code&gt;{@link Tile}&lt;/code&gt;.
+ *
+ * @generatedBy CodePro at 5/19/18 11:10 AM
+ * @author Collin
+ * @version $Revision: 1.0 $
+ */
+<span class="nc" id="L14">public class TileTest {</span>
+	/**
+	 * Run the Color color() method test.
+	 *
+	 * @throws Exception
+	 *
+	 * @generatedBy CodePro at 5/19/18 11:10 AM
+	 */
+	@Test
+	public void testColor_1()
+		throws Exception {
+<span class="nc" id="L25">		Tile fixture = Tile.BOUNDS;</span>
+
+<span class="nc" id="L27">		Color result = fixture.color();</span>
+
+		// add additional test code here
+<span class="nc" id="L30">		assertNotNull(result);</span>
+<span class="nc" id="L31">		assertEquals(&quot;java.awt.Color[r=128,g=128,b=128]&quot;, result.toString());</span>
+<span class="nc" id="L32">		assertEquals(128, result.getGreen());</span>
+<span class="nc" id="L33">		assertEquals(128, result.getRed());</span>
+<span class="nc" id="L34">		assertEquals(128, result.getBlue());</span>
+<span class="nc" id="L35">		assertEquals(255, result.getAlpha());</span>
+<span class="nc" id="L36">		assertEquals(-8355712, result.getRGB());</span>
+<span class="nc" id="L37">		assertEquals(1, result.getTransparency());</span>
+<span class="nc" id="L38">	}</span>
+
+	/**
+	 * Run the String details() method test.
+	 *
+	 * @throws Exception
+	 *
+	 * @generatedBy CodePro at 5/19/18 11:10 AM
+	 */
+	@Test
+	public void testDetails_1()
+		throws Exception {
+<span class="nc" id="L50">		Tile fixture = Tile.BOUNDS;</span>
+
+<span class="nc" id="L52">		String result = fixture.details();</span>
+
+		// add additional test code here
+<span class="nc" id="L55">		assertEquals(&quot;Beyond the edge of the world.&quot;, result);</span>
+<span class="nc" id="L56">	}</span>
+
+	/**
+	 * Run the char glyph() method test.
+	 *
+	 * @throws Exception
+	 *
+	 * @generatedBy CodePro at 5/19/18 11:10 AM
+	 */
+	@Test
+	public void testGlyph_1()
+		throws Exception {
+<span class="nc" id="L68">		Tile fixture = Tile.BOUNDS;</span>
+
+<span class="nc" id="L70">		char result = fixture.glyph();</span>
+
+		// add additional test code here
+<span class="nc" id="L73">		assertEquals('x', result);</span>
+<span class="nc" id="L74">	}</span>
+
+	/**
+	 * Run the boolean isDiggable() method test.
+	 *
+	 * @throws Exception
+	 *
+	 * @generatedBy CodePro at 5/19/18 11:10 AM
+	 */
+	@Test
+	public void testIsDiggable_1()
+		throws Exception {
+<span class="nc" id="L86">		Tile fixture = Tile.BOUNDS;</span>
+
+<span class="nc" id="L88">		boolean result = fixture.isDiggable();</span>
+
+		// add additional test code here
+<span class="nc" id="L91">		assertEquals(false, result);</span>
+<span class="nc" id="L92">	}</span>
+
+	/**
+	 * Run the boolean isDiggable() method test.
+	 *
+	 * @throws Exception
+	 *
+	 * @generatedBy CodePro at 5/19/18 11:10 AM
+	 */
+	@Test
+	public void testIsDiggable_2()
+		throws Exception {
+<span class="nc" id="L104">		Tile fixture = Tile.BOUNDS;</span>
+
+<span class="nc" id="L106">		boolean result = fixture.isDiggable();</span>
+
+		// add additional test code here
+<span class="nc" id="L109">		assertEquals(false, result);</span>
+<span class="nc" id="L110">	}</span>
+
+	/**
+	 * Run the boolean isGround() method test.
+	 *
+	 * @throws Exception
+	 *
+	 * @generatedBy CodePro at 5/19/18 11:10 AM
+	 */
+	@Test
+	public void testIsGround_1()
+		throws Exception {
+<span class="nc" id="L122">		Tile fixture = Tile.BOUNDS;</span>
+
+<span class="nc" id="L124">		boolean result = fixture.isGround();</span>
+
+		// add additional test code here
+<span class="nc" id="L127">		assertEquals(false, result);</span>
+<span class="nc" id="L128">	}</span>
+
+	/**
+	 * Run the boolean isGround() method test.
+	 *
+	 * @throws Exception
+	 *
+	 * @generatedBy CodePro at 5/19/18 11:10 AM
+	 */
+	@Test
+	public void testIsGround_2()
+		throws Exception {
+<span class="nc" id="L140">		Tile fixture = Tile.BOUNDS;</span>
+
+<span class="nc" id="L142">		boolean result = fixture.isGround();</span>
+
+		// add additional test code here
+<span class="nc" id="L145">		assertEquals(false, result);</span>
+<span class="nc" id="L146">	}</span>
+
+	/**
+	 * Run the boolean isGround() method test.
+	 *
+	 * @throws Exception
+	 *
+	 * @generatedBy CodePro at 5/19/18 11:10 AM
+	 */
+	@Test
+	public void testIsGround_3()
+		throws Exception {
+<span class="nc" id="L158">		Tile fixture = Tile.BOUNDS;</span>
+
+<span class="nc" id="L160">		boolean result = fixture.isGround();</span>
+
+		// add additional test code here
+<span class="nc" id="L163">		assertEquals(false, result);</span>
+<span class="nc" id="L164">	}</span>
+
+	/**
+	 * Perform pre-test initialization.
+	 *
+	 * @throws Exception
+	 *         if the initialization fails for some reason
+	 *
+	 * @generatedBy CodePro at 5/19/18 11:10 AM
+	 */
+	@Before
+	public void setUp()
+		throws Exception {
+		// add additional set up code here
+<span class="nc" id="L178">	}</span>
+
+	/**
+	 * Perform post-test clean-up.
+	 *
+	 * @throws Exception
+	 *         if the clean-up fails for some reason
+	 *
+	 * @generatedBy CodePro at 5/19/18 11:10 AM
+	 */
+	@After
+	public void tearDown()
+		throws Exception {
+		// Add additional tear down code here
+<span class="nc" id="L192">	}</span>
+
+	/**
+	 * Launch the test.
+	 *
+	 * @param args the command line arguments
+	 *
+	 * @generatedBy CodePro at 5/19/18 11:10 AM
+	 */
+	public static void main(String[] args) {
+<span class="nc" id="L202">		new org.junit.runner.JUnitCore().run(TileTest.class);</span>
+<span class="nc" id="L203">	}</span>
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.7.9.201702052155</span>AllUiTests (May 19, 2018 11:46:29 AM)</div></body></html>

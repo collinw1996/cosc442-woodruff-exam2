@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../../../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../../../jacoco-resources/report.gif" type="image/gif"/><title>ThrowAtScreenTest.java</title><link rel="stylesheet" href="../../../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../../../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../../../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../../../index.html" class="el_report">AllUiTests (May 19, 2018 11:46:29 AM)</a> &gt; <a href="../../index.html" class="el_group">JoshHack</a> &gt; <a href="../index.html" class="el_bundle">src</a> &gt; <a href="index.source.html" class="el_package">ui</a> &gt; <span class="el_source">ThrowAtScreenTest.java</span></div><h1>ThrowAtScreenTest.java</h1><pre class="source lang-java linenums">package ui;
+
+import org.junit.*;
+import game.Creature;
+import game.CreatureFactory;
+import game.Item;
+import game.ItemFactory;
+import static org.junit.Assert.*;
+
+/**
+ * The class &lt;code&gt;ThrowAtScreenTest&lt;/code&gt; contains tests for the class &lt;code&gt;{@link ThrowAtScreen}&lt;/code&gt;.
+ *
+ * @generatedBy CodePro at 5/19/18 11:12 AM
+ * @author Collin
+ * @version $Revision: 1.0 $
+ */
+<span class="fc" id="L17">public class ThrowAtScreenTest {</span>
+	/**
+	 * Run the ThrowAtScreen(Creature,int,int,Item) constructor test.
+	 *
+	 * @throws Exception
+	 *
+	 * @generatedBy CodePro at 5/19/18 11:12 AM
+	 */
+	@Test
+	public void testThrowAtScreen_1()
+		throws Exception {
+<span class="fc" id="L28">		Creature player = CreatureFactory.createCreature();</span>
+<span class="fc" id="L29">		int sx = 1;</span>
+<span class="fc" id="L30">		int sy = 1;</span>
+<span class="fc" id="L31">		Item item = ItemFactory.createItem();</span>
+
+<span class="nc" id="L33">		ThrowAtScreen result = new ThrowAtScreen(player, sx, sy, item);</span>
+
+		// add additional test code here
+		// An unexpected exception was thrown in user code while executing this test:
+		//    java.lang.NullPointerException
+		//       at game.Creature.nameOf(Creature.java:543)
+		//       at ui.ThrowAtScreen.&lt;init&gt;(ThrowAtScreen.java:12)
+<span class="nc" id="L40">		assertNotNull(result);</span>
+<span class="nc" id="L41">	}</span>
+
+	/**
+	 * Run the boolean isAcceptable(int,int) method test.
+	 *
+	 * @throws Exception
+	 *
+	 * @generatedBy CodePro at 5/19/18 11:12 AM
+	 */
+	@Test
+	public void testIsAcceptable_1()
+		throws Exception {
+<span class="nc" id="L53">		ThrowAtScreen fixture = ThrowAtScreenFactory.createThrowAtScreen();</span>
+<span class="nc" id="L54">		int x = 1;</span>
+<span class="nc" id="L55">		int y = 1;</span>
+
+<span class="nc" id="L57">		boolean result = fixture.isAcceptable(x, y);</span>
+
+		// add additional test code here
+		// An unexpected exception was thrown in user code while executing this test:
+		//    java.lang.NullPointerException
+		//       at game.Creature.nameOf(Creature.java:543)
+		//       at ui.ThrowAtScreen.&lt;init&gt;(ThrowAtScreen.java:12)
+		//       at ui.ThrowAtScreenFactory.createThrowAtScreen(ThrowAtScreenFactory.java:33)
+<span class="nc" id="L65">		assertTrue(result);</span>
+<span class="nc" id="L66">	}</span>
+
+	/**
+	 * Run the boolean isAcceptable(int,int) method test.
+	 *
+	 * @throws Exception
+	 *
+	 * @generatedBy CodePro at 5/19/18 11:12 AM
+	 */
+	@Test
+	public void testIsAcceptable_2()
+		throws Exception {
+<span class="nc" id="L78">		ThrowAtScreen fixture = ThrowAtScreenFactory.createThrowAtScreen2();</span>
+<span class="nc" id="L79">		int x = 1;</span>
+<span class="nc" id="L80">		int y = 1;</span>
+
+<span class="nc" id="L82">		boolean result = fixture.isAcceptable(x, y);</span>
+
+		// add additional test code here
+		// An unexpected exception was thrown in user code while executing this test:
+		//    java.lang.NullPointerException
+		//       at game.Creature.nameOf(Creature.java:543)
+		//       at ui.ThrowAtScreen.&lt;init&gt;(ThrowAtScreen.java:12)
+		//       at ui.ThrowAtScreenFactory.createThrowAtScreen2(ThrowAtScreenFactory.java:43)
+<span class="nc" id="L90">		assertTrue(result);</span>
+<span class="nc" id="L91">	}</span>
+
+	/**
+	 * Run the boolean isAcceptable(int,int) method test.
+	 *
+	 * @throws Exception
+	 *
+	 * @generatedBy CodePro at 5/19/18 11:12 AM
+	 */
+	@Test
+	public void testIsAcceptable_3()
+		throws Exception {
+<span class="nc" id="L103">		ThrowAtScreen fixture = ThrowAtScreenFactory.createThrowAtScreen3();</span>
+<span class="nc" id="L104">		int x = 1;</span>
+<span class="nc" id="L105">		int y = 1;</span>
+
+<span class="nc" id="L107">		boolean result = fixture.isAcceptable(x, y);</span>
+
+		// add additional test code here
+		// An unexpected exception was thrown in user code while executing this test:
+		//    java.lang.NullPointerException
+		//       at game.Creature.nameOf(Creature.java:543)
+		//       at ui.ThrowAtScreen.&lt;init&gt;(ThrowAtScreen.java:12)
+		//       at ui.ThrowAtScreenFactory.createThrowAtScreen3(ThrowAtScreenFactory.java:53)
+<span class="nc" id="L115">		assertTrue(result);</span>
+<span class="nc" id="L116">	}</span>
+
+	/**
+	 * Run the boolean isAcceptable(int,int) method test.
+	 *
+	 * @throws Exception
+	 *
+	 * @generatedBy CodePro at 5/19/18 11:12 AM
+	 */
+	@Test
+	public void testIsAcceptable_4()
+		throws Exception {
+<span class="nc" id="L128">		ThrowAtScreen fixture = ThrowAtScreenFactory.createThrowAtScreen4();</span>
+<span class="nc" id="L129">		int x = 1;</span>
+<span class="nc" id="L130">		int y = 1;</span>
+
+<span class="nc" id="L132">		boolean result = fixture.isAcceptable(x, y);</span>
+
+		// add additional test code here
+		// An unexpected exception was thrown in user code while executing this test:
+		//    java.lang.NullPointerException
+		//       at game.Creature.nameOf(Creature.java:543)
+		//       at ui.ThrowAtScreen.&lt;init&gt;(ThrowAtScreen.java:12)
+		//       at ui.ThrowAtScreenFactory.createThrowAtScreen4(ThrowAtScreenFactory.java:63)
+<span class="nc" id="L140">		assertTrue(result);</span>
+<span class="nc" id="L141">	}</span>
+
+	/**
+	 * Run the void selectWorldCoordinate(int,int,int,int) method test.
+	 *
+	 * @throws Exception
+	 *
+	 * @generatedBy CodePro at 5/19/18 11:12 AM
+	 */
+	@Test
+	public void testSelectWorldCoordinate_1()
+		throws Exception {
+<span class="nc" id="L153">		ThrowAtScreen fixture = ThrowAtScreenFactory.createThrowAtScreen();</span>
+<span class="nc" id="L154">		int x = 1;</span>
+<span class="nc" id="L155">		int y = 1;</span>
+<span class="nc" id="L156">		int screenX = 1;</span>
+<span class="nc" id="L157">		int screenY = 1;</span>
+
+<span class="nc" id="L159">		fixture.selectWorldCoordinate(x, y, screenX, screenY);</span>
+
+		// add additional test code here
+		// An unexpected exception was thrown in user code while executing this test:
+		//    java.lang.NullPointerException
+		//       at game.Creature.nameOf(Creature.java:543)
+		//       at ui.ThrowAtScreen.&lt;init&gt;(ThrowAtScreen.java:12)
+		//       at ui.ThrowAtScreenFactory.createThrowAtScreen(ThrowAtScreenFactory.java:33)
+<span class="nc" id="L167">	}</span>
+
+	/**
+	 * Perform pre-test initialization.
+	 *
+	 * @throws Exception
+	 *         if the initialization fails for some reason
+	 *
+	 * @generatedBy CodePro at 5/19/18 11:12 AM
+	 */
+	@Before
+	public void setUp()
+		throws Exception {
+		// add additional set up code here
+<span class="fc" id="L181">	}</span>
+
+	/**
+	 * Perform post-test clean-up.
+	 *
+	 * @throws Exception
+	 *         if the clean-up fails for some reason
+	 *
+	 * @generatedBy CodePro at 5/19/18 11:12 AM
+	 */
+	@After
+	public void tearDown()
+		throws Exception {
+		// Add additional tear down code here
+<span class="fc" id="L195">	}</span>
+
+	/**
+	 * Launch the test.
+	 *
+	 * @param args the command line arguments
+	 *
+	 * @generatedBy CodePro at 5/19/18 11:12 AM
+	 */
+	public static void main(String[] args) {
+<span class="nc" id="L205">		new org.junit.runner.JUnitCore().run(ThrowAtScreenTest.class);</span>
+<span class="nc" id="L206">	}</span>
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.7.9.201702052155</span>AllUiTests (May 19, 2018 11:46:29 AM)</div></body></html>

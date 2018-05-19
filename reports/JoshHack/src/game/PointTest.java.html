@@ -1,0 +1,320 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../../../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../../../jacoco-resources/report.gif" type="image/gif"/><title>PointTest.java</title><link rel="stylesheet" href="../../../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../../../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../../../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../../../index.html" class="el_report">AllUiTests (May 19, 2018 11:46:29 AM)</a> &gt; <a href="../../index.html" class="el_group">JoshHack</a> &gt; <a href="../index.html" class="el_bundle">src</a> &gt; <a href="index.source.html" class="el_package">game</a> &gt; <span class="el_source">PointTest.java</span></div><h1>PointTest.java</h1><pre class="source lang-java linenums">package game;
+
+import java.util.List;
+import org.junit.*;
+import static org.junit.Assert.*;
+
+/**
+ * The class &lt;code&gt;PointTest&lt;/code&gt; contains tests for the class &lt;code&gt;{@link Point}&lt;/code&gt;.
+ *
+ * @generatedBy CodePro at 5/19/18 11:10 AM
+ * @author Collin
+ * @version $Revision: 1.0 $
+ */
+<span class="nc" id="L14">public class PointTest {</span>
+	/**
+	 * Run the Point(int,int,int) constructor test.
+	 *
+	 * @throws Exception
+	 *
+	 * @generatedBy CodePro at 5/19/18 11:10 AM
+	 */
+	@Test
+	public void testPoint_1()
+		throws Exception {
+<span class="nc" id="L25">		int x = 1;</span>
+<span class="nc" id="L26">		int y = 1;</span>
+<span class="nc" id="L27">		int z = 1;</span>
+
+<span class="nc" id="L29">		Point result = new Point(x, y, z);</span>
+
+		// add additional test code here
+<span class="nc" id="L32">		assertNotNull(result);</span>
+<span class="nc" id="L33">	}</span>
+
+	/**
+	 * Run the boolean equals(Object) method test.
+	 *
+	 * @throws Exception
+	 *
+	 * @generatedBy CodePro at 5/19/18 11:10 AM
+	 */
+	@Test
+	public void testEquals_1()
+		throws Exception {
+<span class="nc" id="L45">		Point fixture = PointFactory.createPoint2();</span>
+<span class="nc" id="L46">		Object obj = PointFactory.createPoint3();</span>
+
+<span class="nc" id="L48">		boolean result = fixture.equals(obj);</span>
+
+		// add additional test code here
+<span class="nc" id="L51">		assertEquals(false, result);</span>
+<span class="nc" id="L52">	}</span>
+
+	/**
+	 * Run the boolean equals(Object) method test.
+	 *
+	 * @throws Exception
+	 *
+	 * @generatedBy CodePro at 5/19/18 11:10 AM
+	 */
+	@Test
+	public void testEquals_2()
+		throws Exception {
+<span class="nc" id="L64">		Point fixture = PointFactory.createPoint();</span>
+<span class="nc" id="L65">		Object obj = null;</span>
+
+<span class="nc" id="L67">		boolean result = fixture.equals(obj);</span>
+
+		// add additional test code here
+<span class="nc" id="L70">		assertEquals(false, result);</span>
+<span class="nc" id="L71">	}</span>
+
+	/**
+	 * Run the boolean equals(Object) method test.
+	 *
+	 * @throws Exception
+	 *
+	 * @generatedBy CodePro at 5/19/18 11:10 AM
+	 */
+	@Test
+	public void testEquals_3()
+		throws Exception {
+<span class="nc" id="L83">		Point fixture = PointFactory.createPoint2();</span>
+<span class="nc" id="L84">		Object obj = new Object();</span>
+
+<span class="nc" id="L86">		boolean result = fixture.equals(obj);</span>
+
+		// add additional test code here
+<span class="nc" id="L89">		assertEquals(false, result);</span>
+<span class="nc" id="L90">	}</span>
+
+	/**
+	 * Run the boolean equals(Object) method test.
+	 *
+	 * @throws Exception
+	 *
+	 * @generatedBy CodePro at 5/19/18 11:10 AM
+	 */
+	@Test
+	public void testEquals_4()
+		throws Exception {
+<span class="nc" id="L102">		Point fixture = PointFactory.createPoint3();</span>
+<span class="nc" id="L103">		Object obj = PointFactory.createPoint();</span>
+
+<span class="nc" id="L105">		boolean result = fixture.equals(obj);</span>
+
+		// add additional test code here
+<span class="nc" id="L108">		assertEquals(false, result);</span>
+<span class="nc" id="L109">	}</span>
+
+	/**
+	 * Run the boolean equals(Object) method test.
+	 *
+	 * @throws Exception
+	 *
+	 * @generatedBy CodePro at 5/19/18 11:10 AM
+	 */
+	@Test
+	public void testEquals_5()
+		throws Exception {
+<span class="nc" id="L121">		Point fixture = PointFactory.createPoint2();</span>
+<span class="nc" id="L122">		Object obj = PointFactory.createPoint3();</span>
+
+<span class="nc" id="L124">		boolean result = fixture.equals(obj);</span>
+
+		// add additional test code here
+<span class="nc" id="L127">		assertEquals(false, result);</span>
+<span class="nc" id="L128">	}</span>
+
+	/**
+	 * Run the boolean equals(Object) method test.
+	 *
+	 * @throws Exception
+	 *
+	 * @generatedBy CodePro at 5/19/18 11:10 AM
+	 */
+	@Test
+	public void testEquals_6()
+		throws Exception {
+<span class="nc" id="L140">		Point fixture = PointFactory.createPoint();</span>
+<span class="nc" id="L141">		Object obj = PointFactory.createPoint2();</span>
+
+<span class="nc" id="L143">		boolean result = fixture.equals(obj);</span>
+
+		// add additional test code here
+<span class="nc" id="L146">		assertEquals(false, result);</span>
+<span class="nc" id="L147">	}</span>
+
+	/**
+	 * Run the boolean equals(Object) method test.
+	 *
+	 * @throws Exception
+	 *
+	 * @generatedBy CodePro at 5/19/18 11:10 AM
+	 */
+	@Test
+	public void testEquals_7()
+		throws Exception {
+<span class="nc" id="L159">		Point fixture = PointFactory.createPoint3();</span>
+<span class="nc" id="L160">		Object obj = PointFactory.createPoint();</span>
+
+<span class="nc" id="L162">		boolean result = fixture.equals(obj);</span>
+
+		// add additional test code here
+<span class="nc" id="L165">		assertEquals(false, result);</span>
+<span class="nc" id="L166">	}</span>
+
+	/**
+	 * Run the int hashCode() method test.
+	 *
+	 * @throws Exception
+	 *
+	 * @generatedBy CodePro at 5/19/18 11:10 AM
+	 */
+	@Test
+	public void testHashCode_1()
+		throws Exception {
+<span class="nc" id="L178">		Point fixture = PointFactory.createPoint();</span>
+
+<span class="nc" id="L180">		int result = fixture.hashCode();</span>
+
+		// add additional test code here
+<span class="nc" id="L183">		assertEquals(29791, result);</span>
+<span class="nc" id="L184">	}</span>
+
+	/**
+	 * Run the List&lt;Point&gt; neighbors8() method test.
+	 *
+	 * @throws Exception
+	 *
+	 * @generatedBy CodePro at 5/19/18 11:10 AM
+	 */
+	@Test
+	public void testNeighbors8_1()
+		throws Exception {
+<span class="nc" id="L196">		Point fixture = PointFactory.createPoint2();</span>
+
+<span class="nc" id="L198">		List&lt;Point&gt; result = fixture.neighbors8();</span>
+
+		// add additional test code here
+<span class="nc" id="L201">		assertNotNull(result);</span>
+<span class="nc" id="L202">		assertEquals(8, result.size());</span>
+<span class="nc" id="L203">	}</span>
+
+	/**
+	 * Run the List&lt;Point&gt; neighbors8() method test.
+	 *
+	 * @throws Exception
+	 *
+	 * @generatedBy CodePro at 5/19/18 11:10 AM
+	 */
+	@Test
+	public void testNeighbors8_2()
+		throws Exception {
+<span class="nc" id="L215">		Point fixture = PointFactory.createPoint3();</span>
+
+<span class="nc" id="L217">		List&lt;Point&gt; result = fixture.neighbors8();</span>
+
+		// add additional test code here
+<span class="nc" id="L220">		assertNotNull(result);</span>
+<span class="nc" id="L221">		assertEquals(8, result.size());</span>
+<span class="nc" id="L222">	}</span>
+
+	/**
+	 * Run the List&lt;Point&gt; neighbors8() method test.
+	 *
+	 * @throws Exception
+	 *
+	 * @generatedBy CodePro at 5/19/18 11:10 AM
+	 */
+	@Test
+	public void testNeighbors8_3()
+		throws Exception {
+<span class="nc" id="L234">		Point fixture = PointFactory.createPoint();</span>
+
+<span class="nc" id="L236">		List&lt;Point&gt; result = fixture.neighbors8();</span>
+
+		// add additional test code here
+<span class="nc" id="L239">		assertNotNull(result);</span>
+<span class="nc" id="L240">		assertEquals(8, result.size());</span>
+<span class="nc" id="L241">	}</span>
+
+	/**
+	 * Run the List&lt;Point&gt; neighbors8() method test.
+	 *
+	 * @throws Exception
+	 *
+	 * @generatedBy CodePro at 5/19/18 11:10 AM
+	 */
+	@Test
+	public void testNeighbors8_4()
+		throws Exception {
+<span class="nc" id="L253">		Point fixture = PointFactory.createPoint2();</span>
+
+<span class="nc" id="L255">		List&lt;Point&gt; result = fixture.neighbors8();</span>
+
+		// add additional test code here
+<span class="nc" id="L258">		assertNotNull(result);</span>
+<span class="nc" id="L259">		assertEquals(8, result.size());</span>
+<span class="nc" id="L260">	}</span>
+
+	/**
+	 * Run the List&lt;Point&gt; neighbors8() method test.
+	 *
+	 * @throws Exception
+	 *
+	 * @generatedBy CodePro at 5/19/18 11:10 AM
+	 */
+	@Test
+	public void testNeighbors8_5()
+		throws Exception {
+<span class="nc" id="L272">		Point fixture = PointFactory.createPoint3();</span>
+
+<span class="nc" id="L274">		List&lt;Point&gt; result = fixture.neighbors8();</span>
+
+		// add additional test code here
+<span class="nc" id="L277">		assertNotNull(result);</span>
+<span class="nc" id="L278">		assertEquals(8, result.size());</span>
+<span class="nc" id="L279">	}</span>
+
+	/**
+	 * Perform pre-test initialization.
+	 *
+	 * @throws Exception
+	 *         if the initialization fails for some reason
+	 *
+	 * @generatedBy CodePro at 5/19/18 11:10 AM
+	 */
+	@Before
+	public void setUp()
+		throws Exception {
+		// add additional set up code here
+<span class="nc" id="L293">	}</span>
+
+	/**
+	 * Perform post-test clean-up.
+	 *
+	 * @throws Exception
+	 *         if the clean-up fails for some reason
+	 *
+	 * @generatedBy CodePro at 5/19/18 11:10 AM
+	 */
+	@After
+	public void tearDown()
+		throws Exception {
+		// Add additional tear down code here
+<span class="nc" id="L307">	}</span>
+
+	/**
+	 * Launch the test.
+	 *
+	 * @param args the command line arguments
+	 *
+	 * @generatedBy CodePro at 5/19/18 11:10 AM
+	 */
+	public static void main(String[] args) {
+<span class="nc" id="L317">		new org.junit.runner.JUnitCore().run(PointTest.class);</span>
+<span class="nc" id="L318">	}</span>
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.7.9.201702052155</span>AllUiTests (May 19, 2018 11:46:29 AM)</div></body></html>

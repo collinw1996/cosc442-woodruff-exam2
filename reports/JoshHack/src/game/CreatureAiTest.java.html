@@ -1,0 +1,1182 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../../../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../../../jacoco-resources/report.gif" type="image/gif"/><title>CreatureAiTest.java</title><link rel="stylesheet" href="../../../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../../../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../../../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../../../index.html" class="el_report">AllUiTests (May 19, 2018 11:46:29 AM)</a> &gt; <a href="../../index.html" class="el_group">JoshHack</a> &gt; <a href="../index.html" class="el_bundle">src</a> &gt; <a href="index.source.html" class="el_package">game</a> &gt; <span class="el_source">CreatureAiTest.java</span></div><h1>CreatureAiTest.java</h1><pre class="source lang-java linenums">package game;
+
+import java.awt.Color;
+import org.junit.*;
+import static org.junit.Assert.*;
+
+/**
+ * The class &lt;code&gt;CreatureAiTest&lt;/code&gt; contains tests for the class &lt;code&gt;{@link CreatureAi}&lt;/code&gt;.
+ *
+ * @generatedBy CodePro at 5/19/18 11:10 AM
+ * @author Collin
+ * @version $Revision: 1.0 $
+ */
+<span class="nc" id="L14">public class CreatureAiTest {</span>
+	/**
+	 * Run the CreatureAi(Creature) constructor test.
+	 *
+	 * @throws Exception
+	 *
+	 * @generatedBy CodePro at 5/19/18 11:10 AM
+	 */
+	@Test
+	public void testCreatureAi_1()
+		throws Exception {
+<span class="nc" id="L25">		Creature creature = CreatureFactory.createCreature();</span>
+
+<span class="nc" id="L27">		CreatureAi result = new CreatureAi(creature);</span>
+
+		// add additional test code here
+<span class="nc" id="L30">		assertNotNull(result);</span>
+<span class="nc" id="L31">	}</span>
+
+	/**
+	 * Run the boolean canPickup() method test.
+	 *
+	 * @throws Exception
+	 *
+	 * @generatedBy CodePro at 5/19/18 11:10 AM
+	 */
+	@Test
+	public void testCanPickup_1()
+		throws Exception {
+<span class="nc" id="L43">		CreatureAi fixture = CreatureAiFactory.createCreatureAi();</span>
+
+<span class="nc" id="L45">		boolean result = fixture.canPickup();</span>
+
+		// add additional test code here
+<span class="nc" id="L48">		assertEquals(false, result);</span>
+<span class="nc" id="L49">	}</span>
+
+	/**
+	 * Run the boolean canPickup() method test.
+	 *
+	 * @throws Exception
+	 *
+	 * @generatedBy CodePro at 5/19/18 11:10 AM
+	 */
+	@Test
+	public void testCanPickup_2()
+		throws Exception {
+<span class="nc" id="L61">		CreatureAi fixture = CreatureAiFactory.createCreatureAi();</span>
+
+<span class="nc" id="L63">		boolean result = fixture.canPickup();</span>
+
+		// add additional test code here
+<span class="nc" id="L66">		assertEquals(false, result);</span>
+<span class="nc" id="L67">	}</span>
+
+	/**
+	 * Run the boolean canPickup() method test.
+	 *
+	 * @throws Exception
+	 *
+	 * @generatedBy CodePro at 5/19/18 11:10 AM
+	 */
+	@Test
+	public void testCanPickup_3()
+		throws Exception {
+<span class="nc" id="L79">		CreatureAi fixture = CreatureAiFactory.createCreatureAi();</span>
+
+<span class="nc" id="L81">		boolean result = fixture.canPickup();</span>
+
+		// add additional test code here
+<span class="nc" id="L84">		assertEquals(false, result);</span>
+<span class="nc" id="L85">	}</span>
+
+	/**
+	 * Run the boolean canRangedWeaponAttack(Creature) method test.
+	 *
+	 * @throws Exception
+	 *
+	 * @generatedBy CodePro at 5/19/18 11:10 AM
+	 */
+	@Test
+	public void testCanRangedWeaponAttack_1()
+		throws Exception {
+<span class="nc" id="L97">		CreatureAi fixture = CreatureAiFactory.createCreatureAi();</span>
+<span class="nc" id="L98">		Creature other = CreatureFactory.createCreature5();</span>
+
+<span class="nc" id="L100">		boolean result = fixture.canRangedWeaponAttack(other);</span>
+
+		// add additional test code here
+<span class="nc" id="L103">		assertEquals(false, result);</span>
+<span class="nc" id="L104">	}</span>
+
+	/**
+	 * Run the boolean canRangedWeaponAttack(Creature) method test.
+	 *
+	 * @throws Exception
+	 *
+	 * @generatedBy CodePro at 5/19/18 11:10 AM
+	 */
+	@Test
+	public void testCanRangedWeaponAttack_2()
+		throws Exception {
+<span class="nc" id="L116">		CreatureAi fixture = CreatureAiFactory.createCreatureAi();</span>
+<span class="nc" id="L117">		Creature other = CreatureFactory.createCreature6();</span>
+
+<span class="nc" id="L119">		boolean result = fixture.canRangedWeaponAttack(other);</span>
+
+		// add additional test code here
+<span class="nc" id="L122">		assertEquals(false, result);</span>
+<span class="nc" id="L123">	}</span>
+
+	/**
+	 * Run the boolean canRangedWeaponAttack(Creature) method test.
+	 *
+	 * @throws Exception
+	 *
+	 * @generatedBy CodePro at 5/19/18 11:10 AM
+	 */
+	@Test
+	public void testCanRangedWeaponAttack_3()
+		throws Exception {
+<span class="nc" id="L135">		CreatureAi fixture = CreatureAiFactory.createCreatureAi();</span>
+<span class="nc" id="L136">		Creature other = CreatureFactory.createCreature7();</span>
+
+<span class="nc" id="L138">		boolean result = fixture.canRangedWeaponAttack(other);</span>
+
+		// add additional test code here
+<span class="nc" id="L141">		assertEquals(false, result);</span>
+<span class="nc" id="L142">	}</span>
+
+	/**
+	 * Run the boolean canRangedWeaponAttack(Creature) method test.
+	 *
+	 * @throws Exception
+	 *
+	 * @generatedBy CodePro at 5/19/18 11:10 AM
+	 */
+	@Test
+	public void testCanRangedWeaponAttack_4()
+		throws Exception {
+<span class="nc" id="L154">		CreatureAi fixture = CreatureAiFactory.createCreatureAi();</span>
+<span class="nc" id="L155">		Creature other = CreatureFactory.createCreature();</span>
+
+<span class="nc" id="L157">		boolean result = fixture.canRangedWeaponAttack(other);</span>
+
+		// add additional test code here
+<span class="nc" id="L160">		assertEquals(false, result);</span>
+<span class="nc" id="L161">	}</span>
+
+	/**
+	 * Run the boolean canSee(int,int,int) method test.
+	 *
+	 * @throws Exception
+	 *
+	 * @generatedBy CodePro at 5/19/18 11:10 AM
+	 */
+	@Test
+	public void testCanSee_1()
+		throws Exception {
+<span class="nc" id="L173">		CreatureAi fixture = CreatureAiFactory.createCreatureAi();</span>
+<span class="nc" id="L174">		int wx = 1;</span>
+<span class="nc" id="L175">		int wy = 1;</span>
+<span class="nc" id="L176">		int wz = 1;</span>
+
+<span class="nc" id="L178">		boolean result = fixture.canSee(wx, wy, wz);</span>
+
+		// add additional test code here
+<span class="nc" id="L181">		assertEquals(false, result);</span>
+<span class="nc" id="L182">	}</span>
+
+	/**
+	 * Run the boolean canSee(int,int,int) method test.
+	 *
+	 * @throws Exception
+	 *
+	 * @generatedBy CodePro at 5/19/18 11:10 AM
+	 */
+	@Test
+	public void testCanSee_2()
+		throws Exception {
+<span class="nc" id="L194">		CreatureAi fixture = CreatureAiFactory.createCreatureAi();</span>
+<span class="nc" id="L195">		int wx = 1;</span>
+<span class="nc" id="L196">		int wy = 1;</span>
+<span class="nc" id="L197">		int wz = 1;</span>
+
+<span class="nc" id="L199">		boolean result = fixture.canSee(wx, wy, wz);</span>
+
+		// add additional test code here
+<span class="nc" id="L202">		assertEquals(false, result);</span>
+<span class="nc" id="L203">	}</span>
+
+	/**
+	 * Run the boolean canSee(int,int,int) method test.
+	 *
+	 * @throws Exception
+	 *
+	 * @generatedBy CodePro at 5/19/18 11:10 AM
+	 */
+	@Test
+	public void testCanSee_3()
+		throws Exception {
+<span class="nc" id="L215">		CreatureAi fixture = CreatureAiFactory.createCreatureAi();</span>
+<span class="nc" id="L216">		int wx = 1;</span>
+<span class="nc" id="L217">		int wy = 1;</span>
+<span class="nc" id="L218">		int wz = 1;</span>
+
+<span class="nc" id="L220">		boolean result = fixture.canSee(wx, wy, wz);</span>
+
+		// add additional test code here
+<span class="nc" id="L223">		assertEquals(false, result);</span>
+<span class="nc" id="L224">	}</span>
+
+	/**
+	 * Run the boolean canSee(int,int,int) method test.
+	 *
+	 * @throws Exception
+	 *
+	 * @generatedBy CodePro at 5/19/18 11:10 AM
+	 */
+	@Test
+	public void testCanSee_4()
+		throws Exception {
+<span class="nc" id="L236">		CreatureAi fixture = CreatureAiFactory.createCreatureAi();</span>
+<span class="nc" id="L237">		int wx = 1;</span>
+<span class="nc" id="L238">		int wy = 1;</span>
+<span class="nc" id="L239">		int wz = 1;</span>
+
+<span class="nc" id="L241">		boolean result = fixture.canSee(wx, wy, wz);</span>
+
+		// add additional test code here
+<span class="nc" id="L244">		assertEquals(false, result);</span>
+<span class="nc" id="L245">	}</span>
+
+	/**
+	 * Run the boolean canSee(int,int,int) method test.
+	 *
+	 * @throws Exception
+	 *
+	 * @generatedBy CodePro at 5/19/18 11:10 AM
+	 */
+	@Test
+	public void testCanSee_5()
+		throws Exception {
+<span class="nc" id="L257">		CreatureAi fixture = CreatureAiFactory.createCreatureAi();</span>
+<span class="nc" id="L258">		int wx = 1;</span>
+<span class="nc" id="L259">		int wy = 1;</span>
+<span class="nc" id="L260">		int wz = 1;</span>
+
+<span class="nc" id="L262">		boolean result = fixture.canSee(wx, wy, wz);</span>
+
+		// add additional test code here
+<span class="nc" id="L265">		assertEquals(false, result);</span>
+<span class="nc" id="L266">	}</span>
+
+	/**
+	 * Run the boolean canSee(int,int,int) method test.
+	 *
+	 * @throws Exception
+	 *
+	 * @generatedBy CodePro at 5/19/18 11:10 AM
+	 */
+	@Test
+	public void testCanSee_6()
+		throws Exception {
+<span class="nc" id="L278">		CreatureAi fixture = CreatureAiFactory.createCreatureAi();</span>
+<span class="nc" id="L279">		int wx = 1;</span>
+<span class="nc" id="L280">		int wy = 1;</span>
+<span class="nc" id="L281">		int wz = 1;</span>
+
+<span class="nc" id="L283">		boolean result = fixture.canSee(wx, wy, wz);</span>
+
+		// add additional test code here
+<span class="nc" id="L286">		assertEquals(false, result);</span>
+<span class="nc" id="L287">	}</span>
+
+	/**
+	 * Run the boolean canSee(int,int,int) method test.
+	 *
+	 * @throws Exception
+	 *
+	 * @generatedBy CodePro at 5/19/18 11:10 AM
+	 */
+	@Test
+	public void testCanSee_7()
+		throws Exception {
+<span class="nc" id="L299">		CreatureAi fixture = CreatureAiFactory.createCreatureAi();</span>
+<span class="nc" id="L300">		int wx = 1;</span>
+<span class="nc" id="L301">		int wy = 1;</span>
+<span class="nc" id="L302">		int wz = 1;</span>
+
+<span class="nc" id="L304">		boolean result = fixture.canSee(wx, wy, wz);</span>
+
+		// add additional test code here
+<span class="nc" id="L307">		assertEquals(false, result);</span>
+<span class="nc" id="L308">	}</span>
+
+	/**
+	 * Run the boolean canThrowAt(Creature) method test.
+	 *
+	 * @throws Exception
+	 *
+	 * @generatedBy CodePro at 5/19/18 11:10 AM
+	 */
+	@Test
+	public void testCanThrowAt_1()
+		throws Exception {
+<span class="nc" id="L320">		CreatureAi fixture = CreatureAiFactory.createCreatureAi();</span>
+<span class="nc" id="L321">		Creature other = CreatureFactory.createCreature2();</span>
+
+<span class="nc" id="L323">		boolean result = fixture.canThrowAt(other);</span>
+
+		// add additional test code here
+<span class="nc" id="L326">		assertEquals(false, result);</span>
+<span class="nc" id="L327">	}</span>
+
+	/**
+	 * Run the boolean canThrowAt(Creature) method test.
+	 *
+	 * @throws Exception
+	 *
+	 * @generatedBy CodePro at 5/19/18 11:10 AM
+	 */
+	@Test
+	public void testCanThrowAt_2()
+		throws Exception {
+<span class="nc" id="L339">		CreatureAi fixture = CreatureAiFactory.createCreatureAi();</span>
+<span class="nc" id="L340">		Creature other = CreatureFactory.createCreature3();</span>
+
+<span class="nc" id="L342">		boolean result = fixture.canThrowAt(other);</span>
+
+		// add additional test code here
+<span class="nc" id="L345">		assertEquals(false, result);</span>
+<span class="nc" id="L346">	}</span>
+
+	/**
+	 * Run the boolean canThrowAt(Creature) method test.
+	 *
+	 * @throws Exception
+	 *
+	 * @generatedBy CodePro at 5/19/18 11:10 AM
+	 */
+	@Test
+	public void testCanThrowAt_3()
+		throws Exception {
+<span class="nc" id="L358">		CreatureAi fixture = CreatureAiFactory.createCreatureAi();</span>
+<span class="nc" id="L359">		Creature other = CreatureFactory.createCreature4();</span>
+
+<span class="nc" id="L361">		boolean result = fixture.canThrowAt(other);</span>
+
+		// add additional test code here
+<span class="nc" id="L364">		assertEquals(false, result);</span>
+<span class="nc" id="L365">	}</span>
+
+	/**
+	 * Run the boolean canUseBetterEquipment() method test.
+	 *
+	 * @throws Exception
+	 *
+	 * @generatedBy CodePro at 5/19/18 11:10 AM
+	 */
+	@Test
+	public void testCanUseBetterEquipment_1()
+		throws Exception {
+<span class="nc" id="L377">		CreatureAi fixture = CreatureAiFactory.createCreatureAi();</span>
+
+<span class="nc" id="L379">		boolean result = fixture.canUseBetterEquipment();</span>
+
+		// add additional test code here
+<span class="nc" id="L382">		assertEquals(false, result);</span>
+<span class="nc" id="L383">	}</span>
+
+	/**
+	 * Run the boolean canUseBetterEquipment() method test.
+	 *
+	 * @throws Exception
+	 *
+	 * @generatedBy CodePro at 5/19/18 11:10 AM
+	 */
+	@Test
+	public void testCanUseBetterEquipment_2()
+		throws Exception {
+<span class="nc" id="L395">		CreatureAi fixture = CreatureAiFactory.createCreatureAi();</span>
+
+<span class="nc" id="L397">		boolean result = fixture.canUseBetterEquipment();</span>
+
+		// add additional test code here
+<span class="nc" id="L400">		assertEquals(false, result);</span>
+<span class="nc" id="L401">	}</span>
+
+	/**
+	 * Run the boolean canUseBetterEquipment() method test.
+	 *
+	 * @throws Exception
+	 *
+	 * @generatedBy CodePro at 5/19/18 11:10 AM
+	 */
+	@Test
+	public void testCanUseBetterEquipment_3()
+		throws Exception {
+<span class="nc" id="L413">		CreatureAi fixture = CreatureAiFactory.createCreatureAi();</span>
+
+<span class="nc" id="L415">		boolean result = fixture.canUseBetterEquipment();</span>
+
+		// add additional test code here
+<span class="nc" id="L418">		assertEquals(false, result);</span>
+<span class="nc" id="L419">	}</span>
+
+	/**
+	 * Run the boolean canUseBetterEquipment() method test.
+	 *
+	 * @throws Exception
+	 *
+	 * @generatedBy CodePro at 5/19/18 11:10 AM
+	 */
+	@Test
+	public void testCanUseBetterEquipment_4()
+		throws Exception {
+<span class="nc" id="L431">		CreatureAi fixture = CreatureAiFactory.createCreatureAi();</span>
+
+<span class="nc" id="L433">		boolean result = fixture.canUseBetterEquipment();</span>
+
+		// add additional test code here
+<span class="nc" id="L436">		assertEquals(false, result);</span>
+<span class="nc" id="L437">	}</span>
+
+	/**
+	 * Run the boolean canUseBetterEquipment() method test.
+	 *
+	 * @throws Exception
+	 *
+	 * @generatedBy CodePro at 5/19/18 11:10 AM
+	 */
+	@Test
+	public void testCanUseBetterEquipment_5()
+		throws Exception {
+<span class="nc" id="L449">		CreatureAi fixture = CreatureAiFactory.createCreatureAi();</span>
+
+<span class="nc" id="L451">		boolean result = fixture.canUseBetterEquipment();</span>
+
+		// add additional test code here
+<span class="nc" id="L454">		assertEquals(false, result);</span>
+<span class="nc" id="L455">	}</span>
+
+	/**
+	 * Run the boolean canUseBetterEquipment() method test.
+	 *
+	 * @throws Exception
+	 *
+	 * @generatedBy CodePro at 5/19/18 11:10 AM
+	 */
+	@Test
+	public void testCanUseBetterEquipment_6()
+		throws Exception {
+<span class="nc" id="L467">		CreatureAi fixture = CreatureAiFactory.createCreatureAi();</span>
+
+<span class="nc" id="L469">		boolean result = fixture.canUseBetterEquipment();</span>
+
+		// add additional test code here
+<span class="nc" id="L472">		assertEquals(false, result);</span>
+<span class="nc" id="L473">	}</span>
+
+	/**
+	 * Run the String getName(Item) method test.
+	 *
+	 * @throws Exception
+	 *
+	 * @generatedBy CodePro at 5/19/18 11:10 AM
+	 */
+	@Test
+	public void testGetName_1()
+		throws Exception {
+<span class="nc" id="L485">		CreatureAi fixture = CreatureAiFactory.createCreatureAi();</span>
+<span class="nc" id="L486">		Item item = ItemFactory.createItem();</span>
+
+<span class="nc" id="L488">		String result = fixture.getName(item);</span>
+
+		// add additional test code here
+<span class="nc" id="L491">		assertEquals(&quot;&quot;, result);</span>
+<span class="nc" id="L492">	}</span>
+
+	/**
+	 * Run the String getName(Item) method test.
+	 *
+	 * @throws Exception
+	 *
+	 * @generatedBy CodePro at 5/19/18 11:10 AM
+	 */
+	@Test
+	public void testGetName_2()
+		throws Exception {
+<span class="nc" id="L504">		CreatureAi fixture = CreatureAiFactory.createCreatureAi();</span>
+<span class="nc" id="L505">		Item item = ItemFactory.createItem2();</span>
+
+<span class="nc" id="L507">		String result = fixture.getName(item);</span>
+
+		// add additional test code here
+<span class="nc" id="L510">		assertEquals(&quot;0123456789&quot;, result);</span>
+<span class="nc" id="L511">	}</span>
+
+	/**
+	 * Run the Item getWeaponToThrow() method test.
+	 *
+	 * @throws Exception
+	 *
+	 * @generatedBy CodePro at 5/19/18 11:10 AM
+	 */
+	@Test
+	public void testGetWeaponToThrow_1()
+		throws Exception {
+<span class="nc" id="L523">		CreatureAi fixture = CreatureAiFactory.createCreatureAi();</span>
+
+<span class="nc" id="L525">		Item result = fixture.getWeaponToThrow();</span>
+
+		// add additional test code here
+<span class="nc" id="L528">		assertEquals(null, result);</span>
+<span class="nc" id="L529">	}</span>
+
+	/**
+	 * Run the Item getWeaponToThrow() method test.
+	 *
+	 * @throws Exception
+	 *
+	 * @generatedBy CodePro at 5/19/18 11:10 AM
+	 */
+	@Test
+	public void testGetWeaponToThrow_2()
+		throws Exception {
+<span class="nc" id="L541">		CreatureAi fixture = CreatureAiFactory.createCreatureAi();</span>
+
+<span class="nc" id="L543">		Item result = fixture.getWeaponToThrow();</span>
+
+		// add additional test code here
+<span class="nc" id="L546">		assertEquals(null, result);</span>
+<span class="nc" id="L547">	}</span>
+
+	/**
+	 * Run the Item getWeaponToThrow() method test.
+	 *
+	 * @throws Exception
+	 *
+	 * @generatedBy CodePro at 5/19/18 11:10 AM
+	 */
+	@Test
+	public void testGetWeaponToThrow_3()
+		throws Exception {
+<span class="nc" id="L559">		CreatureAi fixture = CreatureAiFactory.createCreatureAi();</span>
+
+<span class="nc" id="L561">		Item result = fixture.getWeaponToThrow();</span>
+
+		// add additional test code here
+<span class="nc" id="L564">		assertEquals(null, result);</span>
+<span class="nc" id="L565">	}</span>
+
+	/**
+	 * Run the Item getWeaponToThrow() method test.
+	 *
+	 * @throws Exception
+	 *
+	 * @generatedBy CodePro at 5/19/18 11:10 AM
+	 */
+	@Test
+	public void testGetWeaponToThrow_4()
+		throws Exception {
+<span class="nc" id="L577">		CreatureAi fixture = CreatureAiFactory.createCreatureAi();</span>
+
+<span class="nc" id="L579">		Item result = fixture.getWeaponToThrow();</span>
+
+		// add additional test code here
+<span class="nc" id="L582">		assertEquals(null, result);</span>
+<span class="nc" id="L583">	}</span>
+
+	/**
+	 * Run the Item getWeaponToThrow() method test.
+	 *
+	 * @throws Exception
+	 *
+	 * @generatedBy CodePro at 5/19/18 11:10 AM
+	 */
+	@Test
+	public void testGetWeaponToThrow_5()
+		throws Exception {
+<span class="nc" id="L595">		CreatureAi fixture = CreatureAiFactory.createCreatureAi();</span>
+
+<span class="nc" id="L597">		Item result = fixture.getWeaponToThrow();</span>
+
+		// add additional test code here
+<span class="nc" id="L600">		assertEquals(null, result);</span>
+<span class="nc" id="L601">	}</span>
+
+	/**
+	 * Run the Item getWeaponToThrow() method test.
+	 *
+	 * @throws Exception
+	 *
+	 * @generatedBy CodePro at 5/19/18 11:10 AM
+	 */
+	@Test
+	public void testGetWeaponToThrow_6()
+		throws Exception {
+<span class="nc" id="L613">		CreatureAi fixture = CreatureAiFactory.createCreatureAi();</span>
+
+<span class="nc" id="L615">		Item result = fixture.getWeaponToThrow();</span>
+
+		// add additional test code here
+<span class="nc" id="L618">		assertEquals(null, result);</span>
+<span class="nc" id="L619">	}</span>
+
+	/**
+	 * Run the Item getWeaponToThrow() method test.
+	 *
+	 * @throws Exception
+	 *
+	 * @generatedBy CodePro at 5/19/18 11:10 AM
+	 */
+	@Test
+	public void testGetWeaponToThrow_7()
+		throws Exception {
+<span class="nc" id="L631">		CreatureAi fixture = CreatureAiFactory.createCreatureAi();</span>
+
+<span class="nc" id="L633">		Item result = fixture.getWeaponToThrow();</span>
+
+		// add additional test code here
+<span class="nc" id="L636">		assertEquals(null, result);</span>
+<span class="nc" id="L637">	}</span>
+
+	/**
+	 * Run the void hunt(Creature) method test.
+	 *
+	 * @throws Exception
+	 *
+	 * @generatedBy CodePro at 5/19/18 11:10 AM
+	 */
+	@Test
+	public void testHunt_1()
+		throws Exception {
+<span class="nc" id="L649">		CreatureAi fixture = CreatureAiFactory.createCreatureAi();</span>
+<span class="nc" id="L650">		Creature target = CreatureFactory.createCreature2();</span>
+
+<span class="nc" id="L652">		fixture.hunt(target);</span>
+
+		// add additional test code here
+		// An unexpected exception was thrown in user code while executing this test:
+		//    java.lang.IndexOutOfBoundsException: Index: 0, Size: 0
+		//       at java.util.ArrayList.rangeCheck(Unknown Source)
+		//       at java.util.ArrayList.get(Unknown Source)
+		//       at game.CreatureAi.hunt(CreatureAi.java:114)
+<span class="nc" id="L660">	}</span>
+
+	/**
+	 * Run the void onEnter(int,int,int,Tile) method test.
+	 *
+	 * @throws Exception
+	 *
+	 * @generatedBy CodePro at 5/19/18 11:10 AM
+	 */
+	@Test
+	public void testOnEnter_1()
+		throws Exception {
+<span class="nc" id="L672">		CreatureAi fixture = CreatureAiFactory.createCreatureAi();</span>
+<span class="nc" id="L673">		int x = 1;</span>
+<span class="nc" id="L674">		int y = 1;</span>
+<span class="nc" id="L675">		int z = 1;</span>
+<span class="nc" id="L676">		Tile tile = Tile.BOUNDS;</span>
+
+<span class="nc" id="L678">		fixture.onEnter(x, y, z, tile);</span>
+
+		// add additional test code here
+<span class="nc" id="L681">	}</span>
+
+	/**
+	 * Run the void onEnter(int,int,int,Tile) method test.
+	 *
+	 * @throws Exception
+	 *
+	 * @generatedBy CodePro at 5/19/18 11:10 AM
+	 */
+	@Test
+	public void testOnEnter_2()
+		throws Exception {
+<span class="nc" id="L693">		CreatureAi fixture = CreatureAiFactory.createCreatureAi();</span>
+<span class="nc" id="L694">		int x = 1;</span>
+<span class="nc" id="L695">		int y = 1;</span>
+<span class="nc" id="L696">		int z = 1;</span>
+<span class="nc" id="L697">		Tile tile = Tile.BOUNDS;</span>
+
+<span class="nc" id="L699">		fixture.onEnter(x, y, z, tile);</span>
+
+		// add additional test code here
+<span class="nc" id="L702">	}</span>
+
+	/**
+	 * Run the void onGainLevel() method test.
+	 *
+	 * @throws Exception
+	 *
+	 * @generatedBy CodePro at 5/19/18 11:10 AM
+	 */
+	@Test
+	public void testOnGainLevel_1()
+		throws Exception {
+<span class="nc" id="L714">		CreatureAi fixture = CreatureAiFactory.createCreatureAi();</span>
+
+<span class="nc" id="L716">		fixture.onGainLevel();</span>
+
+		// add additional test code here
+<span class="nc" id="L719">	}</span>
+
+	/**
+	 * Run the void onNotify(String) method test.
+	 *
+	 * @throws Exception
+	 *
+	 * @generatedBy CodePro at 5/19/18 11:10 AM
+	 */
+	@Test
+	public void testOnNotify_1()
+		throws Exception {
+<span class="nc" id="L731">		CreatureAi fixture = CreatureAiFactory.createCreatureAi();</span>
+<span class="nc" id="L732">		String message = &quot;&quot;;</span>
+
+<span class="nc" id="L734">		fixture.onNotify(message);</span>
+
+		// add additional test code here
+<span class="nc" id="L737">	}</span>
+
+	/**
+	 * Run the void onUpdate() method test.
+	 *
+	 * @throws Exception
+	 *
+	 * @generatedBy CodePro at 5/19/18 11:10 AM
+	 */
+	@Test
+	public void testOnUpdate_1()
+		throws Exception {
+<span class="nc" id="L749">		CreatureAi fixture = CreatureAiFactory.createCreatureAi();</span>
+
+<span class="nc" id="L751">		fixture.onUpdate();</span>
+
+		// add additional test code here
+<span class="nc" id="L754">	}</span>
+
+	/**
+	 * Run the Tile rememberedTile(int,int,int) method test.
+	 *
+	 * @throws Exception
+	 *
+	 * @generatedBy CodePro at 5/19/18 11:10 AM
+	 */
+	@Test
+	public void testRememberedTile_1()
+		throws Exception {
+<span class="nc" id="L766">		CreatureAi fixture = CreatureAiFactory.createCreatureAi();</span>
+<span class="nc" id="L767">		int wx = 1;</span>
+<span class="nc" id="L768">		int wy = 1;</span>
+<span class="nc" id="L769">		int wz = 1;</span>
+
+<span class="nc" id="L771">		Tile result = fixture.rememberedTile(wx, wy, wz);</span>
+
+		// add additional test code here
+<span class="nc" id="L774">		assertNotNull(result);</span>
+<span class="nc" id="L775">		assertEquals(&quot;(unknown)&quot;, result.details());</span>
+<span class="nc" id="L776">		assertEquals(' ', result.glyph());</span>
+<span class="nc" id="L777">		assertEquals(true, result.isGround());</span>
+<span class="nc" id="L778">		assertEquals(false, result.isDiggable());</span>
+<span class="nc" id="L779">		assertEquals(&quot;UNKNOWN&quot;, result.name());</span>
+<span class="nc" id="L780">		assertEquals(&quot;UNKNOWN&quot;, result.toString());</span>
+<span class="nc" id="L781">		assertEquals(5, result.ordinal());</span>
+<span class="nc" id="L782">	}</span>
+
+	/**
+	 * Run the void setName(Item,String) method test.
+	 *
+	 * @throws Exception
+	 *
+	 * @generatedBy CodePro at 5/19/18 11:10 AM
+	 */
+	@Test
+	public void testSetName_1()
+		throws Exception {
+<span class="nc" id="L794">		CreatureAi fixture = CreatureAiFactory.createCreatureAi();</span>
+<span class="nc" id="L795">		Item item = ItemFactory.createItem3();</span>
+<span class="nc" id="L796">		String name = &quot;&quot;;</span>
+
+<span class="nc" id="L798">		fixture.setName(item, name);</span>
+
+		// add additional test code here
+<span class="nc" id="L801">	}</span>
+
+	/**
+	 * Run the void useBetterEquipment() method test.
+	 *
+	 * @throws Exception
+	 *
+	 * @generatedBy CodePro at 5/19/18 11:10 AM
+	 */
+	@Test
+	public void testUseBetterEquipment_1()
+		throws Exception {
+<span class="nc" id="L813">		CreatureAi fixture = CreatureAiFactory.createCreatureAi();</span>
+
+<span class="nc" id="L815">		fixture.useBetterEquipment();</span>
+
+		// add additional test code here
+<span class="nc" id="L818">	}</span>
+
+	/**
+	 * Run the void useBetterEquipment() method test.
+	 *
+	 * @throws Exception
+	 *
+	 * @generatedBy CodePro at 5/19/18 11:10 AM
+	 */
+	@Test
+	public void testUseBetterEquipment_2()
+		throws Exception {
+<span class="nc" id="L830">		CreatureAi fixture = CreatureAiFactory.createCreatureAi();</span>
+
+<span class="nc" id="L832">		fixture.useBetterEquipment();</span>
+
+		// add additional test code here
+<span class="nc" id="L835">	}</span>
+
+	/**
+	 * Run the void useBetterEquipment() method test.
+	 *
+	 * @throws Exception
+	 *
+	 * @generatedBy CodePro at 5/19/18 11:10 AM
+	 */
+	@Test
+	public void testUseBetterEquipment_3()
+		throws Exception {
+<span class="nc" id="L847">		CreatureAi fixture = CreatureAiFactory.createCreatureAi();</span>
+
+<span class="nc" id="L849">		fixture.useBetterEquipment();</span>
+
+		// add additional test code here
+<span class="nc" id="L852">	}</span>
+
+	/**
+	 * Run the void useBetterEquipment() method test.
+	 *
+	 * @throws Exception
+	 *
+	 * @generatedBy CodePro at 5/19/18 11:10 AM
+	 */
+	@Test
+	public void testUseBetterEquipment_4()
+		throws Exception {
+<span class="nc" id="L864">		CreatureAi fixture = CreatureAiFactory.createCreatureAi();</span>
+
+<span class="nc" id="L866">		fixture.useBetterEquipment();</span>
+
+		// add additional test code here
+<span class="nc" id="L869">	}</span>
+
+	/**
+	 * Run the void useBetterEquipment() method test.
+	 *
+	 * @throws Exception
+	 *
+	 * @generatedBy CodePro at 5/19/18 11:10 AM
+	 */
+	@Test
+	public void testUseBetterEquipment_5()
+		throws Exception {
+<span class="nc" id="L881">		CreatureAi fixture = CreatureAiFactory.createCreatureAi();</span>
+
+<span class="nc" id="L883">		fixture.useBetterEquipment();</span>
+
+		// add additional test code here
+<span class="nc" id="L886">	}</span>
+
+	/**
+	 * Run the void useBetterEquipment() method test.
+	 *
+	 * @throws Exception
+	 *
+	 * @generatedBy CodePro at 5/19/18 11:10 AM
+	 */
+	@Test
+	public void testUseBetterEquipment_6()
+		throws Exception {
+<span class="nc" id="L898">		CreatureAi fixture = CreatureAiFactory.createCreatureAi();</span>
+
+<span class="nc" id="L900">		fixture.useBetterEquipment();</span>
+
+		// add additional test code here
+<span class="nc" id="L903">	}</span>
+
+	/**
+	 * Run the void useBetterEquipment() method test.
+	 *
+	 * @throws Exception
+	 *
+	 * @generatedBy CodePro at 5/19/18 11:10 AM
+	 */
+	@Test
+	public void testUseBetterEquipment_7()
+		throws Exception {
+<span class="nc" id="L915">		CreatureAi fixture = CreatureAiFactory.createCreatureAi();</span>
+
+<span class="nc" id="L917">		fixture.useBetterEquipment();</span>
+
+		// add additional test code here
+<span class="nc" id="L920">	}</span>
+
+	/**
+	 * Run the void useBetterEquipment() method test.
+	 *
+	 * @throws Exception
+	 *
+	 * @generatedBy CodePro at 5/19/18 11:10 AM
+	 */
+	@Test
+	public void testUseBetterEquipment_8()
+		throws Exception {
+<span class="nc" id="L932">		CreatureAi fixture = CreatureAiFactory.createCreatureAi();</span>
+
+<span class="nc" id="L934">		fixture.useBetterEquipment();</span>
+
+		// add additional test code here
+<span class="nc" id="L937">	}</span>
+
+	/**
+	 * Run the void useBetterEquipment() method test.
+	 *
+	 * @throws Exception
+	 *
+	 * @generatedBy CodePro at 5/19/18 11:10 AM
+	 */
+	@Test
+	public void testUseBetterEquipment_9()
+		throws Exception {
+<span class="nc" id="L949">		CreatureAi fixture = CreatureAiFactory.createCreatureAi();</span>
+
+<span class="nc" id="L951">		fixture.useBetterEquipment();</span>
+
+		// add additional test code here
+<span class="nc" id="L954">	}</span>
+
+	/**
+	 * Run the void useBetterEquipment() method test.
+	 *
+	 * @throws Exception
+	 *
+	 * @generatedBy CodePro at 5/19/18 11:10 AM
+	 */
+	@Test
+	public void testUseBetterEquipment_10()
+		throws Exception {
+<span class="nc" id="L966">		CreatureAi fixture = CreatureAiFactory.createCreatureAi();</span>
+
+<span class="nc" id="L968">		fixture.useBetterEquipment();</span>
+
+		// add additional test code here
+<span class="nc" id="L971">	}</span>
+
+	/**
+	 * Run the void useBetterEquipment() method test.
+	 *
+	 * @throws Exception
+	 *
+	 * @generatedBy CodePro at 5/19/18 11:10 AM
+	 */
+	@Test
+	public void testUseBetterEquipment_11()
+		throws Exception {
+<span class="nc" id="L983">		CreatureAi fixture = CreatureAiFactory.createCreatureAi();</span>
+
+<span class="nc" id="L985">		fixture.useBetterEquipment();</span>
+
+		// add additional test code here
+<span class="nc" id="L988">	}</span>
+
+	/**
+	 * Run the void useBetterEquipment() method test.
+	 *
+	 * @throws Exception
+	 *
+	 * @generatedBy CodePro at 5/19/18 11:10 AM
+	 */
+	@Test
+	public void testUseBetterEquipment_12()
+		throws Exception {
+<span class="nc" id="L1000">		CreatureAi fixture = CreatureAiFactory.createCreatureAi();</span>
+
+<span class="nc" id="L1002">		fixture.useBetterEquipment();</span>
+
+		// add additional test code here
+<span class="nc" id="L1005">	}</span>
+
+	/**
+	 * Run the void useBetterEquipment() method test.
+	 *
+	 * @throws Exception
+	 *
+	 * @generatedBy CodePro at 5/19/18 11:10 AM
+	 */
+	@Test
+	public void testUseBetterEquipment_13()
+		throws Exception {
+<span class="nc" id="L1017">		CreatureAi fixture = CreatureAiFactory.createCreatureAi();</span>
+
+<span class="nc" id="L1019">		fixture.useBetterEquipment();</span>
+
+		// add additional test code here
+<span class="nc" id="L1022">	}</span>
+
+	/**
+	 * Run the void useBetterEquipment() method test.
+	 *
+	 * @throws Exception
+	 *
+	 * @generatedBy CodePro at 5/19/18 11:10 AM
+	 */
+	@Test
+	public void testUseBetterEquipment_14()
+		throws Exception {
+<span class="nc" id="L1034">		CreatureAi fixture = CreatureAiFactory.createCreatureAi();</span>
+
+<span class="nc" id="L1036">		fixture.useBetterEquipment();</span>
+
+		// add additional test code here
+<span class="nc" id="L1039">	}</span>
+
+	/**
+	 * Run the void useBetterEquipment() method test.
+	 *
+	 * @throws Exception
+	 *
+	 * @generatedBy CodePro at 5/19/18 11:10 AM
+	 */
+	@Test
+	public void testUseBetterEquipment_15()
+		throws Exception {
+<span class="nc" id="L1051">		CreatureAi fixture = CreatureAiFactory.createCreatureAi();</span>
+
+<span class="nc" id="L1053">		fixture.useBetterEquipment();</span>
+
+		// add additional test code here
+<span class="nc" id="L1056">	}</span>
+
+	/**
+	 * Run the void useBetterEquipment() method test.
+	 *
+	 * @throws Exception
+	 *
+	 * @generatedBy CodePro at 5/19/18 11:10 AM
+	 */
+	@Test
+	public void testUseBetterEquipment_16()
+		throws Exception {
+<span class="nc" id="L1068">		CreatureAi fixture = CreatureAiFactory.createCreatureAi();</span>
+
+<span class="nc" id="L1070">		fixture.useBetterEquipment();</span>
+
+		// add additional test code here
+<span class="nc" id="L1073">	}</span>
+
+	/**
+	 * Run the void wander() method test.
+	 *
+	 * @throws Exception
+	 *
+	 * @generatedBy CodePro at 5/19/18 11:10 AM
+	 */
+	@Test
+	public void testWander_1()
+		throws Exception {
+<span class="nc" id="L1085">		CreatureAi fixture = CreatureAiFactory.createCreatureAi();</span>
+
+<span class="nc" id="L1087">		fixture.wander();</span>
+
+		// add additional test code here
+<span class="nc" id="L1090">	}</span>
+
+	/**
+	 * Run the void wander() method test.
+	 *
+	 * @throws Exception
+	 *
+	 * @generatedBy CodePro at 5/19/18 11:10 AM
+	 */
+	@Test
+	public void testWander_2()
+		throws Exception {
+<span class="nc" id="L1102">		CreatureAi fixture = CreatureAiFactory.createCreatureAi();</span>
+
+<span class="nc" id="L1104">		fixture.wander();</span>
+
+		// add additional test code here
+<span class="nc" id="L1107">	}</span>
+
+	/**
+	 * Run the void wander() method test.
+	 *
+	 * @throws Exception
+	 *
+	 * @generatedBy CodePro at 5/19/18 11:10 AM
+	 */
+	@Test
+	public void testWander_3()
+		throws Exception {
+<span class="nc" id="L1119">		CreatureAi fixture = CreatureAiFactory.createCreatureAi();</span>
+
+<span class="nc" id="L1121">		fixture.wander();</span>
+
+		// add additional test code here
+<span class="nc" id="L1124">	}</span>
+
+	/**
+	 * Run the void wander() method test.
+	 *
+	 * @throws Exception
+	 *
+	 * @generatedBy CodePro at 5/19/18 11:10 AM
+	 */
+	@Test
+	public void testWander_4()
+		throws Exception {
+<span class="nc" id="L1136">		CreatureAi fixture = CreatureAiFactory.createCreatureAi();</span>
+
+<span class="nc" id="L1138">		fixture.wander();</span>
+
+		// add additional test code here
+<span class="nc" id="L1141">	}</span>
+
+	/**
+	 * Perform pre-test initialization.
+	 *
+	 * @throws Exception
+	 *         if the initialization fails for some reason
+	 *
+	 * @generatedBy CodePro at 5/19/18 11:10 AM
+	 */
+	@Before
+	public void setUp()
+		throws Exception {
+		// add additional set up code here
+<span class="nc" id="L1155">	}</span>
+
+	/**
+	 * Perform post-test clean-up.
+	 *
+	 * @throws Exception
+	 *         if the clean-up fails for some reason
+	 *
+	 * @generatedBy CodePro at 5/19/18 11:10 AM
+	 */
+	@After
+	public void tearDown()
+		throws Exception {
+		// Add additional tear down code here
+<span class="nc" id="L1169">	}</span>
+
+	/**
+	 * Launch the test.
+	 *
+	 * @param args the command line arguments
+	 *
+	 * @generatedBy CodePro at 5/19/18 11:10 AM
+	 */
+	public static void main(String[] args) {
+<span class="nc" id="L1179">		new org.junit.runner.JUnitCore().run(CreatureAiTest.class);</span>
+<span class="nc" id="L1180">	}</span>
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.7.9.201702052155</span>AllUiTests (May 19, 2018 11:46:29 AM)</div></body></html>

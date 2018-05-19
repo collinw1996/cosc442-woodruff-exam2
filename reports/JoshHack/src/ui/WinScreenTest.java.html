@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../../../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../../../jacoco-resources/report.gif" type="image/gif"/><title>WinScreenTest.java</title><link rel="stylesheet" href="../../../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../../../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../../../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../../../index.html" class="el_report">AllUiTests (May 19, 2018 11:46:29 AM)</a> &gt; <a href="../../index.html" class="el_group">JoshHack</a> &gt; <a href="../index.html" class="el_bundle">src</a> &gt; <a href="index.source.html" class="el_package">ui</a> &gt; <span class="el_source">WinScreenTest.java</span></div><h1>WinScreenTest.java</h1><pre class="source lang-java linenums">package ui;
+
+import java.awt.Component;
+import java.awt.event.KeyEvent;
+import org.junit.*;
+import asciiPanel.AsciiPanel;
+import game.AppletMain;
+import static org.junit.Assert.*;
+
+/**
+ * The class &lt;code&gt;WinScreenTest&lt;/code&gt; contains tests for the class &lt;code&gt;{@link WinScreen}&lt;/code&gt;.
+ *
+ * @generatedBy CodePro at 5/19/18 11:12 AM
+ * @author Collin
+ * @version $Revision: 1.0 $
+ */
+<span class="fc" id="L17">public class WinScreenTest {</span>
+	/**
+	 * Run the void displayOutput(AsciiPanel) method test.
+	 *
+	 * @throws Exception
+	 *
+	 * @generatedBy CodePro at 5/19/18 11:12 AM
+	 */
+	@Test
+	public void testDisplayOutput_1()
+		throws Exception {
+<span class="fc" id="L28">		WinScreen fixture = WinScreenFactory.createWinScreen();</span>
+<span class="fc" id="L29">		AsciiPanel terminal = new AsciiPanel();</span>
+
+<span class="fc" id="L31">		fixture.displayOutput(terminal);</span>
+
+		// add additional test code here
+		// An unexpected exception was thrown in user code while executing this test:
+		//    java.lang.SecurityException: Unable to create temporary file or directory
+		//       at java.nio.file.TempFileHelper.create(Unknown Source)
+		//       at java.nio.file.TempFileHelper.createTempFile(Unknown Source)
+		//       at java.nio.file.Files.createTempFile(Unknown Source)
+		//       at javax.imageio.stream.FileCacheImageInputStream.&lt;init&gt;(Unknown Source)
+		//       at com.sun.imageio.spi.InputStreamImageInputStreamSpi.createInputStreamInstance(Unknown Source)
+		//       at javax.imageio.ImageIO.createImageInputStream(Unknown Source)
+		//       at javax.imageio.ImageIO.read(Unknown Source)
+		//       at asciiPanel.AsciiPanel.loadGlyphs(AsciiPanel.java:301)
+		//       at asciiPanel.AsciiPanel.&lt;init&gt;(AsciiPanel.java:273)
+		//       at asciiPanel.AsciiPanel.&lt;init&gt;(AsciiPanel.java:243)
+<span class="fc" id="L46">	}</span>
+
+	/**
+	 * Run the Screen respondToUserInput(KeyEvent) method test.
+	 *
+	 * @throws Exception
+	 *
+	 * @generatedBy CodePro at 5/19/18 11:12 AM
+	 */
+	@Test
+	public void testRespondToUserInput_1()
+		throws Exception {
+<span class="fc" id="L58">		WinScreen fixture = WinScreenFactory.createWinScreen();</span>
+<span class="fc" id="L59">		KeyEvent key = new KeyEvent(new AppletMain(), 1, 1L, 1, 1);</span>
+
+<span class="fc" id="L61">		Screen result = fixture.respondToUserInput(key);</span>
+
+		// add additional test code here
+		// An unexpected exception was thrown in user code while executing this test:
+		//    java.lang.SecurityException: Unable to create temporary file or directory
+		//       at java.nio.file.TempFileHelper.create(Unknown Source)
+		//       at java.nio.file.TempFileHelper.createTempFile(Unknown Source)
+		//       at java.nio.file.Files.createTempFile(Unknown Source)
+		//       at javax.imageio.stream.FileCacheImageInputStream.&lt;init&gt;(Unknown Source)
+		//       at com.sun.imageio.spi.InputStreamImageInputStreamSpi.createInputStreamInstance(Unknown Source)
+		//       at javax.imageio.ImageIO.createImageInputStream(Unknown Source)
+		//       at javax.imageio.ImageIO.read(Unknown Source)
+		//       at asciiPanel.AsciiPanel.loadGlyphs(AsciiPanel.java:301)
+		//       at asciiPanel.AsciiPanel.&lt;init&gt;(AsciiPanel.java:273)
+		//       at asciiPanel.AsciiPanel.&lt;init&gt;(AsciiPanel.java:243)
+		//       at game.AppletMain.&lt;init&gt;(AppletMain.java:19)
+<span class="fc" id="L77">		assertNotNull(result);</span>
+<span class="fc" id="L78">	}</span>
+
+	/**
+	 * Run the Screen respondToUserInput(KeyEvent) method test.
+	 *
+	 * @throws Exception
+	 *
+	 * @generatedBy CodePro at 5/19/18 11:12 AM
+	 */
+	@Test
+	public void testRespondToUserInput_2()
+		throws Exception {
+<span class="fc" id="L90">		WinScreen fixture = WinScreenFactory.createWinScreen();</span>
+<span class="fc" id="L91">		KeyEvent key = new KeyEvent(new AppletMain(), 1, 1L, 1, 1);</span>
+
+<span class="fc" id="L93">		Screen result = fixture.respondToUserInput(key);</span>
+
+		// add additional test code here
+		// An unexpected exception was thrown in user code while executing this test:
+		//    java.lang.SecurityException: Unable to create temporary file or directory
+		//       at java.nio.file.TempFileHelper.create(Unknown Source)
+		//       at java.nio.file.TempFileHelper.createTempFile(Unknown Source)
+		//       at java.nio.file.Files.createTempFile(Unknown Source)
+		//       at javax.imageio.stream.FileCacheImageInputStream.&lt;init&gt;(Unknown Source)
+		//       at com.sun.imageio.spi.InputStreamImageInputStreamSpi.createInputStreamInstance(Unknown Source)
+		//       at javax.imageio.ImageIO.createImageInputStream(Unknown Source)
+		//       at javax.imageio.ImageIO.read(Unknown Source)
+		//       at asciiPanel.AsciiPanel.loadGlyphs(AsciiPanel.java:301)
+		//       at asciiPanel.AsciiPanel.&lt;init&gt;(AsciiPanel.java:273)
+		//       at asciiPanel.AsciiPanel.&lt;init&gt;(AsciiPanel.java:243)
+		//       at game.AppletMain.&lt;init&gt;(AppletMain.java:19)
+<span class="fc" id="L109">		assertNotNull(result);</span>
+<span class="fc" id="L110">	}</span>
+
+	/**
+	 * Perform pre-test initialization.
+	 *
+	 * @throws Exception
+	 *         if the initialization fails for some reason
+	 *
+	 * @generatedBy CodePro at 5/19/18 11:12 AM
+	 */
+	@Before
+	public void setUp()
+		throws Exception {
+		// add additional set up code here
+<span class="fc" id="L124">	}</span>
+
+	/**
+	 * Perform post-test clean-up.
+	 *
+	 * @throws Exception
+	 *         if the clean-up fails for some reason
+	 *
+	 * @generatedBy CodePro at 5/19/18 11:12 AM
+	 */
+	@After
+	public void tearDown()
+		throws Exception {
+		// Add additional tear down code here
+<span class="fc" id="L138">	}</span>
+
+	/**
+	 * Launch the test.
+	 *
+	 * @param args the command line arguments
+	 *
+	 * @generatedBy CodePro at 5/19/18 11:12 AM
+	 */
+	public static void main(String[] args) {
+<span class="nc" id="L148">		new org.junit.runner.JUnitCore().run(WinScreenTest.class);</span>
+<span class="nc" id="L149">	}</span>
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.7.9.201702052155</span>AllUiTests (May 19, 2018 11:46:29 AM)</div></body></html>

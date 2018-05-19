@@ -1,0 +1,1072 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../../../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../../../jacoco-resources/report.gif" type="image/gif"/><title>WorldTest.java</title><link rel="stylesheet" href="../../../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../../../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../../../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../../../index.html" class="el_report">AllUiTests (May 19, 2018 11:46:29 AM)</a> &gt; <a href="../../index.html" class="el_group">JoshHack</a> &gt; <a href="../index.html" class="el_bundle">src</a> &gt; <a href="index.source.html" class="el_package">game</a> &gt; <span class="el_source">WorldTest.java</span></div><h1>WorldTest.java</h1><pre class="source lang-java linenums">package game;
+
+import java.awt.Color;
+import org.junit.*;
+import static org.junit.Assert.*;
+
+/**
+ * The class &lt;code&gt;WorldTest&lt;/code&gt; contains tests for the class &lt;code&gt;{@link World}&lt;/code&gt;.
+ *
+ * @generatedBy CodePro at 5/19/18 11:11 AM
+ * @author Collin
+ * @version $Revision: 1.0 $
+ */
+<span class="nc" id="L14">public class WorldTest {</span>
+	/**
+	 * Run the World(Tile[][][]) constructor test.
+	 *
+	 * @throws Exception
+	 *
+	 * @generatedBy CodePro at 5/19/18 11:11 AM
+	 */
+	@Test
+	public void testWorld_1()
+		throws Exception {
+<span class="nc" id="L25">		Tile[][][] tiles = new Tile[][][] {};</span>
+
+<span class="nc" id="L27">		World result = new World(tiles);</span>
+
+		// add additional test code here
+		// An unexpected exception was thrown in user code while executing this test:
+		//    java.lang.IllegalArgumentException: argument type mismatch
+<span class="nc" id="L32">		assertNotNull(result);</span>
+<span class="nc" id="L33">	}</span>
+
+	/**
+	 * Run the void add(Creature) method test.
+	 *
+	 * @throws Exception
+	 *
+	 * @generatedBy CodePro at 5/19/18 11:11 AM
+	 */
+	@Test
+	public void testAdd_1()
+		throws Exception {
+<span class="nc" id="L45">		World fixture = WorldFactory.createWorld();</span>
+<span class="nc" id="L46">		Creature pet = CreatureFactory.createCreature5();</span>
+
+<span class="nc" id="L48">		fixture.add(pet);</span>
+
+		// add additional test code here
+<span class="nc" id="L51">	}</span>
+
+	/**
+	 * Run the void addAtEmptyLocation(Creature,int) method test.
+	 *
+	 * @throws Exception
+	 *
+	 * @generatedBy CodePro at 5/19/18 11:11 AM
+	 */
+	@Test
+	public void testAddAtEmptyLocation_1()
+		throws Exception {
+<span class="nc" id="L63">		World fixture = WorldFactory.createWorld();</span>
+<span class="nc" id="L64">		Creature creature = CreatureFactory.createCreature();</span>
+<span class="nc" id="L65">		int z = 1;</span>
+
+<span class="nc" id="L67">		fixture.addAtEmptyLocation(creature, z);</span>
+
+		// add additional test code here
+<span class="nc" id="L70">	}</span>
+
+	/**
+	 * Run the void addAtEmptyLocation(Creature,int) method test.
+	 *
+	 * @throws Exception
+	 *
+	 * @generatedBy CodePro at 5/19/18 11:11 AM
+	 */
+	@Test
+	public void testAddAtEmptyLocation_2()
+		throws Exception {
+<span class="nc" id="L82">		World fixture = WorldFactory.createWorld();</span>
+<span class="nc" id="L83">		Creature creature = CreatureFactory.createCreature2();</span>
+<span class="nc" id="L84">		int z = 1;</span>
+
+<span class="nc" id="L86">		fixture.addAtEmptyLocation(creature, z);</span>
+
+		// add additional test code here
+<span class="nc" id="L89">	}</span>
+
+	/**
+	 * Run the void addAtEmptyLocation(Creature,int) method test.
+	 *
+	 * @throws Exception
+	 *
+	 * @generatedBy CodePro at 5/19/18 11:11 AM
+	 */
+	@Test
+	public void testAddAtEmptyLocation_3()
+		throws Exception {
+<span class="nc" id="L101">		World fixture = WorldFactory.createWorld();</span>
+<span class="nc" id="L102">		Creature creature = CreatureFactory.createCreature3();</span>
+<span class="nc" id="L103">		int z = 1;</span>
+
+<span class="nc" id="L105">		fixture.addAtEmptyLocation(creature, z);</span>
+
+		// add additional test code here
+<span class="nc" id="L108">	}</span>
+
+	/**
+	 * Run the void addAtEmptyLocation(Item,int) method test.
+	 *
+	 * @throws Exception
+	 *
+	 * @generatedBy CodePro at 5/19/18 11:11 AM
+	 */
+	@Test
+	public void testAddAtEmptyLocation_4()
+		throws Exception {
+<span class="nc" id="L120">		World fixture = WorldFactory.createWorld();</span>
+<span class="nc" id="L121">		Item item = ItemFactory.createItem2();</span>
+<span class="nc" id="L122">		int depth = 1;</span>
+
+<span class="nc" id="L124">		fixture.addAtEmptyLocation(item, depth);</span>
+
+		// add additional test code here
+<span class="nc" id="L127">	}</span>
+
+	/**
+	 * Run the void addAtEmptyLocation(Item,int) method test.
+	 *
+	 * @throws Exception
+	 *
+	 * @generatedBy CodePro at 5/19/18 11:11 AM
+	 */
+	@Test
+	public void testAddAtEmptyLocation_5()
+		throws Exception {
+<span class="nc" id="L139">		World fixture = WorldFactory.createWorld();</span>
+<span class="nc" id="L140">		Item item = ItemFactory.createItem3();</span>
+<span class="nc" id="L141">		int depth = 1;</span>
+
+<span class="nc" id="L143">		fixture.addAtEmptyLocation(item, depth);</span>
+
+		// add additional test code here
+<span class="nc" id="L146">	}</span>
+
+	/**
+	 * Run the void addAtEmptyLocation(Item,int) method test.
+	 *
+	 * @throws Exception
+	 *
+	 * @generatedBy CodePro at 5/19/18 11:11 AM
+	 */
+	@Test
+	public void testAddAtEmptyLocation_6()
+		throws Exception {
+<span class="nc" id="L158">		World fixture = WorldFactory.createWorld();</span>
+<span class="nc" id="L159">		Item item = ItemFactory.createItem4();</span>
+<span class="nc" id="L160">		int depth = 1;</span>
+
+<span class="nc" id="L162">		fixture.addAtEmptyLocation(item, depth);</span>
+
+		// add additional test code here
+<span class="nc" id="L165">	}</span>
+
+	/**
+	 * Run the boolean addAtEmptySpace(Item,int,int,int) method test.
+	 *
+	 * @throws Exception
+	 *
+	 * @generatedBy CodePro at 5/19/18 11:11 AM
+	 */
+	@Test
+	public void testAddAtEmptySpace_1()
+		throws Exception {
+<span class="nc" id="L177">		World fixture = WorldFactory.createWorld();</span>
+<span class="nc" id="L178">		Item item = null;</span>
+<span class="nc" id="L179">		int x = 1;</span>
+<span class="nc" id="L180">		int y = 1;</span>
+<span class="nc" id="L181">		int z = 1;</span>
+
+<span class="nc" id="L183">		boolean result = fixture.addAtEmptySpace(item, x, y, z);</span>
+
+		// add additional test code here
+<span class="nc" id="L186">		assertEquals(true, result);</span>
+<span class="nc" id="L187">	}</span>
+
+	/**
+	 * Run the boolean addAtEmptySpace(Item,int,int,int) method test.
+	 *
+	 * @throws Exception
+	 *
+	 * @generatedBy CodePro at 5/19/18 11:11 AM
+	 */
+	@Test
+	public void testAddAtEmptySpace_2()
+		throws Exception {
+<span class="nc" id="L199">		World fixture = WorldFactory.createWorld();</span>
+<span class="nc" id="L200">		Item item = ItemFactory.createItem();</span>
+<span class="nc" id="L201">		int x = 1;</span>
+<span class="nc" id="L202">		int y = 1;</span>
+<span class="nc" id="L203">		int z = 1;</span>
+
+<span class="nc" id="L205">		boolean result = fixture.addAtEmptySpace(item, x, y, z);</span>
+
+		// add additional test code here
+<span class="nc" id="L208">		assertEquals(false, result);</span>
+<span class="nc" id="L209">	}</span>
+
+	/**
+	 * Run the boolean addAtEmptySpace(Item,int,int,int) method test.
+	 *
+	 * @throws Exception
+	 *
+	 * @generatedBy CodePro at 5/19/18 11:11 AM
+	 */
+	@Test
+	public void testAddAtEmptySpace_3()
+		throws Exception {
+<span class="nc" id="L221">		World fixture = WorldFactory.createWorld();</span>
+<span class="nc" id="L222">		Item item = ItemFactory.createItem2();</span>
+<span class="nc" id="L223">		int x = 1;</span>
+<span class="nc" id="L224">		int y = 1;</span>
+<span class="nc" id="L225">		int z = 1;</span>
+
+<span class="nc" id="L227">		boolean result = fixture.addAtEmptySpace(item, x, y, z);</span>
+
+		// add additional test code here
+<span class="nc" id="L230">		assertEquals(false, result);</span>
+<span class="nc" id="L231">	}</span>
+
+	/**
+	 * Run the boolean addAtEmptySpace(Item,int,int,int) method test.
+	 *
+	 * @throws Exception
+	 *
+	 * @generatedBy CodePro at 5/19/18 11:11 AM
+	 */
+	@Test
+	public void testAddAtEmptySpace_4()
+		throws Exception {
+<span class="nc" id="L243">		World fixture = WorldFactory.createWorld();</span>
+<span class="nc" id="L244">		Item item = ItemFactory.createItem3();</span>
+<span class="nc" id="L245">		int x = 1;</span>
+<span class="nc" id="L246">		int y = 1;</span>
+<span class="nc" id="L247">		int z = 1;</span>
+
+<span class="nc" id="L249">		boolean result = fixture.addAtEmptySpace(item, x, y, z);</span>
+
+		// add additional test code here
+<span class="nc" id="L252">		assertEquals(false, result);</span>
+<span class="nc" id="L253">	}</span>
+
+	/**
+	 * Run the boolean addAtEmptySpace(Item,int,int,int) method test.
+	 *
+	 * @throws Exception
+	 *
+	 * @generatedBy CodePro at 5/19/18 11:11 AM
+	 */
+	@Test
+	public void testAddAtEmptySpace_5()
+		throws Exception {
+<span class="nc" id="L265">		World fixture = WorldFactory.createWorld();</span>
+<span class="nc" id="L266">		Item item = ItemFactory.createItem4();</span>
+<span class="nc" id="L267">		int x = 1;</span>
+<span class="nc" id="L268">		int y = 1;</span>
+<span class="nc" id="L269">		int z = 1;</span>
+
+<span class="nc" id="L271">		boolean result = fixture.addAtEmptySpace(item, x, y, z);</span>
+
+		// add additional test code here
+<span class="nc" id="L274">		assertEquals(false, result);</span>
+<span class="nc" id="L275">	}</span>
+
+	/**
+	 * Run the boolean addAtEmptySpace(Item,int,int,int) method test.
+	 *
+	 * @throws Exception
+	 *
+	 * @generatedBy CodePro at 5/19/18 11:11 AM
+	 */
+	@Test
+	public void testAddAtEmptySpace_6()
+		throws Exception {
+<span class="nc" id="L287">		World fixture = WorldFactory.createWorld();</span>
+<span class="nc" id="L288">		Item item = ItemFactory.createItem();</span>
+<span class="nc" id="L289">		int x = 1;</span>
+<span class="nc" id="L290">		int y = 1;</span>
+<span class="nc" id="L291">		int z = 1;</span>
+
+<span class="nc" id="L293">		boolean result = fixture.addAtEmptySpace(item, x, y, z);</span>
+
+		// add additional test code here
+<span class="nc" id="L296">		assertEquals(false, result);</span>
+<span class="nc" id="L297">	}</span>
+
+	/**
+	 * Run the Color color(int,int,int) method test.
+	 *
+	 * @throws Exception
+	 *
+	 * @generatedBy CodePro at 5/19/18 11:11 AM
+	 */
+	@Test
+	public void testColor_1()
+		throws Exception {
+<span class="nc" id="L309">		World fixture = WorldFactory.createWorld();</span>
+<span class="nc" id="L310">		int x = 1;</span>
+<span class="nc" id="L311">		int y = 1;</span>
+<span class="nc" id="L312">		int z = 1;</span>
+
+<span class="nc" id="L314">		Color result = fixture.color(x, y, z);</span>
+
+		// add additional test code here
+		// An unexpected exception was thrown in user code while executing this test:
+		//    java.lang.ArrayIndexOutOfBoundsException: 1
+		//       at game.World.item(World.java:114)
+		//       at game.World.color(World.java:62)
+<span class="nc" id="L321">		assertNotNull(result);</span>
+<span class="nc" id="L322">	}</span>
+
+	/**
+	 * Run the Color color(int,int,int) method test.
+	 *
+	 * @throws Exception
+	 *
+	 * @generatedBy CodePro at 5/19/18 11:11 AM
+	 */
+	@Test
+	public void testColor_2()
+		throws Exception {
+<span class="nc" id="L334">		World fixture = WorldFactory.createWorld();</span>
+<span class="nc" id="L335">		int x = 1;</span>
+<span class="nc" id="L336">		int y = 1;</span>
+<span class="nc" id="L337">		int z = 1;</span>
+
+<span class="nc" id="L339">		Color result = fixture.color(x, y, z);</span>
+
+		// add additional test code here
+		// An unexpected exception was thrown in user code while executing this test:
+		//    java.lang.ArrayIndexOutOfBoundsException: 1
+		//       at game.World.item(World.java:114)
+		//       at game.World.color(World.java:62)
+<span class="nc" id="L346">		assertNotNull(result);</span>
+<span class="nc" id="L347">	}</span>
+
+	/**
+	 * Run the Color color(int,int,int) method test.
+	 *
+	 * @throws Exception
+	 *
+	 * @generatedBy CodePro at 5/19/18 11:11 AM
+	 */
+	@Test
+	public void testColor_3()
+		throws Exception {
+<span class="nc" id="L359">		World fixture = WorldFactory.createWorld();</span>
+<span class="nc" id="L360">		int x = 1;</span>
+<span class="nc" id="L361">		int y = 1;</span>
+<span class="nc" id="L362">		int z = 1;</span>
+
+<span class="nc" id="L364">		Color result = fixture.color(x, y, z);</span>
+
+		// add additional test code here
+		// An unexpected exception was thrown in user code while executing this test:
+		//    java.lang.ArrayIndexOutOfBoundsException: 1
+		//       at game.World.item(World.java:114)
+		//       at game.World.color(World.java:62)
+<span class="nc" id="L371">		assertNotNull(result);</span>
+<span class="nc" id="L372">	}</span>
+
+	/**
+	 * Run the Creature creature(int,int,int) method test.
+	 *
+	 * @throws Exception
+	 *
+	 * @generatedBy CodePro at 5/19/18 11:11 AM
+	 */
+	@Test
+	public void testCreature_1()
+		throws Exception {
+<span class="nc" id="L384">		World fixture = WorldFactory.createWorld();</span>
+<span class="nc" id="L385">		int x = 1;</span>
+<span class="nc" id="L386">		int y = 1;</span>
+<span class="nc" id="L387">		int z = 1;</span>
+
+<span class="nc" id="L389">		Creature result = fixture.creature(x, y, z);</span>
+
+		// add additional test code here
+<span class="nc" id="L392">		assertEquals(null, result);</span>
+<span class="nc" id="L393">	}</span>
+
+	/**
+	 * Run the Creature creature(int,int,int) method test.
+	 *
+	 * @throws Exception
+	 *
+	 * @generatedBy CodePro at 5/19/18 11:11 AM
+	 */
+	@Test
+	public void testCreature_2()
+		throws Exception {
+<span class="nc" id="L405">		World fixture = WorldFactory.createWorld();</span>
+<span class="nc" id="L406">		int x = 1;</span>
+<span class="nc" id="L407">		int y = 1;</span>
+<span class="nc" id="L408">		int z = 1;</span>
+
+<span class="nc" id="L410">		Creature result = fixture.creature(x, y, z);</span>
+
+		// add additional test code here
+<span class="nc" id="L413">		assertEquals(null, result);</span>
+<span class="nc" id="L414">	}</span>
+
+	/**
+	 * Run the Creature creature(int,int,int) method test.
+	 *
+	 * @throws Exception
+	 *
+	 * @generatedBy CodePro at 5/19/18 11:11 AM
+	 */
+	@Test
+	public void testCreature_3()
+		throws Exception {
+<span class="nc" id="L426">		World fixture = WorldFactory.createWorld();</span>
+<span class="nc" id="L427">		int x = 1;</span>
+<span class="nc" id="L428">		int y = 1;</span>
+<span class="nc" id="L429">		int z = 1;</span>
+
+<span class="nc" id="L431">		Creature result = fixture.creature(x, y, z);</span>
+
+		// add additional test code here
+<span class="nc" id="L434">		assertEquals(null, result);</span>
+<span class="nc" id="L435">	}</span>
+
+	/**
+	 * Run the Creature creature(int,int,int) method test.
+	 *
+	 * @throws Exception
+	 *
+	 * @generatedBy CodePro at 5/19/18 11:11 AM
+	 */
+	@Test
+	public void testCreature_4()
+		throws Exception {
+<span class="nc" id="L447">		World fixture = WorldFactory.createWorld();</span>
+<span class="nc" id="L448">		int x = 1;</span>
+<span class="nc" id="L449">		int y = 1;</span>
+<span class="nc" id="L450">		int z = 1;</span>
+
+<span class="nc" id="L452">		Creature result = fixture.creature(x, y, z);</span>
+
+		// add additional test code here
+<span class="nc" id="L455">		assertEquals(null, result);</span>
+<span class="nc" id="L456">	}</span>
+
+	/**
+	 * Run the Creature creature(int,int,int) method test.
+	 *
+	 * @throws Exception
+	 *
+	 * @generatedBy CodePro at 5/19/18 11:11 AM
+	 */
+	@Test
+	public void testCreature_5()
+		throws Exception {
+<span class="nc" id="L468">		World fixture = WorldFactory.createWorld();</span>
+<span class="nc" id="L469">		int x = 1;</span>
+<span class="nc" id="L470">		int y = 1;</span>
+<span class="nc" id="L471">		int z = 1;</span>
+
+<span class="nc" id="L473">		Creature result = fixture.creature(x, y, z);</span>
+
+		// add additional test code here
+<span class="nc" id="L476">		assertEquals(null, result);</span>
+<span class="nc" id="L477">	}</span>
+
+	/**
+	 * Run the int depth() method test.
+	 *
+	 * @throws Exception
+	 *
+	 * @generatedBy CodePro at 5/19/18 11:11 AM
+	 */
+	@Test
+	public void testDepth_1()
+		throws Exception {
+<span class="nc" id="L489">		World fixture = WorldFactory.createWorld();</span>
+
+<span class="nc" id="L491">		int result = fixture.depth();</span>
+
+		// add additional test code here
+<span class="nc" id="L494">		assertEquals(1, result);</span>
+<span class="nc" id="L495">	}</span>
+
+	/**
+	 * Run the void dig(int,int,int) method test.
+	 *
+	 * @throws Exception
+	 *
+	 * @generatedBy CodePro at 5/19/18 11:11 AM
+	 */
+	@Test
+	public void testDig_1()
+		throws Exception {
+<span class="nc" id="L507">		World fixture = WorldFactory.createWorld();</span>
+<span class="nc" id="L508">		int x = 1;</span>
+<span class="nc" id="L509">		int y = 1;</span>
+<span class="nc" id="L510">		int z = 1;</span>
+
+<span class="nc" id="L512">		fixture.dig(x, y, z);</span>
+
+		// add additional test code here
+<span class="nc" id="L515">	}</span>
+
+	/**
+	 * Run the void dig(int,int,int) method test.
+	 *
+	 * @throws Exception
+	 *
+	 * @generatedBy CodePro at 5/19/18 11:11 AM
+	 */
+	@Test
+	public void testDig_2()
+		throws Exception {
+<span class="nc" id="L527">		World fixture = WorldFactory.createWorld();</span>
+<span class="nc" id="L528">		int x = 1;</span>
+<span class="nc" id="L529">		int y = 1;</span>
+<span class="nc" id="L530">		int z = 1;</span>
+
+<span class="nc" id="L532">		fixture.dig(x, y, z);</span>
+
+		// add additional test code here
+<span class="nc" id="L535">	}</span>
+
+	/**
+	 * Run the char glyph(int,int,int) method test.
+	 *
+	 * @throws Exception
+	 *
+	 * @generatedBy CodePro at 5/19/18 11:11 AM
+	 */
+	@Test
+	public void testGlyph_1()
+		throws Exception {
+<span class="nc" id="L547">		World fixture = WorldFactory.createWorld();</span>
+<span class="nc" id="L548">		int x = 1;</span>
+<span class="nc" id="L549">		int y = 1;</span>
+<span class="nc" id="L550">		int z = 1;</span>
+
+<span class="nc" id="L552">		char result = fixture.glyph(x, y, z);</span>
+
+		// add additional test code here
+		// An unexpected exception was thrown in user code while executing this test:
+		//    java.lang.ArrayIndexOutOfBoundsException: 1
+		//       at game.World.item(World.java:114)
+		//       at game.World.glyph(World.java:51)
+<span class="nc" id="L559">		assertEquals(' ', result);</span>
+<span class="nc" id="L560">	}</span>
+
+	/**
+	 * Run the char glyph(int,int,int) method test.
+	 *
+	 * @throws Exception
+	 *
+	 * @generatedBy CodePro at 5/19/18 11:11 AM
+	 */
+	@Test
+	public void testGlyph_2()
+		throws Exception {
+<span class="nc" id="L572">		World fixture = WorldFactory.createWorld();</span>
+<span class="nc" id="L573">		int x = 1;</span>
+<span class="nc" id="L574">		int y = 1;</span>
+<span class="nc" id="L575">		int z = 1;</span>
+
+<span class="nc" id="L577">		char result = fixture.glyph(x, y, z);</span>
+
+		// add additional test code here
+		// An unexpected exception was thrown in user code while executing this test:
+		//    java.lang.ArrayIndexOutOfBoundsException: 1
+		//       at game.World.item(World.java:114)
+		//       at game.World.glyph(World.java:51)
+<span class="nc" id="L584">		assertEquals(' ', result);</span>
+<span class="nc" id="L585">	}</span>
+
+	/**
+	 * Run the char glyph(int,int,int) method test.
+	 *
+	 * @throws Exception
+	 *
+	 * @generatedBy CodePro at 5/19/18 11:11 AM
+	 */
+	@Test
+	public void testGlyph_3()
+		throws Exception {
+<span class="nc" id="L597">		World fixture = WorldFactory.createWorld();</span>
+<span class="nc" id="L598">		int x = 1;</span>
+<span class="nc" id="L599">		int y = 1;</span>
+<span class="nc" id="L600">		int z = 1;</span>
+
+<span class="nc" id="L602">		char result = fixture.glyph(x, y, z);</span>
+
+		// add additional test code here
+		// An unexpected exception was thrown in user code while executing this test:
+		//    java.lang.ArrayIndexOutOfBoundsException: 1
+		//       at game.World.item(World.java:114)
+		//       at game.World.glyph(World.java:51)
+<span class="nc" id="L609">		assertEquals(' ', result);</span>
+<span class="nc" id="L610">	}</span>
+
+	/**
+	 * Run the int height() method test.
+	 *
+	 * @throws Exception
+	 *
+	 * @generatedBy CodePro at 5/19/18 11:11 AM
+	 */
+	@Test
+	public void testHeight_1()
+		throws Exception {
+<span class="nc" id="L622">		World fixture = WorldFactory.createWorld();</span>
+
+<span class="nc" id="L624">		int result = fixture.height();</span>
+
+		// add additional test code here
+<span class="nc" id="L627">		assertEquals(1, result);</span>
+<span class="nc" id="L628">	}</span>
+
+	/**
+	 * Run the Item item(int,int,int) method test.
+	 *
+	 * @throws Exception
+	 *
+	 * @generatedBy CodePro at 5/19/18 11:11 AM
+	 */
+	@Test
+	public void testItem_1()
+		throws Exception {
+<span class="nc" id="L640">		World fixture = WorldFactory.createWorld();</span>
+<span class="nc" id="L641">		int x = 1;</span>
+<span class="nc" id="L642">		int y = 1;</span>
+<span class="nc" id="L643">		int z = 1;</span>
+
+<span class="nc" id="L645">		Item result = fixture.item(x, y, z);</span>
+
+		// add additional test code here
+		// An unexpected exception was thrown in user code while executing this test:
+		//    java.lang.ArrayIndexOutOfBoundsException: 1
+		//       at game.World.item(World.java:114)
+<span class="nc" id="L651">		assertNotNull(result);</span>
+<span class="nc" id="L652">	}</span>
+
+	/**
+	 * Run the void remove(Creature) method test.
+	 *
+	 * @throws Exception
+	 *
+	 * @generatedBy CodePro at 5/19/18 11:11 AM
+	 */
+	@Test
+	public void testRemove_1()
+		throws Exception {
+<span class="nc" id="L664">		World fixture = WorldFactory.createWorld();</span>
+<span class="nc" id="L665">		Creature other = CreatureFactory.createCreature4();</span>
+
+<span class="nc" id="L667">		fixture.remove(other);</span>
+
+		// add additional test code here
+<span class="nc" id="L670">	}</span>
+
+	/**
+	 * Run the void remove(Item) method test.
+	 *
+	 * @throws Exception
+	 *
+	 * @generatedBy CodePro at 5/19/18 11:11 AM
+	 */
+	@Test
+	public void testRemove_2()
+		throws Exception {
+<span class="nc" id="L682">		World fixture = WorldFactory.createWorld();</span>
+<span class="nc" id="L683">		Item item = ItemFactory.createItem();</span>
+
+<span class="nc" id="L685">		fixture.remove(item);</span>
+
+		// add additional test code here
+<span class="nc" id="L688">	}</span>
+
+	/**
+	 * Run the void remove(Item) method test.
+	 *
+	 * @throws Exception
+	 *
+	 * @generatedBy CodePro at 5/19/18 11:11 AM
+	 */
+	@Test
+	public void testRemove_3()
+		throws Exception {
+<span class="nc" id="L700">		World fixture = WorldFactory.createWorld();</span>
+<span class="nc" id="L701">		Item item = ItemFactory.createItem2();</span>
+
+<span class="nc" id="L703">		fixture.remove(item);</span>
+
+		// add additional test code here
+<span class="nc" id="L706">	}</span>
+
+	/**
+	 * Run the void remove(Item) method test.
+	 *
+	 * @throws Exception
+	 *
+	 * @generatedBy CodePro at 5/19/18 11:11 AM
+	 */
+	@Test
+	public void testRemove_4()
+		throws Exception {
+<span class="nc" id="L718">		World fixture = WorldFactory.createWorld();</span>
+<span class="nc" id="L719">		Item item = ItemFactory.createItem3();</span>
+
+<span class="nc" id="L721">		fixture.remove(item);</span>
+
+		// add additional test code here
+<span class="nc" id="L724">	}</span>
+
+	/**
+	 * Run the void remove(Item) method test.
+	 *
+	 * @throws Exception
+	 *
+	 * @generatedBy CodePro at 5/19/18 11:11 AM
+	 */
+	@Test
+	public void testRemove_5()
+		throws Exception {
+<span class="nc" id="L736">		World fixture = WorldFactory.createWorld();</span>
+<span class="nc" id="L737">		Item item = ItemFactory.createItem4();</span>
+
+<span class="nc" id="L739">		fixture.remove(item);</span>
+
+		// add additional test code here
+<span class="nc" id="L742">	}</span>
+
+	/**
+	 * Run the void remove(Item) method test.
+	 *
+	 * @throws Exception
+	 *
+	 * @generatedBy CodePro at 5/19/18 11:11 AM
+	 */
+	@Test
+	public void testRemove_6()
+		throws Exception {
+<span class="nc" id="L754">		World fixture = WorldFactory.createWorld();</span>
+<span class="nc" id="L755">		Item item = ItemFactory.createItem();</span>
+
+<span class="nc" id="L757">		fixture.remove(item);</span>
+
+		// add additional test code here
+<span class="nc" id="L760">	}</span>
+
+	/**
+	 * Run the void remove(int,int,int) method test.
+	 *
+	 * @throws Exception
+	 *
+	 * @generatedBy CodePro at 5/19/18 11:11 AM
+	 */
+	@Test
+	public void testRemove_7()
+		throws Exception {
+<span class="nc" id="L772">		World fixture = WorldFactory.createWorld();</span>
+<span class="nc" id="L773">		int x = 1;</span>
+<span class="nc" id="L774">		int y = 1;</span>
+<span class="nc" id="L775">		int z = 1;</span>
+
+<span class="nc" id="L777">		fixture.remove(x, y, z);</span>
+
+		// add additional test code here
+		// An unexpected exception was thrown in user code while executing this test:
+		//    java.lang.ArrayIndexOutOfBoundsException: 1
+		//       at game.World.remove(World.java:131)
+<span class="nc" id="L783">	}</span>
+
+	/**
+	 * Run the Tile tile(int,int,int) method test.
+	 *
+	 * @throws Exception
+	 *
+	 * @generatedBy CodePro at 5/19/18 11:11 AM
+	 */
+	@Test
+	public void testTile_1()
+		throws Exception {
+<span class="nc" id="L795">		World fixture = WorldFactory.createWorld();</span>
+<span class="nc" id="L796">		int x = -1;</span>
+<span class="nc" id="L797">		int y = 1;</span>
+<span class="nc" id="L798">		int z = 1;</span>
+
+<span class="nc" id="L800">		Tile result = fixture.tile(x, y, z);</span>
+
+		// add additional test code here
+<span class="nc" id="L803">		assertNotNull(result);</span>
+<span class="nc" id="L804">		assertEquals(&quot;Beyond the edge of the world.&quot;, result.details());</span>
+<span class="nc" id="L805">		assertEquals('x', result.glyph());</span>
+<span class="nc" id="L806">		assertEquals(false, result.isGround());</span>
+<span class="nc" id="L807">		assertEquals(false, result.isDiggable());</span>
+<span class="nc" id="L808">		assertEquals(&quot;BOUNDS&quot;, result.name());</span>
+<span class="nc" id="L809">		assertEquals(&quot;BOUNDS&quot;, result.toString());</span>
+<span class="nc" id="L810">		assertEquals(2, result.ordinal());</span>
+<span class="nc" id="L811">	}</span>
+
+	/**
+	 * Run the Tile tile(int,int,int) method test.
+	 *
+	 * @throws Exception
+	 *
+	 * @generatedBy CodePro at 5/19/18 11:11 AM
+	 */
+	@Test
+	public void testTile_2()
+		throws Exception {
+<span class="nc" id="L823">		World fixture = WorldFactory.createWorld();</span>
+<span class="nc" id="L824">		int x = 1;</span>
+<span class="nc" id="L825">		int y = 1;</span>
+<span class="nc" id="L826">		int z = 1;</span>
+
+<span class="nc" id="L828">		Tile result = fixture.tile(x, y, z);</span>
+
+		// add additional test code here
+<span class="nc" id="L831">		assertNotNull(result);</span>
+<span class="nc" id="L832">		assertEquals(&quot;Beyond the edge of the world.&quot;, result.details());</span>
+<span class="nc" id="L833">		assertEquals('x', result.glyph());</span>
+<span class="nc" id="L834">		assertEquals(false, result.isGround());</span>
+<span class="nc" id="L835">		assertEquals(false, result.isDiggable());</span>
+<span class="nc" id="L836">		assertEquals(&quot;BOUNDS&quot;, result.name());</span>
+<span class="nc" id="L837">		assertEquals(&quot;BOUNDS&quot;, result.toString());</span>
+<span class="nc" id="L838">		assertEquals(2, result.ordinal());</span>
+<span class="nc" id="L839">	}</span>
+
+	/**
+	 * Run the Tile tile(int,int,int) method test.
+	 *
+	 * @throws Exception
+	 *
+	 * @generatedBy CodePro at 5/19/18 11:11 AM
+	 */
+	@Test
+	public void testTile_3()
+		throws Exception {
+<span class="nc" id="L851">		World fixture = WorldFactory.createWorld();</span>
+<span class="nc" id="L852">		int x = 1;</span>
+<span class="nc" id="L853">		int y = -1;</span>
+<span class="nc" id="L854">		int z = 1;</span>
+
+<span class="nc" id="L856">		Tile result = fixture.tile(x, y, z);</span>
+
+		// add additional test code here
+<span class="nc" id="L859">		assertNotNull(result);</span>
+<span class="nc" id="L860">		assertEquals(&quot;Beyond the edge of the world.&quot;, result.details());</span>
+<span class="nc" id="L861">		assertEquals('x', result.glyph());</span>
+<span class="nc" id="L862">		assertEquals(false, result.isGround());</span>
+<span class="nc" id="L863">		assertEquals(false, result.isDiggable());</span>
+<span class="nc" id="L864">		assertEquals(&quot;BOUNDS&quot;, result.name());</span>
+<span class="nc" id="L865">		assertEquals(&quot;BOUNDS&quot;, result.toString());</span>
+<span class="nc" id="L866">		assertEquals(2, result.ordinal());</span>
+<span class="nc" id="L867">	}</span>
+
+	/**
+	 * Run the Tile tile(int,int,int) method test.
+	 *
+	 * @throws Exception
+	 *
+	 * @generatedBy CodePro at 5/19/18 11:11 AM
+	 */
+	@Test
+	public void testTile_4()
+		throws Exception {
+<span class="nc" id="L879">		World fixture = WorldFactory.createWorld();</span>
+<span class="nc" id="L880">		int x = 1;</span>
+<span class="nc" id="L881">		int y = 1;</span>
+<span class="nc" id="L882">		int z = 1;</span>
+
+<span class="nc" id="L884">		Tile result = fixture.tile(x, y, z);</span>
+
+		// add additional test code here
+<span class="nc" id="L887">		assertNotNull(result);</span>
+<span class="nc" id="L888">		assertEquals(&quot;Beyond the edge of the world.&quot;, result.details());</span>
+<span class="nc" id="L889">		assertEquals('x', result.glyph());</span>
+<span class="nc" id="L890">		assertEquals(false, result.isGround());</span>
+<span class="nc" id="L891">		assertEquals(false, result.isDiggable());</span>
+<span class="nc" id="L892">		assertEquals(&quot;BOUNDS&quot;, result.name());</span>
+<span class="nc" id="L893">		assertEquals(&quot;BOUNDS&quot;, result.toString());</span>
+<span class="nc" id="L894">		assertEquals(2, result.ordinal());</span>
+<span class="nc" id="L895">	}</span>
+
+	/**
+	 * Run the Tile tile(int,int,int) method test.
+	 *
+	 * @throws Exception
+	 *
+	 * @generatedBy CodePro at 5/19/18 11:11 AM
+	 */
+	@Test
+	public void testTile_5()
+		throws Exception {
+<span class="nc" id="L907">		World fixture = WorldFactory.createWorld();</span>
+<span class="nc" id="L908">		int x = 1;</span>
+<span class="nc" id="L909">		int y = 1;</span>
+<span class="nc" id="L910">		int z = -1;</span>
+
+<span class="nc" id="L912">		Tile result = fixture.tile(x, y, z);</span>
+
+		// add additional test code here
+<span class="nc" id="L915">		assertNotNull(result);</span>
+<span class="nc" id="L916">		assertEquals(&quot;Beyond the edge of the world.&quot;, result.details());</span>
+<span class="nc" id="L917">		assertEquals('x', result.glyph());</span>
+<span class="nc" id="L918">		assertEquals(false, result.isGround());</span>
+<span class="nc" id="L919">		assertEquals(false, result.isDiggable());</span>
+<span class="nc" id="L920">		assertEquals(&quot;BOUNDS&quot;, result.name());</span>
+<span class="nc" id="L921">		assertEquals(&quot;BOUNDS&quot;, result.toString());</span>
+<span class="nc" id="L922">		assertEquals(2, result.ordinal());</span>
+<span class="nc" id="L923">	}</span>
+
+	/**
+	 * Run the Tile tile(int,int,int) method test.
+	 *
+	 * @throws Exception
+	 *
+	 * @generatedBy CodePro at 5/19/18 11:11 AM
+	 */
+	@Test
+	public void testTile_6()
+		throws Exception {
+<span class="nc" id="L935">		World fixture = WorldFactory.createWorld();</span>
+<span class="nc" id="L936">		int x = 1;</span>
+<span class="nc" id="L937">		int y = 1;</span>
+<span class="nc" id="L938">		int z = 1;</span>
+
+<span class="nc" id="L940">		Tile result = fixture.tile(x, y, z);</span>
+
+		// add additional test code here
+<span class="nc" id="L943">		assertNotNull(result);</span>
+<span class="nc" id="L944">		assertEquals(&quot;Beyond the edge of the world.&quot;, result.details());</span>
+<span class="nc" id="L945">		assertEquals('x', result.glyph());</span>
+<span class="nc" id="L946">		assertEquals(false, result.isGround());</span>
+<span class="nc" id="L947">		assertEquals(false, result.isDiggable());</span>
+<span class="nc" id="L948">		assertEquals(&quot;BOUNDS&quot;, result.name());</span>
+<span class="nc" id="L949">		assertEquals(&quot;BOUNDS&quot;, result.toString());</span>
+<span class="nc" id="L950">		assertEquals(2, result.ordinal());</span>
+<span class="nc" id="L951">	}</span>
+
+	/**
+	 * Run the Tile tile(int,int,int) method test.
+	 *
+	 * @throws Exception
+	 *
+	 * @generatedBy CodePro at 5/19/18 11:11 AM
+	 */
+	@Test
+	public void testTile_7()
+		throws Exception {
+<span class="nc" id="L963">		World fixture = WorldFactory.createWorld();</span>
+<span class="nc" id="L964">		int x = 1;</span>
+<span class="nc" id="L965">		int y = 1;</span>
+<span class="nc" id="L966">		int z = 1;</span>
+
+<span class="nc" id="L968">		Tile result = fixture.tile(x, y, z);</span>
+
+		// add additional test code here
+<span class="nc" id="L971">		assertNotNull(result);</span>
+<span class="nc" id="L972">		assertEquals(&quot;Beyond the edge of the world.&quot;, result.details());</span>
+<span class="nc" id="L973">		assertEquals('x', result.glyph());</span>
+<span class="nc" id="L974">		assertEquals(false, result.isGround());</span>
+<span class="nc" id="L975">		assertEquals(false, result.isDiggable());</span>
+<span class="nc" id="L976">		assertEquals(&quot;BOUNDS&quot;, result.name());</span>
+<span class="nc" id="L977">		assertEquals(&quot;BOUNDS&quot;, result.toString());</span>
+<span class="nc" id="L978">		assertEquals(2, result.ordinal());</span>
+<span class="nc" id="L979">	}</span>
+
+	/**
+	 * Run the void update() method test.
+	 *
+	 * @throws Exception
+	 *
+	 * @generatedBy CodePro at 5/19/18 11:11 AM
+	 */
+	@Test
+	public void testUpdate_1()
+		throws Exception {
+<span class="nc" id="L991">		World fixture = WorldFactory.createWorld();</span>
+
+<span class="nc" id="L993">		fixture.update();</span>
+
+		// add additional test code here
+<span class="nc" id="L996">	}</span>
+
+	/**
+	 * Run the void update() method test.
+	 *
+	 * @throws Exception
+	 *
+	 * @generatedBy CodePro at 5/19/18 11:11 AM
+	 */
+	@Test
+	public void testUpdate_2()
+		throws Exception {
+<span class="nc" id="L1008">		World fixture = WorldFactory.createWorld();</span>
+
+<span class="nc" id="L1010">		fixture.update();</span>
+
+		// add additional test code here
+<span class="nc" id="L1013">	}</span>
+
+	/**
+	 * Run the int width() method test.
+	 *
+	 * @throws Exception
+	 *
+	 * @generatedBy CodePro at 5/19/18 11:11 AM
+	 */
+	@Test
+	public void testWidth_1()
+		throws Exception {
+<span class="nc" id="L1025">		World fixture = WorldFactory.createWorld();</span>
+
+<span class="nc" id="L1027">		int result = fixture.width();</span>
+
+		// add additional test code here
+<span class="nc" id="L1030">		assertEquals(1, result);</span>
+<span class="nc" id="L1031">	}</span>
+
+	/**
+	 * Perform pre-test initialization.
+	 *
+	 * @throws Exception
+	 *         if the initialization fails for some reason
+	 *
+	 * @generatedBy CodePro at 5/19/18 11:11 AM
+	 */
+	@Before
+	public void setUp()
+		throws Exception {
+		// add additional set up code here
+<span class="nc" id="L1045">	}</span>
+
+	/**
+	 * Perform post-test clean-up.
+	 *
+	 * @throws Exception
+	 *         if the clean-up fails for some reason
+	 *
+	 * @generatedBy CodePro at 5/19/18 11:11 AM
+	 */
+	@After
+	public void tearDown()
+		throws Exception {
+		// Add additional tear down code here
+<span class="nc" id="L1059">	}</span>
+
+	/**
+	 * Launch the test.
+	 *
+	 * @param args the command line arguments
+	 *
+	 * @generatedBy CodePro at 5/19/18 11:11 AM
+	 */
+	public static void main(String[] args) {
+<span class="nc" id="L1069">		new org.junit.runner.JUnitCore().run(WorldTest.class);</span>
+<span class="nc" id="L1070">	}</span>
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.7.9.201702052155</span>AllUiTests (May 19, 2018 11:46:29 AM)</div></body></html>

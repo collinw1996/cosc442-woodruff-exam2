@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../../../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../../../jacoco-resources/report.gif" type="image/gif"/><title>GoblinAiFactory.java</title><link rel="stylesheet" href="../../../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../../../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../../../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../../../index.html" class="el_report">AllUiTests (May 19, 2018 11:46:29 AM)</a> &gt; <a href="../../index.html" class="el_group">JoshHack</a> &gt; <a href="../index.html" class="el_bundle">src</a> &gt; <a href="index.source.html" class="el_package">game</a> &gt; <span class="el_source">GoblinAiFactory.java</span></div><h1>GoblinAiFactory.java</h1><pre class="source lang-java linenums">package game;
+
+import java.awt.Color;
+
+
+/**
+ * The class &lt;code&gt;GoblinAiFactory&lt;/code&gt; implements static methods that return instances of the class &lt;code&gt;{@link GoblinAi}&lt;/code&gt;.
+ *
+ * @generatedBy CodePro at 5/19/18 11:01 AM
+ * @author Collin
+ * @version $Revision: 1.0 $
+ */
+public class GoblinAiFactory
+ {
+	/**
+	 * Prevent creation of instances of this class.
+	 *
+	 * @generatedBy CodePro at 5/19/18 11:01 AM
+	 */
+<span class="nc" id="L20">	private GoblinAiFactory() {</span>
+<span class="nc" id="L21">	}</span>
+
+
+	/**
+	 * Create an instance of the class &lt;code&gt;{@link GoblinAi}&lt;/code&gt;.
+	 *
+	 * @generatedBy CodePro at 5/19/18 11:01 AM
+	 */
+	public static GoblinAi createGoblinAi() {
+<span class="nc" id="L30">		return new GoblinAi(new Creature(WorldFactory.createWorld(), ' ', Color.BLACK, &quot;&quot;, 0, 0, 0), new Creature(WorldFactory.createWorld(), ' ', Color.BLACK, &quot;&quot;, 0, 0, 0));</span>
+	}
+
+
+	/**
+	 * Create an instance of the class &lt;code&gt;{@link GoblinAi}&lt;/code&gt;.
+	 *
+	 * @generatedBy CodePro at 5/19/18 11:01 AM
+	 */
+	public static GoblinAi createGoblinAi2() {
+<span class="nc" id="L40">		return new GoblinAi(new Creature(WorldFactory.createWorld(), '\n', Color.LIGHT_GRAY, &quot;0123456789&quot;, Integer.MIN_VALUE, Integer.MIN_VALUE, Integer.MIN_VALUE), new Creature(WorldFactory.createWorld(), '\n', Color.LIGHT_GRAY, &quot;0123456789&quot;, Integer.MIN_VALUE, Integer.MIN_VALUE, Integer.MIN_VALUE));</span>
+	}
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.7.9.201702052155</span>AllUiTests (May 19, 2018 11:46:29 AM)</div></body></html>

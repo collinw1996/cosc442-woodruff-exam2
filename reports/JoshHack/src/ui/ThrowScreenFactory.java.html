@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../../../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../../../jacoco-resources/report.gif" type="image/gif"/><title>ThrowScreenFactory.java</title><link rel="stylesheet" href="../../../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../../../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../../../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../../../index.html" class="el_report">AllUiTests (May 19, 2018 11:46:29 AM)</a> &gt; <a href="../../index.html" class="el_group">JoshHack</a> &gt; <a href="../index.html" class="el_bundle">src</a> &gt; <a href="index.source.html" class="el_package">ui</a> &gt; <span class="el_source">ThrowScreenFactory.java</span></div><h1>ThrowScreenFactory.java</h1><pre class="source lang-java linenums">package ui;
+
+import game.Creature;
+import game.CreatureFactory;
+
+
+/**
+ * The class &lt;code&gt;ThrowScreenFactory&lt;/code&gt; implements static methods that return instances of the class &lt;code&gt;{@link ThrowScreen}&lt;/code&gt;.
+ *
+ * @generatedBy CodePro at 5/19/18 11:01 AM
+ * @author Collin
+ * @version $Revision: 1.0 $
+ */
+public class ThrowScreenFactory
+ {
+	/**
+	 * Prevent creation of instances of this class.
+	 *
+	 * @generatedBy CodePro at 5/19/18 11:01 AM
+	 */
+<span class="nc" id="L21">	private ThrowScreenFactory() {</span>
+<span class="nc" id="L22">	}</span>
+
+
+	/**
+	 * Create an instance of the class &lt;code&gt;{@link ThrowScreen}&lt;/code&gt;.
+	 *
+	 * @generatedBy CodePro at 5/19/18 11:01 AM
+	 */
+	public static ThrowScreen createThrowScreen() {
+<span class="fc" id="L31">		return new ThrowScreen(CreatureFactory.createCreature(), 0, 0);</span>
+	}
+
+
+	/**
+	 * Create an instance of the class &lt;code&gt;{@link ThrowScreen}&lt;/code&gt;.
+	 *
+	 * @generatedBy CodePro at 5/19/18 11:01 AM
+	 */
+	public static ThrowScreen createThrowScreen2() {
+<span class="fc" id="L41">		return new ThrowScreen(CreatureFactory.createCreature2(), 1, 1);</span>
+	}
+
+
+	/**
+	 * Create an instance of the class &lt;code&gt;{@link ThrowScreen}&lt;/code&gt;.
+	 *
+	 * @generatedBy CodePro at 5/19/18 11:01 AM
+	 */
+	public static ThrowScreen createThrowScreen3() {
+<span class="fc" id="L51">		return new ThrowScreen(CreatureFactory.createCreature3(), 7, 7);</span>
+	}
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.7.9.201702052155</span>AllUiTests (May 19, 2018 11:46:29 AM)</div></body></html>
